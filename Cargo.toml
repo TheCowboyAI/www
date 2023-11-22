@@ -1,7 +1,7 @@
 [package]
 name = "thecowboy-ai"
 version = "0.1.0"
-authors = ["Steele Price <steele@amaranthos.io>"]
+authors = ["Cowboy AI, LLC. <git@thecowboy.ai>"]
 edition = "2018"
 
 [lib]
