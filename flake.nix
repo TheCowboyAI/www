@@ -92,6 +92,7 @@
               libiconv
               tailwindcss
               sass
+              wasm-pack
             ];
             
             RUST_SRC_PATH = rustPlatform.rustLibSrc;
