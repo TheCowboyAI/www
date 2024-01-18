@@ -5,5 +5,5 @@ pkg/
 wasm-pack.log
 .env
 /.direnv
-
+/dist
 node_modules/
