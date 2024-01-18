@@ -93,6 +93,10 @@
               tailwindcss
               sass
               wasm-pack
+              nodejs_18.out
+              nodePackages.webpack
+              nodePackages.webpack-cli
+              nodePackages.npm
             ];
             
             RUST_SRC_PATH = rustPlatform.rustLibSrc;
