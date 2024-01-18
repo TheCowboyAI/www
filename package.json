@@ -1,0 +1,36 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecowboyai/www.git"
+  },
+  "keywords": [
+    "AI",
+    "API",
+    "Integration",
+    "Ontology",
+    "Taxonomy",
+    "Knowledge",
+    "Graph",
+    "CIM",
+    "Conceptual",
+    "Spaces"
+  ],
+  "author": "Cowboy AI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thecowboyai/www/issues"
+  },
+  "homepage": "https://github.com/thecowboyai/www#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
+  }
+}

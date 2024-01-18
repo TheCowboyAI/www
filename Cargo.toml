@@ -1,0 +1,10 @@
+[package]
+name = "www-thecowboy-ai"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+leptos = { version = "0.5", features = ["csr"] }
+
+[lib]
+crate-type = ["cdylib"]
