@@ -26,13 +26,10 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-/* styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* Set body background and text properties */
 body {
     line-height: 1;
     background-image: url('assets/sunset1.jpeg');
@@ -40,37 +37,56 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
-    background-color: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
-h1, h2, h3, p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.app {
+    margin: 0;
+    padding: 0px;
 }
 
-ol, ul {
-    list-style: none;
+.content {
+    text-align: center;
 }
 
-blockquote, q {
-    quotes: none;
+.cowboy-blue {
+    background-color: #00A9FF;
+    color: white;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+.cowboy-white {
+    background-color: white;
+    color: #00A9FF;    
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+.caption {
+    color:#00A9FF;
+    font-weight: bold;
 }
 
+.svg-container {
+    margin: 0px;
+    background-color: white;
+    border-style: solid;       
+    border-width: 2px;
+    border-color: black;      
+    border-radius: 10px;           /* Rounded corners */
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0); /* Thick black drop shadow */
+    display: inline-block;         /* To properly contain the SVG */
+    padding: 2px;                 /* Optional: space between the SVG and the container edges */
+}
 
+.svg-container svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.icon {
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
