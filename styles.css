@@ -31275,7 +31275,7 @@ video {
 
 body {
   line-height: 1;
-  background-image: url('assets/sunset1.jpeg');
+  background-image: url('assets/elk-sun.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31332,7 +31332,7 @@ body {
 
 .icon {
   width: 100px;
-  height: 130px;
+  height: 125px;
   top: 10px;
   left: 10px;
 }

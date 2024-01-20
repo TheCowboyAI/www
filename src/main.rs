@@ -21,73 +21,91 @@ fn App() -> impl IntoView {
 #[component]
 fn Content() -> impl IntoView {
     view! {
-        <div class="ml-5 md:ml-24">
+        <div class="ml-5 md:ml-24 ">
             <h1 class="text-4xl md:text-5xl m-2.5 caption bg-black shadow-lg text-center rounded-lg">
             {"AI-Driven Business Transformation"}
             </h1>
-            <div class="rounded-md m-2.5">
-                <div class="lg:mr-20 text-white">
-
-                    <h2 class="text-2xl md:text-4xl my-2.5 caption">
-                    {"Imagine..."}
+            <div class="">
+            <div class="mt-5 bg-black bg-opacity-50 rounded-lg m-2.5 lg:mr-20 text-white">
+                <h2 class="bg-black bg-opacity-40 pl-2 pb-2 text-2xl md:text-4xl my-2.5 caption">
+                    {"Modeled Intelligence"}
                     </h2>
 
-                    <p class="text-lg text-shadow-lg shadow-black">
-                    {"a world where every facet of your business is not just enhanced,
+                    <p class="mx-2.5 pb-2 text-lg shadow-black">
+                    {"With a business model driven architecture, 
+                    you enter a world where every facet of your business is not just enhanced,
                     but transformed with insight through artificial intelligence."}
                     </p>
-
-                    <blockquote class="italic text-lg text-white-300 mt-5 pl-10">
-                    {"- That's the world Cowboy AI is creating. -"}
+                </div>
+        
+                <div class="mt-5 font-bold bg-black bg-opacity-50 rounded-lg m-2.5 lg:mr-20 text-white">
+                    <blockquote class="text-middle bg-black bg-opacity-40 italic text-lg text-center text-white-300 mt-5">
+                    {"~ Cowboy AI delivers this Model. ~"}
                     </blockquote>
+                </div>
 
-                    <h2 class="text-2xl md:text-4xl my-2.5 caption">
-                    {"Your platform as a partnership"}
+                <div class="mt-5 bg-black bg-opacity-50 rounded-lg m-2.5 lg:mr-20 text-white">
+                    <h2 class="bg-black bg-opacity-40 pl-2 pb-2 text-2xl md:text-4xl my-2.5 caption">
+                    {"Craft a Unique AI Experience"}
                     </h2>
 
-                    <p class="lg:mr-20 text-lg text-shadow-lg shadow-black text-white">
-                    {"AI solutions are not just applied but intricately tailored to you.
-                    Forget the one-size-fits-all approach, you are special."}
+                    <p class="mx-2.5 pb-2 text-lg shadow-black">
+                    {"Composable Information Machine (CIM) is carefully adapted to mesh 
+                    seamlessly with the unique fabric of your business."}
                     </p>
+                </div>
 
-                    <h2 class="text-2xl md:text-4xl my-2.5 caption">
-                    {"Strategic extensions"}
+                <div class="mt-5 bg-black bg-opacity-50 rounded-lg m-2.5 lg:mr-20 text-white">
+                    <h2 class="bg-black bg-opacity-40 pl-2 pb-2 text-2xl md:text-4xl my-2.5 caption">
+                    {"Strategic Extensions"}
                     </h2>
 
-                    <ul>
-                        <li>{"Automate mundane tasks"}</li>
-                        <li>{"Understand workflows"}</li>
+                    <ul class="mx-2.5 pb-2 list-disc list-inside">
+                        <li>{"Visualize your Business Model"}</li>
+                        <li>{"Understand Workflows"}</li>
+                        <li>{"Enforce Event Models"}</li>
+                        <li>{"Automate Mundane Tasks"}</li>
                         <li>{"Derive profound insights from your data"}</li>
-                        <li>{"Engaging with your customers on a whole new level."}</li>
+                        <li>{"Engage with customers on a new level"}</li>
                     </ul>
+                </div>
 
-                    <h2 class="text-2xl md:text-4xl my-2.5 caption">
+                <div class="mt-5 bg-black bg-opacity-50 rounded-lg m-2.5 lg:mr-20 text-white">
+                    <h2 class="bg-black bg-opacity-40 pl-2 pb-2 text-2xl md:text-4xl my-2.5 caption">
                     {"AI tools and APIs"}
                     </h2>
 
-                    <ul>
-                        <li>{"Any LLM"}</li>
+                    <ul class="mx-2.5 pb-2 list-disc list-inside">
+                        <li>{"Custom GPTs and Agents"}</li>
+                        <li>{"Generate Source Code"}</li>
+                        <li>{"Interact with any LLM"}</li>
                         <li>{"Machine Learning"}</li>
                         <li>{"Natural Language Processing"}</li>
                         <li>{"Voice Recognition"}</li>
                         <li>{"Predictive Analytics"}</li>
                     </ul>
+                </div>
 
-                    <h2 class="text-2xl md:text-4xl my-2.5 caption">
-                    {"Strategic partnerships"}
+                <div class="mt-5 bg-black bg-opacity-50 rounded-lg m-2.5 lg:mr-20 text-white">
+                    <h2 class="bg-black bg-opacity-40 pl-2 pb-2 text-2xl md:text-4xl my-2.5 caption">
+                    {"Strategic Partnerships"}
                     </h2>
-                    <p class="text-shadow-lg shadow-black text-white">
+
+                    <p class="mx-2.5 pb-2 shadow-black text-white">
                     {"We work with the tech titans and navigate open-source solutions to fit your model.
-                    Cowboy AI is not just your provider but your co-pilot in the 
+                    Cowboy AI is not just your provider but your guide through the 
                     journey toward digital excellence."}
                     </p>
+                </div>
 
-                    <p class="font-bold mt-10 text-xl text-shadow-lg shadow-black text-white">
+                <div class="mt-5 bg-black bg-opacity-50 rounded-lg m-2.5 lg:mr-20 text-white">
+                    <p class="font-bold mx-2.5 pt-2 mt-10 text-xl text-shadow-lg shadow-black text-white">
                     {"With Cowboy AI, it's not just business as usual;"}
                     </p>
-                    <p class="font-bold text-xl text-shadow-lg shadow-black text-white">
+                    <p class="font-bold mx-2.5 pb-2 text-xl text-shadow-lg shadow-black text-white">
                     {"it's business ahead of the curve."}
                     </p>
+
                 </div>
             </div>
         </div>
@@ -145,7 +163,7 @@ fn Dashboard() -> impl IntoView {
 fn Navigate() -> impl IntoView {
     view! {
         // mini menu
-        <div>
+        <div class="">
     <nav class="flex flex-col w-48 h-screen px-4 border border-black rounded-md">
         <div class="mt-3">
             <div class="icon ml-10 px-4 py-4 flex flex-row svg-container items-center">
@@ -153,10 +171,10 @@ fn Navigate() -> impl IntoView {
                 <div class="font-bold caption text-center mb-4">Cowboy AI</div>
             </div>
             <div class="mt-10 mb-4">
-            <ul class="ml-4">
+            <ul class="ml-4 text-white">
             <li class="mb-2 px-4 py-4 flex flex-row">
             <a href="#" class="border-black hover:text-black hover:bg-white hover:font-bold rounded">
-              <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24">
+              <svg class="fill-current h-10 w-10 " viewBox="0 0 24 24">
                 <title>Dashboard</title>
                 <path d="M16 20h4v-4h-4m0-2h4v-4h-4m-6-2h4V4h-4m6 4h4V4h-4m-6 10h4v-4h-4m-6 4h4v-4H4m0 10h4v-4H4m6 4h4v-4h-4M4 8h4V4H4v4z"/>
               </svg>
@@ -166,8 +184,8 @@ fn Navigate() -> impl IntoView {
              <li class="mb-2 px-4 py-4 flex flex-row">
               <a href="#" class="border-black hover:text-black hover:bg-white hover:font-bold rounded">
                 <span>
-                  <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24">
-                  <title>Articles</title>
+                  <svg class="fill-current h-10 w-10 " viewBox="0 0 24 24">
+                  <title>AI Tooling</title>
                     <path
                       d="M12 13H7v5h5v2H5V10h2v1h5v2M8
                           4v2H4V4h4m2-2H2v6h8V2m10 9v2h-4v-2h4m2-2h-8v6h8V9m-2
@@ -182,7 +200,7 @@ fn Navigate() -> impl IntoView {
               <a href="#" class="border-black hover:text-black hover:bg-white hover:font-bold rounded">
                 <span>
                   <svg
-                    class="fill-current h-5 w-5 "
+                    class="fill-current h-10 w-10 "
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +224,7 @@ fn Navigate() -> impl IntoView {
               <li class="mb-2 px-4 py-4 flex flex-row">
               <a href="#" class="border-black hover:text-black hover:bg-white hover:font-bold rounded">
                       <span>
-                        <svg class="fill-current h-5 w-5 " viewBox="0 0 24 24">
+                        <svg class="fill-current h-10 w-10 " viewBox="0 0 24 24">
                             <title>Milestones</title>
                             <path
                                 d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2
@@ -220,7 +238,7 @@ fn Navigate() -> impl IntoView {
               <li class="mb-2 px-4 py-4 flex flex-row">
               <a href="#" class="border-black hover:text-black hover:bg-white hover:font-bold rounded">
                   <span>
-                    <svg class="fill-current h-5 w-5" viewBox="0 0 24 24">
+                    <svg class="fill-current h-10 w-10" viewBox="0 0 24 24">
                     <title>Team</title>
                         <path
                         d="M12 4a4 4 0 014 4 4 4 0 01-4 4 4 4 0 01-4-4 4 4 0
