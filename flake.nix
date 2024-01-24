@@ -78,6 +78,7 @@
               gcc
               zsh
               git
+              act
               just
               starship
               openssl
