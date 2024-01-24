@@ -1,13 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cowboy AI</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- include support for `wasm-bindgen --weak-refs` - see: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
+    <link data-trunk rel="rust" data-wasm-opt="z" data-weak-refs />
+
     <link data-trunk rel="tailwind-css" href="styles.css" />
     <link data-trunk rel="copy-dir" href="assets"/>
-</head>
-<body>
-    
-</body>
+
+    <title>The Cowboy AI</title>
+  </head>
+  <body></body>
 </html>
