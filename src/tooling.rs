@@ -5,9 +5,9 @@ pub fn Tooling() -> impl IntoView {
     view! {
         <div class="h-screen flex items-center animate-fadeIn">
             <div class="flex-row"> 
-                <h2 class="font-bold text-white text-4xl md:text-6xl">
+                <h1 class="font-bold text-white text-4xl md:text-6xl">
                 {"Modeled Intelligence"}
-                </h2>
+                </h1>
                 <div class="text-black flex-row mt-10">
                     <ul class="text-2xl">
                     <li>{"Business model"}</li>
@@ -19,6 +19,12 @@ pub fn Tooling() -> impl IntoView {
                     {"AI Composable Insights"}
                     </h2>
                 </div>
+                <h2 class="mt-5 font-bold text-white text-3xl md:text-4xl">
+                {"Our Custom GPTs"}
+                </h2>
+                <h2 class="font-bold text-white text-3xl md:text-4xl">
+                {"Fit Your Model"}
+                </h2>
             </div>
         </div>
     }
