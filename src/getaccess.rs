@@ -1,7 +1,7 @@
 use leptos::*;
 
 #[component]
-pub fn Access() -> impl IntoView {
+pub fn GetAccess() -> impl IntoView {
     view! {
         <div class="h-screen flex items-center animate-fadeIn">
             <div class="flex-row">

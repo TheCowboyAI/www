@@ -18,7 +18,7 @@ use crate::tooling::Tooling;
 use crate::workflow::Workflow;
 use crate::events::Events;
 use crate::people::People;
-use crate::getaccess::Access;
+use crate::getaccess::GetAccess;
 
 use leptos::*;
 use leptos_router::*;
@@ -43,7 +43,7 @@ fn App() -> impl IntoView {
                         <Route path="/workflow" view=Workflow />
                         <Route path="/events" view=Events />
                         <Route path="/people" view=People />
-                        <Route path="/getaccess" view=Access />
+                        <Route path="/getaccess" view=GetAccess />
                     </Routes>
                 </Router>
             </main>
