@@ -13,7 +13,9 @@ module.exports = {
       xl: '4px 4px 16px var(--tw-shadow-color)',
     }
   },
-  plugins: [plugin(function ({ matchUtilities, theme }) {
+  plugins: [
+    require('@tailwindcss/forms'),
+    plugin(function ({ matchUtilities, theme }) {
     matchUtilities(
       {
         'text-shadow': (value) => ({

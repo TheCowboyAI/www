@@ -3,8 +3,8 @@ use leptos::*;
 #[component]
 pub fn AccessGPTs() -> impl IntoView {
   view! {
-    <button type="button" 
-      onclick="window.location.href='/getaccess';"
+    <a  
+      href="/getaccess"
       class="text-white 
         bg-gradient-to-br 
         from-purple-600 
@@ -24,7 +24,7 @@ pub fn AccessGPTs() -> impl IntoView {
         mb-2"
     >
       {"Access our GPTs"}
-    </button>
+    </a>
   }
 }
 
