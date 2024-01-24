@@ -3,9 +3,9 @@ use leptos::*;
 #[component]
 pub fn Tooling() -> impl IntoView {
     view! {
-        <div class="h-screen flex items-center">
+        <div class="h-screen flex items-center animate-fadeIn">
             <div class="flex-row"> 
-                <h2 class="text-white text-4xl md:text-6xl">
+                <h2 class="font-bold text-white text-4xl md:text-6xl">
                 {"Modeled Intelligence"}
                 </h2>
                 <div class="text-black flex-row mt-10">
