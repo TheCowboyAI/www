@@ -68,6 +68,8 @@
               cargo-leptos
               cargo-generate
               cargo-make
+              docker
+              docker-compose
               cacert
               trunk
               direnv
