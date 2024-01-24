@@ -7,6 +7,7 @@ pub mod workflow;
 pub mod dashboard;
 pub mod events;
 pub mod people;
+pub mod getaccess;
 
 use crate::navigate::Navigate;
 use crate::footer::Footer;
@@ -16,6 +17,7 @@ use crate::tooling::Tooling;
 use crate::workflow::Workflow;
 use crate::events::Events;
 use crate::people::People;
+use crate::getaccess::Access;
 
 use leptos::*;
 use leptos_router::*;
@@ -40,6 +42,7 @@ fn App() -> impl IntoView {
                         <Route path="/workflow" view=Workflow />
                         <Route path="/events" view=Events />
                         <Route path="/people" view=People />
+                        <Route path="/getaccess" view=Access />
                     </Routes>
                 </Router>
             </main>

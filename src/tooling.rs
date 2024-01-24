@@ -19,7 +19,7 @@ pub fn Tooling() -> impl IntoView {
                     {"AI Composable Insights"}
                     </h2>
                 </div>
-                <h2 class="mt-5 font-bold text-white text-3xl md:text-4xl">
+                <h2 class="mt-10 font-bold text-white text-3xl md:text-4xl">
                 {"Our Custom GPTs"}
                 </h2>
                 <h2 class="font-bold text-white text-3xl md:text-4xl">
