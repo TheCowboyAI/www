@@ -6,10 +6,12 @@ pub fn Navigate() -> impl IntoView {
     // mini menu
     <div class="overflow-hidden">
         <nav class="flex flex-col h-screen items-center pt-3 pl-3">
+            <a href="/">
               <div class="icon py-4 flex flex-row svg-container items-center">
                   <img src="assets/logo.svg" class="mx-auto" />
                   <div class="font-bold caption text-center">Cowboy AI</div>
               </div>
+            </a>
 
               <div class="mt-5 flex flex-col space-y-3 > * + *">
                   <a href="/dashboard"
