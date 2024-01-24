@@ -14,11 +14,29 @@ pub fn Landing() -> impl IntoView {
                     <li>{"Generate content"}</li>
                     <li>{"Be deterministic"}</li>
                     <li class="mt-10">
-                        <a href="/getaccess" class="relative rounded px-5 py-2.5 overflow-hidden group bg-red-500 relative hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300">
-                            <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                            <span class="relative">Access Our GPTs</span>
-                        </a>
-                    </li>
+                    <button type="button" 
+                        onclick="window.location.href='/getaccess';"
+                        class="text-white 
+                                bg-gradient-to-br 
+                                from-purple-600 
+                                to-blue-500 
+                                hover:bg-gradient-to-bl 
+                                focus:ring-4 
+                                focus:outline-none 
+                                focus:ring-blue-300 
+                                dark:focus:ring-blue-800 
+                                font-bold 
+                                rounded-lg 
+                                text-base 
+                                px-5 
+                                py-2.5 
+                                text-center 
+                                me-2 
+                                mb-2"
+                        >
+                            {"Access our GPTs"}
+                        </button>
+                   </li>
                 </ul>
             </div>
         </div>
