@@ -12,6 +12,9 @@ pub fn Access() -> impl IntoView {
                 {"Access these and more as we grow"}
                 </h3>
                 <ul class="border-dashed text-base mt-10 px-5 py-2 text-white">
+                    <li class="text-xl font-bold">{"Summarize to Markdown"}</li>
+                    <li class="ml-2 text-black">{"Upload a document, get a summary back in markdown"}</li>
+                    
                     <li class="text-xl font-bold">{"Business Model Canvas Assistant"}</li>
                     <li class="ml-2 text-black">{"Understand your business model by generating a Business Model Canvas. Step-by-step, produce a persistant model"}</li>
                     
