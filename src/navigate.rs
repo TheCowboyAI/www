@@ -12,7 +12,8 @@ pub fn Navigate() -> impl IntoView {
               </div>
 
               <div class="mt-5 flex flex-col space-y-3 > * + *">
-                  <a href="#" 
+                  <a href="/dashboard"
+                    
                     class="p-2 rounded-lg text-white 
                            hover:text-black hover:bg-white hover:font-bold hover:border-black hover:border-2">
                       <svg class="h-16 w-16" viewBox="0 0 1920 1920">
@@ -26,7 +27,7 @@ pub fn Navigate() -> impl IntoView {
                       </svg>
                   </a>
 
-                  <a href="#" 
+                  <a href="/tooling" 
                     class="rounded-lg p-2 
                            hover:text-black 
                            hover:bg-white 
@@ -48,7 +49,7 @@ pub fn Navigate() -> impl IntoView {
                     </svg>
                   </a>
 
-                  <a href="#" 
+                  <a href="/workflow" 
                     class="p-2 rounded-lg
                           hover:text-black hover:bg-white hover:font-bold">
                       <svg class="h-16 w-16" viewBox="0 0 24 24"
@@ -58,7 +59,7 @@ pub fn Navigate() -> impl IntoView {
                       </svg>
                   </a>
 
-                  <a href="#" 
+                  <a href="/events" 
                     class="p-2 rounded-lg
                            hover:text-black hover:bg-white hover:font-bold">
                       <svg class="h-16 w-16" viewBox="0 0 24 24">
@@ -70,7 +71,7 @@ pub fn Navigate() -> impl IntoView {
                       </svg>
                   </a>
 
-                  <a href="#" 
+                  <a href="/people" 
                     class="rounded-lg p-2
                            hover:text-black hover:bg-white hover:font-bold">
                       <svg class="h-16 w-16" viewBox="0 0 24 24">
