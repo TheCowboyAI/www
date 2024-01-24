@@ -31275,12 +31275,12 @@ video {
 
 body {
   line-height: 1;
-  background-image: url('assets/elk-sun.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
+  /* background-image: url('assets/elk-sun.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; */
   margin: 0;
 }
 
