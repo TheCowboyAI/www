@@ -12,7 +12,6 @@ pub mod accessgpts;
 pub mod customwork;
 
 use crate::navigate::Navigate;
-use crate::footer::Footer;
 use crate::landing::Landing;
 use crate::dashboard::Dashboard;
 use crate::tooling::Tooling;
@@ -33,7 +32,7 @@ fn main() {
 fn App() -> impl IntoView {
     view! {
         <div class="bg-gradient-to-tl from-black via-blue-500 to-purple-900 app flex">
-            <aside class="h-screen sticky top-0 left-0 bottom-0">
+            <aside class="h-screen sticky top-0 left-0">
                 <Navigate />
             </aside>
             <main class="pl-5">
@@ -50,9 +49,6 @@ fn App() -> impl IntoView {
                     </Routes>
                 </Router>
             </main>
-        </div>
-        <div class="absolute bottom-0 w-full">
-            <Footer />
         </div>
     }
 }

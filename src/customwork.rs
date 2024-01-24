@@ -3,7 +3,7 @@ use leptos::*;
 #[component]
 pub fn CustomWork() -> impl IntoView {
     view! {
-        <div class="h-screen flex items-center animate-fadeIn">
+        <div class="flex items-center animate-fadeIn">
             <div class="flex-row">
                 <h2 class="font-bold text-white text-4xl md:text-6xl">
                     {"Custom Work"}

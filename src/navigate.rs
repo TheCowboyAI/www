@@ -1,4 +1,5 @@
 use leptos::*;
+use crate::footer::Footer;
 
 #[component]
 pub fn Navigate() -> impl IntoView {
@@ -156,7 +157,10 @@ pub fn Navigate() -> impl IntoView {
                       </svg>
                     </a>
                   </div>
-        </nav>
+                  <div class="mt-10">
+                  <Footer />
+                  </div>
+              </nav>
     </div>
     }
 }
