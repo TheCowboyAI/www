@@ -8,6 +8,7 @@ pub mod dashboard;
 pub mod events;
 pub mod people;
 pub mod getaccess;
+pub mod accessgpts;
 
 use crate::navigate::Navigate;
 use crate::footer::Footer;
