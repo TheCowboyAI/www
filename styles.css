@@ -31274,11 +31274,12 @@ video {
 }
 
 html {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(to bottom right, #4c1d95, #00A9FF, black) no-repeat;
-  background: -o-linear-gradient(to bottom right, #4c1d95, #00A9FF, black) no-repeat;
+  min-height: 100vh;
+  background: #4c1d95;
+  background: linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
+  background: -moz-linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
