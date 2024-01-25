@@ -3,13 +3,13 @@ use leptos::*;
 use crate::workform::WorkRequestForm;
 
 #[component]
-pub fn CustomWork() -> impl IntoView {
+pub fn Solutions() -> impl IntoView {
     view! {
         <div class="flex items-center animate-fadeIn mt-5">
             <div class="flex-row">
-                <h2 class="mt-10 font-bold text-white text-3xl md:text-4xl lg:text-6xl">
-                    {"Solutions"}
-                </h2>
+                <h1 class="font-bold text-white text-4xl md:text-6xl">
+                {"Solutions"}
+                </h1>
                 <h3 class="text-xl md:text-2xl lg:text-4xl mt-5 font-bold">
                 {"Our custom solutions"}
                 </h3>
