@@ -31274,6 +31274,7 @@ video {
 }
 
 html {
+  height: 100%;
   min-height: 100vh;
   background: #4c1d95;
   background: linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
@@ -31283,14 +31284,9 @@ html {
 }
 
 body {
+  height: 100%;
+  min-height: 100%;
   line-height: 1;
-  /* background-image: linear-gradient(to bottom right, #4c1d95, #3b82f6, black); */
-  /* background-image: url('assets/elk-sun.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh; */
   margin: 0;
 }
 
