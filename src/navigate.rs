@@ -8,9 +8,9 @@ pub fn Navigate() -> impl IntoView {
     <div class="overflow-hidden">
         <nav class="flex flex-col items-center pt-3 pl-3">
             <a href="/">
-              <div class="icon py-4 flex flex-row svg-container items-center">
-                  <img src="assets/logo.svg" class="mx-auto" />
-                  <div class="font-bold caption text-center">Cowboy AI</div>
+              <div class="py-4 flex flex-row svg-container items-center w-20 md:w-32">
+                  <img src="assets/logo.svg" />
+                  <div class="text-xs md:text-base font-bold caption text-center">Cowboy AI</div>
               </div>
             </a>
 
@@ -22,7 +22,7 @@ pub fn Navigate() -> impl IntoView {
                            hover:border-2
                            hover:border-solid">
                       <svg 
-                        class="h-10 w-10" 
+                        class="h-8 w-8 md:h-12 md:w-12 md:h-12 md:w-12" 
                         viewBox="0 0 1920 1920">
                           <title>Dashboard</title>
                           <path 
@@ -41,7 +41,7 @@ pub fn Navigate() -> impl IntoView {
                     hover:border-2
                     hover:border-solid">
                    <svg 
-                      class="h-10 w-10" 
+                      class="h-8 w-8 md:h-12 md:w-12" 
                       fill="#000000" 
                       width="800px" 
                       height="800px" 
@@ -63,7 +63,7 @@ pub fn Navigate() -> impl IntoView {
                     hover:font-bold hover:border-black 
                     hover:border-2
                     hover:border-solid">
-                    <svg class="h-10 w-10" viewBox="0 0 24 24"
+                    <svg class="h-8 w-8 md:h-12 md:w-12" viewBox="0 0 24 24"
                         width="800px" height="800px" viewBox="0 0 24 24">
                         <title>Workflow</title>
                         <path d="M21 18v-4h-5.042L13 11.042V8.95a3.5 3.5 0 1 0-1 0v2.074L9.024 14H4v4H2v5h5v-5H5v-3h3.958l3.532 3.533L16.024 15H20v3h-2v5h5v-5zM6 22H3v-3h3zm4-16.5A2.5 2.5 0 1 1 12.5 8 2.5 2.5 0 0 1 10 5.5zm2.485 11.633l-2.6-2.6 2.5-2.5h.2l2.5 2.5zM22 22h-3v-3h3z"/>
@@ -76,7 +76,7 @@ pub fn Navigate() -> impl IntoView {
                       hover:font-bold hover:border-black 
                       hover:border-2
                       hover:border-solid">
-                    <svg class="h-10 w-10" viewBox="0 0 24 24">
+                    <svg class="h-8 w-8 md:h-12 md:w-12" viewBox="0 0 24 24">
                           <title>Events</title>
                           <path
                               d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2
@@ -91,7 +91,7 @@ pub fn Navigate() -> impl IntoView {
                       hover:font-bold hover:border-black 
                       hover:border-2
                       hover:border-solid">
-                     <svg class="h-10 w-10" viewBox="0 0 24 24">
+                     <svg class="h-8 w-8 md:h-12 md:w-12" viewBox="0 0 24 24">
                           <title>People</title>
                           <path
                               d="M12 4a4 4 0 014 4 4 4 0 01-4 4 4 4 0 01-4-4 4 4 0
@@ -107,7 +107,7 @@ pub fn Navigate() -> impl IntoView {
                       hover:font-bold hover:border-black 
                       hover:border-2
                       hover:border-solid">
-                       <svg class="h-10 w-10" version="1.1" id="SCIENCE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                       <svg class="h-8 w-8 md:h-12 md:w-12" version="1.1" id="SCIENCE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                           width="800px" height="800px" viewBox="0 0 1800 1800" enable-background="new 0 0 1800 1800" xml:space="preserve">
                           <title>Custom Work</title>
                           <g>
