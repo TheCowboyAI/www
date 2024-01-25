@@ -8,15 +8,18 @@ pub fn People() -> impl IntoView {
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                 {"People-centric"}
                 </h1>
-                <div class="text-black flex-row mt-10">
-                    <ul class="text-2xl">
+                <ul 
+                  class=" 
+                    mt-10 mr-5 py-2
+                    text-black text-xl md:text-2xl lg:text-3xl 
+                  "
+                >                
                     <li>{"Secure Everything"}</li>
                     <li class="mt-5">{"Communicate Efficiently"}</li>
                     <li class="mt-5">{"Visualize Relationships"}</li>
                     <li class="mt-5">{"Collaborate with Ease"}</li>
                     <li class="mt-5">{"Use a Common Language"}</li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
     }
