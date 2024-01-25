@@ -31273,9 +31273,17 @@ video {
   text-shadow: 4px 4px 16px var(--tw-shadow-color);
 }
 
+html {
+  min-height: 100%;
+  max-width: auto;
+  background: linear-gradient(to bottom right, #4c1d95, #00A9FF, black) no-repeat;
+  background:  linear-gradient(to bottom right, #4c1d95, #00A9FF, black) no-repeat;
+  background-size: cover;
+}
+
 body {
   line-height: 1;
-  background-image: linear-gradient(to bottom right, #4c1d95, #3b82f6, black);
+  /* background-image: linear-gradient(to bottom right, #4c1d95, #3b82f6, black); */
   /* background-image: url('assets/elk-sun.jpg');
     background-size: cover;
     background-position: center;

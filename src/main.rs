@@ -32,8 +32,8 @@ fn main() {
 #[component]
 fn App() -> impl IntoView {
     view! {
-        <div class="app flex">
-            <aside class="bg-transparent h-screen sticky top-0 left-0">
+        <div class="bg-transparent app flex">
+            <aside class="bg-transparent sticky top-0 left-0">
                 <Navigate />
             </aside>
             <main class="bg-transparent pl-5">
