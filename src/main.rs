@@ -23,6 +23,7 @@ use crate::customwork::CustomWork;
 
 use leptos::*;
 use leptos_router::*;
+use leptos_meta::*;
 
 fn main() {
     leptos::mount_to_body(App);
@@ -31,7 +32,7 @@ fn main() {
 #[component]
 fn App() -> impl IntoView {
     view! {
-        <div class="bg-gradient-to-tl from-black via-blue-500 to-purple-900 app flex">
+        <div class="app flex">
             <aside class="h-screen sticky top-0 left-0">
                 <Navigate />
             </aside>

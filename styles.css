@@ -31275,6 +31275,7 @@ video {
 
 body {
   line-height: 1;
+  background-image: linear-gradient(to bottom right, #4c1d95, #3b82f6, black);
   /* background-image: url('assets/elk-sun.jpg');
     background-size: cover;
     background-position: center;
