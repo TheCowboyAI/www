@@ -16,10 +16,14 @@ pub fn Navigate() -> impl IntoView {
 
               <div class="mt-5 flex flex-col space-y-3 > * + *">
                   <a href="/dashboard"
-                    
                     class="p-2 rounded-lg text-white 
-                           hover:text-black hover:bg-white hover:font-bold hover:border-black hover:border-2">
-                      <svg class="h-16 w-16" viewBox="0 0 1920 1920">
+                           hover:text-black hover:bg-white 
+                           hover:font-bold hover:border-black 
+                           hover:border-2
+                           hover:border-solid">
+                      <svg 
+                        class="h-10 w-10" 
+                        viewBox="0 0 1920 1920">
                           <title>Dashboard</title>
                           <path 
                             fill="black" 
@@ -31,12 +35,13 @@ pub fn Navigate() -> impl IntoView {
                   </a>
 
                   <a href="/tooling" 
-                    class="rounded-lg p-2 
-                           hover:text-black 
-                           hover:bg-white 
-                           hover:font-bold">
-                    <svg 
-                      class="h-16 w-16"
+                    class="p-2 rounded-lg text-white 
+                    hover:text-black hover:bg-white 
+                    hover:font-bold hover:border-black 
+                    hover:border-2
+                    hover:border-solid">
+                   <svg 
+                      class="h-10 w-10" 
                       fill="#000000" 
                       width="800px" 
                       height="800px" 
@@ -53,9 +58,12 @@ pub fn Navigate() -> impl IntoView {
                   </a>
 
                   <a href="/workflow" 
-                    class="p-2 rounded-lg
-                          hover:text-black hover:bg-white hover:font-bold">
-                      <svg class="h-16 w-16" viewBox="0 0 24 24"
+                  class="p-2 rounded-lg text-white 
+                    hover:text-black hover:bg-white 
+                    hover:font-bold hover:border-black 
+                    hover:border-2
+                    hover:border-solid">
+                    <svg class="h-10 w-10" viewBox="0 0 24 24"
                         width="800px" height="800px" viewBox="0 0 24 24">
                         <title>Workflow</title>
                         <path d="M21 18v-4h-5.042L13 11.042V8.95a3.5 3.5 0 1 0-1 0v2.074L9.024 14H4v4H2v5h5v-5H5v-3h3.958l3.532 3.533L16.024 15H20v3h-2v5h5v-5zM6 22H3v-3h3zm4-16.5A2.5 2.5 0 1 1 12.5 8 2.5 2.5 0 0 1 10 5.5zm2.485 11.633l-2.6-2.6 2.5-2.5h.2l2.5 2.5zM22 22h-3v-3h3z"/>
@@ -63,9 +71,12 @@ pub fn Navigate() -> impl IntoView {
                   </a>
 
                   <a href="/events" 
-                    class="p-2 rounded-lg
-                           hover:text-black hover:bg-white hover:font-bold">
-                      <svg class="h-16 w-16" viewBox="0 0 24 24">
+                    class="p-2 rounded-lg text-white 
+                      hover:text-black hover:bg-white 
+                      hover:font-bold hover:border-black 
+                      hover:border-2
+                      hover:border-solid">
+                    <svg class="h-10 w-10" viewBox="0 0 24 24">
                           <title>Events</title>
                           <path
                               d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2
@@ -75,9 +86,12 @@ pub fn Navigate() -> impl IntoView {
                   </a>
 
                   <a href="/people" 
-                    class="rounded-lg p-2
-                           hover:text-black hover:bg-white hover:font-bold">
-                      <svg class="h-16 w-16" viewBox="0 0 24 24">
+                    class="p-2 rounded-lg text-white 
+                      hover:text-black hover:bg-white 
+                      hover:font-bold hover:border-black 
+                      hover:border-2
+                      hover:border-solid">
+                     <svg class="h-10 w-10" viewBox="0 0 24 24">
                           <title>People</title>
                           <path
                               d="M12 4a4 4 0 014 4 4 4 0 01-4 4 4 4 0 01-4-4 4 4 0
@@ -88,9 +102,12 @@ pub fn Navigate() -> impl IntoView {
                   </a>
 
                   <a href="/customwork" 
-                    class="rounded-lg p-2
-                           hover:text-black hover:bg-white hover:font-bold">
-                          <svg class="h-16 w-16" version="1.1" id="SCIENCE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    class="p-2 rounded-lg text-white 
+                      hover:text-black hover:bg-white 
+                      hover:font-bold hover:border-black 
+                      hover:border-2
+                      hover:border-solid">
+                       <svg class="h-10 w-10" version="1.1" id="SCIENCE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                           width="800px" height="800px" viewBox="0 0 1800 1800" enable-background="new 0 0 1800 1800" xml:space="preserve">
                           <title>Custom Work</title>
                           <g>
