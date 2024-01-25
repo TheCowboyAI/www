@@ -7,9 +7,10 @@ pub mod workflow;
 pub mod dashboard;
 pub mod events;
 pub mod people;
-pub mod getaccess;
-pub mod accessgpts;
+pub mod ourgpts;
 pub mod customwork;
+pub mod workform;
+pub mod gptaccessform;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -18,8 +19,8 @@ use crate::tooling::Tooling;
 use crate::workflow::Workflow;
 use crate::events::Events;
 use crate::people::People;
-use crate::getaccess::GetAccess;
 use crate::customwork::CustomWork;
+use crate::ourgpts::OurGPTs;
 
 use leptos::*;
 use leptos_router::*;
@@ -39,12 +40,12 @@ fn App() -> impl IntoView {
                 <Router>
                     <Routes>
                         <Route path="/" view=Landing />
-                        <Route path="/dashboard" view=Dashboard />
                         <Route path="/tooling" view=Tooling />
+                        <Route path="/dashboard" view=Dashboard />
                         <Route path="/workflow" view=Workflow />
                         <Route path="/events" view=Events />
                         <Route path="/people" view=People />
-                        <Route path="/getaccess" view=GetAccess />
+                        <Route path="/gpts" view=OurGPTs />
                         <Route path="/customwork" view=CustomWork />
                     </Routes>
                 </Router>

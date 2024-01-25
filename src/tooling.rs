@@ -3,7 +3,7 @@ use leptos::*;
 #[component]
 pub fn Tooling() -> impl IntoView {
     view! {
-        <div class="h-screen flex items-center animate-fadeIn">
+        <div class="mt-10 flex items-center animate-fadeIn">
             <div class="flex-row"> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                 {"Modeled Intelligence"}
@@ -19,12 +19,16 @@ pub fn Tooling() -> impl IntoView {
                     {"AI Composable Insights"}
                     </h2>
                 </div>
-                <h2 class="mt-10 font-bold text-white text-3xl md:text-4xl">
-                {"Our Custom GPTs"}
-                </h2>
-                <h2 class="font-bold text-white text-3xl md:text-4xl">
-                {"Fit Your Model"}
-                </h2>
+                <a
+                  class="hover:cursor-hand"
+                  href="/gpts"
+                >
+                    <h2 class="mt-10 font-bold text-white text-3xl md:text-4xl">
+                    {"Our Custom GPTs"}
+                    <br />
+                    {"Fit Your Model"}
+                    </h2>
+                </a>
             </div>
         </div>
     }
