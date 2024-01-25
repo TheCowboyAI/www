@@ -33,10 +33,10 @@ fn main() {
 fn App() -> impl IntoView {
     view! {
         <div class="app flex">
-            <aside class="h-screen sticky top-0 left-0">
+            <aside class="bg-transparent h-screen sticky top-0 left-0">
                 <Navigate />
             </aside>
-            <main class="pl-5">
+            <main class="bg-transparent pl-5">
                 <Router>
                     <Routes>
                         <Route path="/" view=Landing />
