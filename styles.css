@@ -31275,9 +31275,9 @@ video {
 
 html {
   min-height: 100%;
-  max-width: auto;
+  min-width: 100%;
   background: linear-gradient(to bottom right, #4c1d95, #00A9FF, black) no-repeat;
-  background:  linear-gradient(to bottom right, #4c1d95, #00A9FF, black) no-repeat;
+  background: -o-linear-gradient(to bottom right, #4c1d95, #00A9FF, black) no-repeat;
   background-size: cover;
 }
 
