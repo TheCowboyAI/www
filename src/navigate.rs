@@ -5,7 +5,7 @@ use crate::footer::Footer;
 pub fn Navigate() -> impl IntoView {
     view! {
     // mini menu
-    <div class="overflow-hidden">
+    <div class="w-24 md:w-36 lg:w-48">
         <nav class="flex flex-col items-center pt-3 pl-3">
             <a href="/">
               <div class="py-4 flex flex-row svg-container items-center w-20 md:w-32">
