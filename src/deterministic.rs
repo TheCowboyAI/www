@@ -33,7 +33,8 @@ pub fn Deterministic() -> impl IntoView {
                           {"Composable Information Machine (CIM)"}
                       </summary>
                       <p>
-                          {"CIMs represent the next generation of web technology (Web 3.0), focusing on decentralized, user-centric models. They allow for the composition and reusability of different information systems and services, offering a flexible and efficient way to manage complex systems."}
+                        <a href="/cim">CIMs</a>   
+                          {" represent the next generation of web technology (Web 3.0), focusing on decentralized, user-centric models. They allow for the composition and reusability of different information systems and services, offering a flexible and efficient way to manage complex systems."}
                       </p>
                   </details>
               </li>
