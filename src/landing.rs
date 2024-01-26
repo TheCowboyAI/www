@@ -10,11 +10,27 @@ pub fn Landing() -> impl IntoView {
                     {"Business Evolution"}
                     </a>
                 </h1>
-                <h3 class="text-3xl md:text-4xl mt-12 font-bold">{"Ready to level up?"}</h3>
+                <h3 class="text-3xl md:text-4xl mt-12 font-bold">
+                <a href="/gametheory">
+                {"Ready to level up?"}
+                </a>
+                </h3>
                 <ul class="border-dashed text-2xl md:text-3xl mt-10 py-2 rounded-lg text-white">
-                    <li>{"Understand context"}</li>
-                    <li>{"Generate content"}</li>
-                    <li>{"Be deterministic"}</li>
+                    <li>
+                    <a href="/context">
+                    {"Understand context"}
+                    </a>
+                    </li>
+                    <li>
+                    <a href="/generatecontent">
+                    {"Generate content"}
+                    </a>
+                    </li>
+                    <li>
+                    <a href="/deterministic">
+                    {"Be deterministic"}
+                    </a>
+                    </li>
                     <li class="mt-10">
                     <a  
                         href="/gpts"

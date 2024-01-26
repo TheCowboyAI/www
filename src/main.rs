@@ -17,6 +17,10 @@ pub mod simplewords;
 pub mod aicomposable;
 pub mod eventsourcing;
 pub mod modeledintelligence;
+pub mod gametheory;
+pub mod context;
+pub mod generatecontent;
+pub mod deterministic;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -33,6 +37,10 @@ use crate::simplewords::SimpleWords;
 use crate::aicomposable::AIComposable;
 use crate::eventsourcing::EventSourcing;
 use crate::modeledintelligence::ModeledIntelligence;
+use crate::gametheory::GameTheory;
+use crate::context::Context;
+use crate::generatecontent::GenerateContent;
+use crate::deterministic::Deterministic;
 
 use leptos::*;
 use leptos_router::*;
@@ -66,6 +74,10 @@ fn App() -> impl IntoView {
                         <Route path="/aicomposable" view=AIComposable />
                         <Route path="/eventsourcing" view=EventSourcing />
                         <Route path="/modeledintelligence" view=ModeledIntelligence />
+                        <Route path="/gametheory" view=GameTheory />
+                        <Route path="/generatecontent" view=GenerateContent />
+                        <Route path="/context" view=Context />
+                        <Route path="/deterministic" view=Deterministic />
                         <Route path="/*any" view=Landing />
                     </Routes>
                 </Router>
