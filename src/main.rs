@@ -55,6 +55,7 @@ fn App() -> impl IntoView {
                         <Route path="/people" view=People />
                         <Route path="/gpts" view=OurGPTs />
                         <Route path="/customwork" view=Solutions />
+                        <Route path="/solutions" view=Solutions />
                         <Route path="/businessmodel" view=BusinessModel />
                         <Route path="/simplewords" view=SimpleWords />
                         <Route path="/businessevolution" view=BusinessEvolution />

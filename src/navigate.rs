@@ -102,7 +102,7 @@ pub fn Navigate() -> impl IntoView {
                       </svg>
                   </a>
 
-                  <a href="/customwork" 
+                  <a href="/solutions" 
                     class="p-2 rounded-lg text-white 
                       hover:text-black hover:bg-white 
                       hover:font-bold hover:border-black 
@@ -110,7 +110,7 @@ pub fn Navigate() -> impl IntoView {
                       hover:border-solid">
                        <svg class="h-8 w-8 md:h-12 md:w-12" version="1.1" id="SCIENCE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                           width="800px" height="800px" viewBox="0 0 1800 1800" enable-background="new 0 0 1800 1800" xml:space="preserve">
-                          <title>Custom Work</title>
+                          <title>Solutions</title>
                           <g>
                         <path fill="#000000" d="M890.431,974.791c69.867,0,126.714-56.838,126.714-126.704c0-69.867-56.847-126.705-126.714-126.705
                           c-69.867,0-126.7,56.838-126.7,126.705C763.73,917.953,820.564,974.791,890.431,974.791z M890.431,782.932
