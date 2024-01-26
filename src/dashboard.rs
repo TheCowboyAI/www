@@ -14,10 +14,26 @@ pub fn Dashboard() -> impl IntoView {
                     text-black text-xl md:text-2xl lg:text-3xl 
                   "
                 >                
-                    <li>{"Real-Time Monitoring"}</li>
-                    <li class="mt-5">{"Push to Mobile"}</li>
-                    <li class="mt-5">{"Improve Decision-Making"}</li>
-                    <li class="mt-5">{"Enhance Communication"}</li>
+                    <li>
+                        <a href="/realtimemonitoring">
+                        {"Real-Time Monitoring"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/pushtomobile">
+                        {"Push to Mobile"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/decisionmaking">
+                        {"Improve Decision-Making"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/communications">
+                        {"Empowered Communication"}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

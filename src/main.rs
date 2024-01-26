@@ -27,6 +27,19 @@ pub mod codegeneration;
 pub mod existingapps;
 pub mod newfunctionality;
 pub mod cim;
+pub mod audittrail;
+pub mod historicalinsight;
+pub mod projections;
+pub mod eventstreams;
+pub mod predictions;
+pub mod realtimemonitoring;
+pub mod pushtomobile;
+pub mod decisionmaking;
+pub mod communications;
+pub mod security;
+pub mod visualize;
+pub mod collaborate;
+pub mod ubiquitouslanguage;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -53,6 +66,19 @@ use crate::codegeneration::CodeGeneration;
 use crate::existingapps::ExistingApps;
 use crate::newfunctionality::NewFunctionality;
 use crate::cim::Cim;
+use crate::audittrail::AuditTrail;
+use crate::historicalinsight::HistoricalInsight;
+use crate::projections::Projections;
+use crate::eventstreams::EventStreams;
+use crate::predictions::Predictions;
+use crate::realtimemonitoring::RealTimeMonitoring;
+use crate::pushtomobile::PushToMobile;
+use crate::decisionmaking::DecisionMaking;
+use crate::communications::Communications;
+use crate::security::Security;
+use crate::visualize::Visualize;
+use crate::collaborate::Collaborate;
+use crate::ubiquitouslanguage::UbiquitousLanguage;
 
 use leptos::*;
 use leptos_router::*;
@@ -96,6 +122,19 @@ fn App() -> impl IntoView {
                         <Route path="/existingapps" view=ExistingApps />
                         <Route path="/newfunctionality" view=NewFunctionality />
                         <Route path="/cim" view=Cim />
+                        <Route path="/audittrail" view=AuditTrail />
+                        <Route path="/historicalinsight" view=HistoricalInsight />
+                        <Route path="/projections" view=Projections />
+                        <Route path="/eventgstreams" view=EventStreams />
+                        <Route path="/predictions" view=Predictions />
+                        <Route path="/realtimemonitoring" view=RealTimeMonitoring />
+                        <Route path="/pushtomobile" view=PushToMobile />
+                        <Route path="/decisionmaking" view=DecisionMaking />
+                        <Route path="/communications" view=Communications />
+                        <Route path="/security" view=Security />
+                        <Route path="/visualize" view=Visualize />
+                        <Route path="/collaborate" view=Collaborate />
+                        <Route path="/ubiquitouslanguage" view=UbiquitousLanguage />
                         <Route path="/*any" view=Landing />
                     </Routes>
                 </Router>

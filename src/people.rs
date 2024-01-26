@@ -6,7 +6,7 @@ pub fn People() -> impl IntoView {
         <div class="mt-10 flex items-center animate-fadeIn">
             <div class="flex-row"> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
-                {"People-centric"}
+                {"Peoplecentric"}
                 </h1>
                 <ul 
                   class=" 
@@ -14,11 +14,31 @@ pub fn People() -> impl IntoView {
                     text-black text-xl md:text-2xl lg:text-3xl 
                   "
                 >                
-                    <li>{"Secure Everything"}</li>
-                    <li class="mt-5">{"Communicate Efficiently"}</li>
-                    <li class="mt-5">{"Visualize Relationships"}</li>
-                    <li class="mt-5">{"Collaborate with Ease"}</li>
-                    <li class="mt-5">{"Use a Common Language"}</li>
+                    <li>
+                        <a href="/security">
+                        {"Secure Everything"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/communications">
+                        {"Communicate Efficiently"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/visualize">
+                        {"Visualize Relationships"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/collaborate">
+                        {"Collaborate with Ease"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/ubiquitouslanguage">
+                        {"Use a Common Language"}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

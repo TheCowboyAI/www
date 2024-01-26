@@ -16,15 +16,31 @@ pub fn Events() -> impl IntoView {
                     text-black text-xl md:text-2xl lg:text-3xl 
                   "
                 >                
-                    <li>{"Audit Trail"}</li>
-                    <li class="mt-5">{"Historical Insight"}</li>
-                    <li class="mt-5">{"Spot inefficiencies"}</li>
-                    <li class="mt-5">{"Unlimited Projections"}</li>
-                    <li class="mt-5">{"Undo and Replay"}</li>
-                    <li class="mt-5">{"Evolving Business Processes"}</li>
-                    <li class="mt-5">{"Synchronization"}</li>
-                    <li class="mt-5">{"Decision Making"}</li>
-                    <li class="mt-5">{"Predictions"}</li>
+                    <li>
+                        <a href="/audittrail">
+                        {"Audit Trail"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/historicalinsight">
+                        {"Historical Insight"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/projections">
+                        {"Projections"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="/eventstreams">
+                        {"Undo and Replay"}
+                        </a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="predictions">
+                        {"Predictions"}
+                        </a>
+                    </li>
                 </ul>
                 // <Next />
             </div>
