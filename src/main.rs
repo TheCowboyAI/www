@@ -136,7 +136,7 @@ fn App() -> impl IntoView {
                         <Route path="/audittrail" view=AuditTrail />
                         <Route path="/historicalinsight" view=HistoricalInsight />
                         <Route path="/projections" view=Projections />
-                        <Route path="/eventgstreams" view=EventStreams />
+                        <Route path="/eventstreams" view=EventStreams />
                         <Route path="/predictions" view=Predictions />
                         <Route path="/realtimemonitoring" view=RealTimeMonitoring />
                         <Route path="/pushtomobile" view=PushToMobile />
