@@ -1,5 +1,7 @@
 use leptos::*;
 
+use crate::cimsvg::CimSvg;
+
 #[component]
 pub fn Cim() -> impl IntoView {
   view! {
@@ -17,7 +19,10 @@ pub fn Cim() -> impl IntoView {
                   text-black text-xl md:text-2xl lg:text-3xl 
               "
           >
-              <li class="mt-5">                    
+                <li class="mt-5"> 
+                    <CimSvg />                   
+                </li>
+                <li class="mt-5">                    
                   <details class="text-black text-sm">
                       <summary class="text-white text-base font-bold">
                           {"Modularity and Flexibility"}

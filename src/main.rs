@@ -27,6 +27,7 @@ pub mod codegeneration;
 pub mod existingapps;
 pub mod newfunctionality;
 pub mod cim;
+pub mod cimsvg;
 pub mod audittrail;
 pub mod historicalinsight;
 pub mod projections;
