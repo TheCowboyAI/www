@@ -8,7 +8,9 @@ pub fn WorkRequestForm() -> impl IntoView {
       action="https://formsubmit.co/support@thecowboy.ai" method="POST"
     >
       <div class="my-5 p-5 flex flex-col border-black border-2 border-solid rounded-lg">
-        <h2 class="text-lg font-bold">Tell us your need</h2>
+        <h2 class="text-lg font-bold">
+        {"We can deliver for you"}
+        </h2>
           <input
             class="mt-2 p-2 rounded-lg" 
             type="text" 
