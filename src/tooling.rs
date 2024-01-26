@@ -16,11 +16,10 @@ pub fn Tooling() -> impl IntoView {
                     </ul>
                     <hr class="border border-t-2 border-black" />
                     <h2 class="text-2xl mt-2 font-bold italic">
-                    {"AI Composable Insights"}
+                    <a href="/aicomposable">{"AI Composable Insights"}</a>
                     </h2>
                 </div>
                 <a
-                  class="hover:cursor-hand"
                   href="/gpts"
                 >
                     <h2 class="mt-10 font-bold text-white text-3xl md:text-4xl">

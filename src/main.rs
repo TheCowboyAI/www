@@ -14,6 +14,7 @@ pub mod gptaccessform;
 pub mod businessmodel;
 pub mod businessevolution;
 pub mod simplewords;
+pub mod aicomposable;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -27,6 +28,7 @@ use crate::ourgpts::OurGPTs;
 use crate::businessmodel::BusinessModel;
 use crate::businessevolution::BusinessEvolution;
 use crate::simplewords::SimpleWords;
+use crate::aicomposable::AIComposable;
 
 use leptos::*;
 use leptos_router::*;
@@ -56,6 +58,7 @@ fn App() -> impl IntoView {
                         <Route path="/businessmodel" view=BusinessModel />
                         <Route path="/simplewords" view=SimpleWords />
                         <Route path="/businessevolution" view=BusinessEvolution />
+                        <Route path="/aicomposable" view=AIComposable />
                         <Route path="/*any" view=Landing />
                     </Routes>
                 </Router>
