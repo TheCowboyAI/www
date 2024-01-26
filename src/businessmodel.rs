@@ -90,7 +90,7 @@ pub fn BusinessModel() -> impl IntoView {
                 </ol>
                 <p class="mt-5">
                 {"
-                In essence, a business model is not just about how you make money but about how you create, deliver, and capture value. It's a roadmap for success, helping you to navigate the complex business landscape efficiently and effectively.
+                A business model is not just about how you make money but about how you create, deliver, and capture value. It's a roadmap for success, helping you to navigate the complex business landscape efficiently and effectively.
                 "}
                 </p>
             </div>

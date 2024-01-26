@@ -16,11 +16,31 @@ pub fn Workflow() -> impl IntoView {
                 </blockquote>
                 <div class="text-black flex-row mt-10">
                     <ul class="text-2xl">
-                    <li>{"Use Natural Language"}</li>
-                    <li class="mt-2">{"Ask it Questions"}</li>
-                    <li class="mt-2">{"Generate Code"}</li>
-                    <li class="mt-2">{"Use existing Apps"}</li>
-                    <li class="mt-2">{"Integrate New Functionality"}</li>
+                    <li>
+                    <a href="/naturallanguage">
+                    {"Use Natural Language"}
+                    </a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="/askquestions">
+                    {"Ask it Questions"}
+                    </a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="/codegeneration">
+                    {"Generate Code"}
+                    </a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="/existingapps">
+                    {"Use existing Apps"}
+                    </a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="/newfunctionality">
+                    {"Integrate New Functionality"}
+                    </a>
+                    </li>
                     </ul>
                 </div>
             </div>

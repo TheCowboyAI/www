@@ -21,6 +21,11 @@ pub mod gametheory;
 pub mod context;
 pub mod generatecontent;
 pub mod deterministic;
+pub mod naturallanguage;
+pub mod askquestions;
+pub mod codegeneration;
+pub mod existingapps;
+pub mod newfunctionality;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -41,6 +46,11 @@ use crate::gametheory::GameTheory;
 use crate::context::Context;
 use crate::generatecontent::GenerateContent;
 use crate::deterministic::Deterministic;
+use crate::naturallanguage::NaturalLanguage;
+use crate::askquestions::AskQuestions;
+use crate::codegeneration::CodeGeneration;
+use crate::existingapps::ExistingApps;
+use crate::newfunctionality::NewFunctionality;
 
 use leptos::*;
 use leptos_router::*;
@@ -77,7 +87,12 @@ fn App() -> impl IntoView {
                         <Route path="/gametheory" view=GameTheory />
                         <Route path="/generatecontent" view=GenerateContent />
                         <Route path="/context" view=Context />
+                        <Route path="/naturallanguage" view=NaturalLanguage />
                         <Route path="/deterministic" view=Deterministic />
+                        <Route path="/askquestions" view=AskQuestions />
+                        <Route path="/codegeneration" view=CodeGeneration />
+                        <Route path="/existingapps" view=ExistingApps />
+                        <Route path="/newfunctionality" view=NewFunctionality />
                         <Route path="/*any" view=Landing />
                     </Routes>
                 </Router>
