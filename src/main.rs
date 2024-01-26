@@ -26,6 +26,7 @@ pub mod askquestions;
 pub mod codegeneration;
 pub mod existingapps;
 pub mod newfunctionality;
+pub mod cim;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -51,6 +52,7 @@ use crate::askquestions::AskQuestions;
 use crate::codegeneration::CodeGeneration;
 use crate::existingapps::ExistingApps;
 use crate::newfunctionality::NewFunctionality;
+use crate::cim::Cim;
 
 use leptos::*;
 use leptos_router::*;
@@ -93,6 +95,7 @@ fn App() -> impl IntoView {
                         <Route path="/codegeneration" view=CodeGeneration />
                         <Route path="/existingapps" view=ExistingApps />
                         <Route path="/newfunctionality" view=NewFunctionality />
+                        <Route path="/cim" view=Cim />
                         <Route path="/*any" view=Landing />
                     </Routes>
                 </Router>
