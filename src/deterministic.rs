@@ -9,8 +9,12 @@ pub fn Deterministic() -> impl IntoView {
               {"Composable Information Machine (CIM) for Web 3.0"}
           </h1>
           <p class="mt-5">
-              {"A Deterministic System is a system in which no randomness is involved in the development of future states of the system. A Composable Information Machine (CIM) is an advanced model ideal for Web 3.0, offering modularity, flexibility, and automation in managing and delivering services."}
-          </p>
+              {"A Deterministic System is a system in which no randomness is involved in the development of future states of the system. A "}
+              <a href="/cim">
+              {"Composable Information Machine (CIM)"}
+              </a>
+              {" is an advanced model ideal for Web 3.0, offering modularity, flexibility, and automation in managing and delivering services."}
+           </p>
           <ol
               class=" 
                   mr-5 py-2
