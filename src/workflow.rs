@@ -5,9 +5,9 @@ pub fn Workflow() -> impl IntoView {
     view! {
         <div class="flex items-center animate-fadeIn">
             <div class="mt-10 flex-row"> 
-                <h2 class="font-bold text-white text-4xl md:text-6xl">
+                <h1 class="font-bold text-white text-4xl md:text-6xl">
                 {"Workflows"}
-                </h2>
+                </h1>
                 <blockquote class="mt-10 text-xl italic font-bold">
                 {"Your business;"}
                 </blockquote>
@@ -15,7 +15,8 @@ pub fn Workflow() -> impl IntoView {
                 {"Your language"}
                 </blockquote>
                 <div class="text-black flex-row mt-10">
-                    <ul class="text-2xl">
+                    <ul class="mt-10 mr-5 py-2
+                    text-black text-xl md:text-2xl lg:text-3xl ">
                     <li>
                     <a href="/naturallanguage">
                     {"Use Natural Language"}
