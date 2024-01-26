@@ -6,8 +6,9 @@ pub fn CimSvg() -> impl IntoView {
     let svg_content = include_str!("../assets/CIM.svg");
 
     view! {
-        <div class="mt-5 items-center justify-center">
-            <a href="/cim" class="border-black border-solid border-2 rounded-lg">
+        <div class="mt-5 items-center justify-center
+            ">
+            <a href="/cim" class="">
             <div class="svg-container" inner_html={svg_content} />
             </a>
         </div>

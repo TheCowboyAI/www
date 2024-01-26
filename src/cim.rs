@@ -5,7 +5,7 @@ use crate::cimsvg::CimSvg;
 #[component]
 pub fn Cim() -> impl IntoView {
   view! {
-    <div class="mt-10 flex items-center animate-fadeIn">
+    <div class="mt-10 mr-5 md:mr-10 flex items-center animate-fadeIn">
       <div class="flex-row"> 
           <h1 class="font-bold text-white text-4xl md:text-6xl">
               {"CIM: Next Level Computing AI Strategy"}
