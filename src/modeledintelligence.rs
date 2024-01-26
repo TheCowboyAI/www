@@ -13,7 +13,7 @@ pub fn  ModeledIntelligence() -> impl IntoView {
             </p>
             <ol
                 class=" 
-                    mt-10 mr-5 py-2
+                    mr-5 py-2
                     text-black text-xl md:text-2xl lg:text-3xl 
                 "
             >
