@@ -16,20 +16,36 @@ pub fn Solutions() -> impl IntoView {
                 <ul class="mr-5 
                   border-black border-2 border-solid rounded-lg 
                   text-sm md:text-base mt-5 px-5 py-2 text-white">
-                    <li class="text-base md:text-xl font-bold">{"Customer Support"}</li>
+                    <li class="text-base md:text-xl font-bold">
+                        <a href="/customersupport">
+                        {"Customer Support"}
+                        </a>
+                    </li>
                     <li class="ml-2 text-black">{"We support custom API Integration"}</li>
                     
-                    <li class="text-base md:text-xl font-bold">{"Custom GPTs"}</li>
+                    <li class="text-base md:text-xl font-bold">
+                        <a href="/customgpts">
+                        {"Custom GPTs"}
+                        </a>
+                    </li>
                     <li class="ml-2 text-black">{"We build a GPT just for you"}</li>
                     
-                    <li class="text-base md:text-xl font-bold">{"Knowledge Workshops"}</li>
+                    <li class="text-base md:text-xl font-bold">
+                        <a href="/workshops">
+                        {"Knowledge Workshops"}
+                        </a>
+                    </li>
                     <li class="ml-2 text-black">{"Guided generation of your"}</li>
                     <li class="ml-2 text-black">{"Business Model Canvas"}</li>                    
                     <li class="ml-2 mt-2 text-black">{"Knowledge Graphs for Business"}</li>
                     <li class="ml-2 mt-2 text-black">{"Learn, Create and Use"}</li>
                     <li class="ml-2 text-black">{"Event Sourced systems"}</li>
                     
-                    <li class="text-base md:text-xl font-bold">{"NixOS Work"}</li>
+                    <li class="text-base md:text-xl font-bold">
+                        <a href="/nixoswork">
+                        {"NixOS Work"}
+                        </a>
+                    </li>
                     <li class="ml-2 text-black">{"Build determinate systems"}</li>
                     <li class="ml-2 text-black">{"Deploy them anywhere"}</li>
 

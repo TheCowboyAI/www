@@ -40,6 +40,11 @@ pub mod security;
 pub mod visualize;
 pub mod collaborate;
 pub mod ubiquitouslanguage;
+pub mod customersupport;
+pub mod customgpts;
+pub mod workshops;
+pub mod workshopform;
+pub mod nixoswork;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -79,6 +84,11 @@ use crate::security::Security;
 use crate::visualize::Visualize;
 use crate::collaborate::Collaborate;
 use crate::ubiquitouslanguage::UbiquitousLanguage;
+use crate::customersupport::CustomerSupport;
+use crate::customgpts::CustomGPTs;
+use crate::workshops::Workshops;
+use crate::workshopform::WorkshopForm;
+use crate::nixoswork::NixOSWork;
 
 use leptos::*;
 use leptos_router::*;
@@ -135,6 +145,11 @@ fn App() -> impl IntoView {
                         <Route path="/visualize" view=Visualize />
                         <Route path="/collaborate" view=Collaborate />
                         <Route path="/ubiquitouslanguage" view=UbiquitousLanguage />
+                        <Route path="/customersupport" view=CustomerSupport />
+                        <Route path="/customgpts" view=CustomGPTs />
+                        <Route path="/workshops" view=Workshops />
+                        <Route path="/workshopform" view=WorkshopForm />
+                        <Route path="/nixoswork" view=NixOSWork />
                         <Route path="/*any" view=Landing />
                     </Routes>
                 </Router>
