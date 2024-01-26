@@ -15,6 +15,8 @@ pub mod businessmodel;
 pub mod businessevolution;
 pub mod simplewords;
 pub mod aicomposable;
+pub mod eventsourcing;
+pub mod modeledintelligence;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -29,6 +31,8 @@ use crate::businessmodel::BusinessModel;
 use crate::businessevolution::BusinessEvolution;
 use crate::simplewords::SimpleWords;
 use crate::aicomposable::AIComposable;
+use crate::eventsourcing::EventSourcing;
+use crate::modeledintelligence::ModeledIntelligence;
 
 use leptos::*;
 use leptos_router::*;
@@ -60,6 +64,8 @@ fn App() -> impl IntoView {
                         <Route path="/simplewords" view=SimpleWords />
                         <Route path="/businessevolution" view=BusinessEvolution />
                         <Route path="/aicomposable" view=AIComposable />
+                        <Route path="/eventsourcing" view=EventSourcing />
+                        <Route path="/modeledintelligence" view=ModeledIntelligence />
                         <Route path="/*any" view=Landing />
                     </Routes>
                 </Router>

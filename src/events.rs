@@ -6,7 +6,9 @@ pub fn Events() -> impl IntoView {
         <div class="mt-10 flex items-center animate-fadeIn">
             <div class="flex-row"> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
+                    <a href="/eventsourcing">
                     {"It's all Events..."}
+                    </a>
                 </h1>
                 <ul 
                   class=" 

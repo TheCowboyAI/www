@@ -6,7 +6,9 @@ pub fn Tooling() -> impl IntoView {
         <div class="mt-10 flex items-center animate-fadeIn">
             <div class="flex-row"> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
+                <a href="/modeledintelligence">
                 {"Modeled Intelligence"}
+                </a>
                 </h1>
                 <div class="text-black flex-row mt-10">
                     <ul class="text-2xl">
