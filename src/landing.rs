@@ -2,54 +2,63 @@ use leptos::*;
 
 #[component]
 pub fn Landing() -> impl IntoView {
-    view! {
+  view! {
         <div class="h-screen flex items-center animate-fadeIn">
-            <div class="flex-row"> 
-                <h1 class="font-bold text-white text-4xl md:text-6xl">
+          <div class="flex-col"> 
+            <h1 class="font-bold text-white text-4xl md:text-6xl">
+              <a href="/aiintegration">
+                {"AI Integration Experts"}
+              </a>
+            </h1>
+
+            <ul>
+                <li class="mt-2 font-bold text-black text-xl md:text-2xl">
+                    <a href="/workflow">
+                        <span>{"Workflow Automation"}</span>
+                    </a>
+                </li>
+                <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/businessevolution">
-                    {"Revolutionize Your Business Model"}
+                        {"Modeling for Business Evolution"}
                     </a>
-                </h1>
-                <h3 class="text-3xl md:text-4xl mt-12 font-bold">
-                <a href="/cim">
-                {"AI Strategy for the Next Stage"}
-                </a>
-                </h3>
-                <ul class="border-dashed text-2xl md:text-3xl 
-                    mt-8 py-2 rounded-lg text-white">
-                    
-                    <li>
+                </li>
+                <li class="font-bold text-black text-xl md:text-2xl">
+                    <a href="/cim">
+                        {"CIM - Microservices done right"}
+                    </a>
+                </li>
+            </ul>
+
+            <h2 class="mt-10 font-bold text-white text-4xl md:text-6xl">
+            {"Improve Productivity"}
+            </h2>
+            <ul class="text-black text-2xl md:text-3xl py-2">
+                <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/generatecontent">
-                    {"Generate Content"}
+                        {"Generate Content"}
                     </a>
-                    </li>
-                    
-                    <li class="mt-5">
+                </li>
+            
+                <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/context">
-                    {"Understand Context"}
+                    {"Grasp what's happening"}
                     </a>
-                    </li>
-                    
-                    <li class="mt-5">
+                </li>
+            
+                <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/deterministic">
-                    {"Be Deterministic"}
+                    {"Be unwavering in your intentions"}
                     </a>
-                    </li>
-                    
-                    <li class="mt-10">
-                    <a  
-                        href="/gpts"
-                        class="font-bold text-blue-800
-                            border-black border-2 border-dashed
-                            p-2
-                        ">
-                            {"Access our GPTs"}
-                        </a>
-                   </li>
-                </ul>
-            </div>
+                </li>
+            </ul>
+            <h3 class="mt-10 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid p-2">
+                <a href="/gpts">
+                {"Access our GPTs"}
+                </a>
+            </h3>
         </div>
-    }
+    </div>
+  }
 }
 
 

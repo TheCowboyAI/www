@@ -46,6 +46,7 @@ pub mod customgpts;
 pub mod workshops;
 pub mod workshopform;
 pub mod nixoswork;
+pub mod aiintegration;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -90,6 +91,7 @@ use crate::customgpts::CustomGPTs;
 use crate::workshops::Workshops;
 use crate::workshopform::WorkshopForm;
 use crate::nixoswork::NixOSWork;
+use crate::aiintegration::AIIntegration;
 
 use leptos::*;
 use leptos_router::*;
@@ -121,6 +123,7 @@ fn App() -> impl IntoView {
                         <Route path="/simplewords" view=SimpleWords />
                         <Route path="/businessevolution" view=BusinessEvolution />
                         <Route path="/aicomposable" view=AIComposable />
+                        <Route path="/aiintegration" view=AIIntegration />
                         <Route path="/eventsourcing" view=EventSourcing />
                         <Route path="/modeledintelligence" view=ModeledIntelligence />
                         <Route path="/gametheory" view=GameTheory />
