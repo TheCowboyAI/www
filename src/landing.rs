@@ -19,12 +19,12 @@ pub fn Landing() -> impl IntoView {
                 </li>
                 <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/businessevolution">
-                        {"Modeling for Business Evolution"}
+                        {"Evolutionary Model"}
                     </a>
                 </li>
                 <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/cim">
-                        {"CIM - Microservices done right"}
+                        {"CIM - Microservice Pattern"}
                     </a>
                 </li>
             </ul>

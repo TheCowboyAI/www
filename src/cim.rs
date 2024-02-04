@@ -11,7 +11,7 @@ pub fn Cim() -> impl IntoView {
               {"CIM: Next Level Computing AI Strategy"}
           </h1>
           <p class="mt-5">
-              {"Composable Information Machine (CIM) represents a forward-thinking AI strategy that is set to redefine the landscape of computing. It's an innovative approach that integrates modularity, intelligence, and adaptability, paving the way for more robust, scalable, and efficient systems."}
+              {"Composable Information Machine (CIM) represents a forward-thinking strategy that is set to redefine the landscape of computing. It's an innovative approach that integrates modularity, intelligence, and adaptability, paving the way for more robust, scalable, and efficient systems."}
           </p>
           <ol
               class=" 
