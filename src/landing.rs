@@ -7,24 +7,25 @@ pub fn Landing() -> impl IntoView {
           <div class="flex-col"> 
             <h1 class="font-bold text-white text-4xl md:text-6xl">
               <a href="/aiintegration">
-                {"AI Integration Experts"}
+                {"Integrate and Automate AI"}
               </a>
             </h1>
 
             <ul>
-                <li class="mt-2 font-bold text-black text-xl md:text-2xl">
-                    <a href="/workflow">
-                        <span>{"Workflow Automation"}</span>
-                    </a>
-                </li>
+                
                 <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/businessevolution">
-                        {"Evolutionary Model"}
+                        {"Business Process Evaluation"}
                     </a>
                 </li>
                 <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/cim">
-                        {"CIM - Microservice Pattern"}
+                        {"Connect Microservices Patterns"}
+                    </a>
+                </li>
+                <li class="mt-2 font-bold text-black text-xl md:text-2xl">
+                    <a href="/workflow">
+                        <span>{"Task Automation"}</span>
                     </a>
                 </li>
             </ul>
@@ -34,26 +35,26 @@ pub fn Landing() -> impl IntoView {
             </h2>
             <ul class="text-black text-2xl md:text-3xl py-2">
                 <li class="font-bold text-black text-xl md:text-2xl">
-                    <a href="/generatecontent">
-                        {"Generate Content"}
+                    <a href="/realtimemonitoring">
+                        {"Real-Time Monitoring"}
                     </a>
                 </li>
             
                 <li class="font-bold text-black text-xl md:text-2xl">
-                    <a href="/context">
-                    {"Grasp what's happening"}
+                    <a href="/decisionmaking">
+                    {"Improve Decision-Making"}
                     </a>
                 </li>
             
                 <li class="font-bold text-black text-xl md:text-2xl">
-                    <a href="/deterministic">
-                    {"Be unwavering in your intentions"}
+                    <a href="/newfunctionality">
+                    {"Integrate New Functionality"}
                     </a>
                 </li>
             </ul>
             <h3 class="mt-10 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid p-2">
                 <a href="/gpts">
-                {"Access our GPTs"}
+                {"FREE GPTs"}
                 </a>
             </h3>
         </div>
