@@ -25,7 +25,7 @@ pub fn Landing() -> impl IntoView {
                 </li>
                 <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/workflow">
-                        <span>{"Task Automation"}</span>
+                        {"Task Automation"}
                     </a>
                 </li>
             </ul>
