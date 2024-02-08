@@ -13,7 +13,7 @@ pub fn Landing() -> impl IntoView {
 
             <ul>
                 
-                <li class="font-bold text-black text-xl md:text-2xl">
+                <li class="mt-2 font-bold text-black text-xl md:text-2xl">
                     <a href="/businessevolution">
                         {"Business Process Evaluation"}
                     </a>
@@ -23,7 +23,7 @@ pub fn Landing() -> impl IntoView {
                         {"Connect Microservices Patterns"}
                     </a>
                 </li>
-                <li class="mt-2 font-bold text-black text-xl md:text-2xl">
+                <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/workflow">
                         <span>{"Task Automation"}</span>
                     </a>
