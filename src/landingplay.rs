@@ -2,6 +2,8 @@ use leptos::*;
 
 #[component]
 pub fn Landing() -> impl IntoView {
+    // Include CSS file contents as a string literal
+    let css_content = include_str!("style2.css");
     view! {
         <div class="h-screen flex items-center animate-fadeIn">
             <div class="flex-col">
