@@ -122,3 +122,15 @@ body {
 .animate-fadeIn {
     animation: fadeIn 1.5s ease forwards;
 }
+
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff3e3e; /* Change to desired hover color */
+}
+
+.button:active {
+    transform: scale(1.1); /* Scale up on touch */
+}

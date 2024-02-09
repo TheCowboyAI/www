@@ -47,6 +47,7 @@ pub mod workshops;
 pub mod workshopform;
 pub mod nixoswork;
 pub mod aiintegration;
+pub mod landingplay;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -92,6 +93,7 @@ use crate::workshops::Workshops;
 use crate::workshopform::WorkshopForm;
 use crate::nixoswork::NixOSWork;
 use crate::aiintegration::AIIntegration;
+use crate::landingplay::Landingplay;
 
 use leptos::*;
 use leptos_router::*;
@@ -155,6 +157,7 @@ fn App() -> impl IntoView {
                         <Route path="/workshopform" view=WorkshopForm />
                         <Route path="/nixoswork" view=NixOSWork />
                         <Route path="/*any" view=Landing />
+                        <Route path="/landingplay" view=LandingPlay />
                     </Routes>
                 </Router>
             </main>
