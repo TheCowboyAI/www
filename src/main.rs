@@ -156,9 +156,9 @@ fn App() -> impl IntoView {
                         <Route path="/workshops" view=Workshops />
                         <Route path="/workshopform" view=WorkshopForm />
                         <Route path="/nixoswork" view=NixOSWork />
-                        <Route path="/*any" view=Landing />
                         <Route path="/landingplay" view=LandingPlay />
-                    </Routes>
+                        <Route path="/*any" view=Landing />
+                                            </Routes>
                 </Router>
             </main>
         </div>
