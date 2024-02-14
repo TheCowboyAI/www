@@ -7,7 +7,7 @@ pub fn Landing() -> impl IntoView {
           <div class="flex-col"> 
             <h1 class="font-bold text-white text-4xl md:text-6xl">
               <a href="/aiintegration">
-                {"Integrate and Automate AI"}
+                {"IT Start with Intent"}
               </a>
             </h1>
 
@@ -15,17 +15,23 @@ pub fn Landing() -> impl IntoView {
                 
                 <li class="mt-2 font-bold text-black text-xl md:text-2xl">
                     <a href="/businessevolution">
-                        {"Business Process Evaluation"}
+                        {"Identify and Evaluate"}
                     </a>
                 </li>
-                <li class="font-bold text-black text-xl md:text-2xl">
+                <li class="mt-5">
+                <details class="font-bold text-black text-xl md:text-2xl">
                     <a href="/cim">
-                        {"Connect Microservices Patterns"}
+                        {"Integrate and Automate"}
+                        </summary>
+                        <p>
+                            {"Integrate all the parts of your system. Make them talk seemlesly as if they were written together."}
+                        </p>
+                    </details>
                     </a>
                 </li>
                 <li class="font-bold text-black text-xl md:text-2xl">
                     <a href="/workflow">
-                        {"Task Automation"}
+                        {"Turn Data into Information"}
                     </a>
                 </li>
             </ul>

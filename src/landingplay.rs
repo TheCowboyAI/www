@@ -3,11 +3,13 @@ use leptos::*;
 #[component]
 pub fn LandingPlay() -> impl IntoView {
 
+pub fn Landing() -> impl IntoView {
     view! {
         <div class="h-screen flex items-center animate-fadeIn">
             <div class="flex-col">
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                     <a href="/aiintegration" class="button">
+                    <link rel="stylesheet" href="styles.css" />
                         {"Integrate and Automate AI"}
                     </a>
                 </h1>
@@ -15,16 +17,19 @@ pub fn LandingPlay() -> impl IntoView {
                 <ul>
                     <li class="font-bold text-black text-xl md:text-2xl">
                         <a href="/businessevolution" class="button">
+                        <link rel="stylesheet" href="styles.css" />
                             {"Business Process Evaluation"}
                         </a>
                     </li>
                     <li class="font-bold text-black text-xl md:text-2xl">
                         <a href="/cim" class="button">
+                        <link rel="stylesheet" href="styles.css" />
                             {"Connect Microservices Patterns"}
                         </a>
                     </li>
                     <li class="mt-2 font-bold text-black text-xl md:text-2xl">
                         <a href="/workflow" class="button">
+                        <link rel="stylesheet" href="styles.css" />
                             {"Task Automation"}
                         </a>
                     </li>
