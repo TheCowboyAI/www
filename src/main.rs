@@ -93,7 +93,7 @@ use crate::workshops::Workshops;
 use crate::workshopform::WorkshopForm;
 use crate::nixoswork::NixOSWork;
 use crate::aiintegration::AIIntegration;
-use crate::landingplay::Landingplay;
+use crate::landingplay::LandingPlay;
 
 use leptos::*;
 use leptos_router::*;
