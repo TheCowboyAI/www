@@ -7,7 +7,7 @@ pub fn Landing() -> impl IntoView {
             <div class="flex-col"> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                     <a href="/aiintegration">
-                        {"IT Starts with Intent"}
+                        {"IT Starts with IntenT"}
                     </a>
                 </h1>
 
