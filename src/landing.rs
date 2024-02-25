@@ -16,7 +16,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/cim">
                             {"AI Integration and Automation"}
                         </a>
-                        <p class="mt-5">
+                        <p>
                             {"For Small-Medium sized Businesses"}
                         </p>
                     </li>
@@ -24,7 +24,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/businessevolution">
                             {"Evaluate & Identify"}
                         </a>
-                        <p class="mt-5">
+                        <p>
                             {"Processes for AI Automation"}
                         </p>
                     </li>
@@ -32,7 +32,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/newfunctionality">
                             {"Superior Data and Business Intelligence"}
                         </a>
-                        <p class="mt-5">
+                        <p>
                             {"For Projections, Predictions and Intelligent Decision Making"}
                         </p>
                     </li>
@@ -40,7 +40,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/workflow">
                             {"Cost Efficient Hosting"}
                         </a>
-                        <p class="mt-5">
+                        <p>
                             {"For the increased costs associated with the use of AI"}
                         </p>
                     </li>
