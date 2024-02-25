@@ -24,7 +24,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/businessevolution">
                             {"Evaluate & Identify"}
                         </a>
-                        <p>
+                        <p class="text-black text-sm">
                             {"Processes for AI Automation"}
                         </p>
                     </li>
@@ -32,7 +32,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/newfunctionality">
                             {"Superior Data and Business Intelligence"}
                         </a>
-                        <p>
+                        <p class="text-black text-sm">
                             {"For Projections, Predictions and Intelligent Decision Making"}
                         </p>
                     </li>
@@ -40,43 +40,103 @@ pub fn Landing() -> impl IntoView {
                         <a href="/workflow">
                             {"Cost Efficient Hosting"}
                         </a>
-                        <p>
+                        <p class="text-black text-sm">
                             {"For the increased costs associated with the use of AI"}
                         </p>
                     </li>
                 </ul>
 
                 <h2 class="mt-10 font-bold text-white text-4xl md:text-6xl">
-                    {"Improve Productivity"}
+                    {"Cowboy AI: Pioneering Data Frontier"}
                 </h2>
                 <ul class="text-black text-2xl md:text-3xl py-2">
                     <li class="font-bold text-black text-xl md:text-2xl">
-                        <a href="/realtimemonitoring">
-                            {"Real-Time Monitoring"}
+                        <a href="/modeledintelligence">
+                            {"Unleash your True Data's Potential"}
                         </a>
+                        <p class="text-black text-sm">
+                            {"Begin with a deep dive into your business DNA for tailored AI Solutions"}
+                        </p>
+                    </li>
+                    <li class="font-bold text-black text-xl md:text-2xl">
+                        <a href="/workflow">
+                            {"Automate Intelligently"}
+                        </a>
+                        <p class="text-black text-sm">
+                            {"Inject our AI expertise to streamline and elevate your workflows"}
+                        </p>
                     </li>
                     <li class="font-bold text-black text-xl md:text-2xl">
                         <a href="/decisionmaking">
-                            {"Improve Decision-Making"}
+                            {"Empower Decisions"}
                         </a>
+                        <p class="text-black text-sm">
+                            {"Equip your strategy with our top-tier analytics and AI memory"}
+                        </p>
                     </li>
                     <li class="font-bold text-black text-xl md:text-2xl">
-                        <a href="/newfunctionality">
-                            {"Integrate New Functionality"}
+                        <a href="/predictions">
+                            {"Drive Results"}
                         </a>
+                        <p class="text-black text-sm">
+                            {"Superior data for your AI means outpreforming the competition, every time."}
+                        </p>
+                    </li>
+                    <li class="font-bold text-black text-xl md:text-2xl">
+                        <a href="/realtimemonitoring">
+                            {"Cost Efficiant Cloud"}
+                        </a>
+                        <p class="text-black text-sm">
+                            {"Migrate to smarter hosting for leaner costs with Cowboy AI's unique infrastructure"}
+                        </p>
+                    </li>
+                    <li class="font-bold text-black text-xl md:text-2xl">
+                        <a href="/gametheory">
+                            {"Optemized Performance"}
+                        </a>
+                        <p class="text-black text-sm">
+                            {"Our Cloud prowess fuels your AI, cutting expenses without compromise"}
+                        </p>
+                    </li>
+                    <li class="font-bold text-black text-xl md:text-2xl">
+                        <a href="/">
+                            {"Command Excellence"}
+                        </a>
+                        <p class="text-black text-sm">
+                            {"Access Advaced AI tools that set your business operations apart"}
+                        </p>
+                    </li>
+                    <li class="font-bold text-black text-xl md:text-2xl">
+                        <a href="/">
+                            {"Transform your Trajectory"}
+                        </a>
+                        <p class="text-black text-sm">
+                            {"Partner with Cowboy AI for an evolutionary leap in business intelligence"}
+                        </p>
                     </li>
                 </ul>
-                <h3 class="mt-10 font-bold text-red-300 text-4xl md:text-6xl">
-                    {"Ransomeware"}
+                <h3 class="mt-10 font-bold text-white text-4xl md:text-6xl">
+                    {"Cowboy AI: Pioneering Data Frontier"}
                 </h3>
+                <ul class="text-black text-2xl md:text-3xl py-2">
+                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <a href="/modeledintelligence">
+                            {"Unleash your True Data Potential"}
                 <p>
-                    {"ASK US ABOUT our Proactive Ransomeware Prevention and Protection"}
+                    {"Begin with a deep dive into your business DNA for tailored AI Solutions"}
                 </p>
-                <h4 class="mt-10 font-bold text-center text-xl rounded-lg lg-white text-blue-800 border-white border-2 border-solid p-2">
+                </ul>
+                <h4 class="mt-10 font-bold text-red-300 text-4xl md:text-6xl">
+                    {"Ransomeware"}
+                </h4>
+                    <p>
+                    {"ASK US ABOUT our Proactive Ransomeware Prevention and Protection"}
+                    </p>
+                <h5 class="mt-10 font-bold text-center text-xl rounded-lg lg-white text-blue-800 border-white border-2 border-solid p-2">
                     <a href="/gpts">
                         {"FREE GPTs"}
                     </a>
-                </h4>
+                </h5>
             </div>
         </div>
     }
