@@ -16,7 +16,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/cim">
                             {"AI Integration and Automation"}
                         </a>
-                        <p>
+                        <p class="mt-5">
                             {"For Small-Medium sized Businesses"}
                         </p>
                     </li>
@@ -24,7 +24,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/businessevolution">
                             {"Evaluate & Identify"}
                         </a>
-                        <p>
+                        <p class="mt-5">
                             {"Processes for AI Automation"}
                         </p>
                     </li>
@@ -32,7 +32,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/newfunctionality">
                             {"Superior Data and Business Intelligence"}
                         </a>
-                        <p>
+                        <p class="mt-5">
                             {"For Projections, Predictions and Intelligent Decision Making"}
                         </p>
                     </li>
@@ -40,7 +40,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/workflow">
                             {"Cost Efficient Hosting"}
                         </a>
-                        <p>
+                        <p class="mt-5">
                             {"For the increased costs associated with the use of AI"}
                         </p>
                     </li>
@@ -66,11 +66,17 @@ pub fn Landing() -> impl IntoView {
                         </a>
                     </li>
                 </ul>
-                <h3 class="mt-10 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid p-2">
+                <h3 class="mt-10 font-bold text-red text-4xl md:text-6xl">
+                    {"Ransomeware"}
+                </h3>
+                <p>
+                    {"ASK US ABOUT our Proactive Ransomeware Prevention and Protection"}
+                </p>
+                <h4 class="mt-10 font-bold text-center text-xl rounded-lg md-white text-blue-800 border-white border-2 border-solid p-2">
                     <a href="/gpts">
                         {"FREE GPTs"}
                     </a>
-                </h3>
+                </h4>
             </div>
         </div>
     }
