@@ -115,28 +115,17 @@ pub fn Landing() -> impl IntoView {
                         </p>
                     </li>
                 </ul>
-                <h3 class="mt-10 font-bold text-white text-4xl md:text-6xl">
-                    {"Cowboy AI: Pioneering Data Frontier"}
-                </h3>
-                <ul class="text-black text-2xl md:text-3xl py-2">
-                    <li class="font-bold text-black text-xl md:text-2xl">
-                    <a href="/modeledintelligence">
-                            {"Unleash your True Data Potential"}
-                <p>
-                    {"Begin with a deep dive into your business DNA for tailored AI Solutions"}
-                </p>
-                </ul>
-                <h4 class="mt-10 font-bold text-red-300 text-4xl md:text-6xl">
+                <h3 class="mt-10 font-bold text-red-300 text-4xl md:text-6xl">
                     {"Ransomeware"}
-                </h4>
+                </h3>
                     <p>
                     {"ASK US ABOUT our Proactive Ransomeware Prevention and Protection"}
                     </p>
-                <h5 class="mt-10 font-bold text-center text-xl rounded-lg lg-white text-blue-800 border-white border-2 border-solid p-2">
+                <h4 class="mt-10 font-bold text-center text-xl rounded-lg lg-white text-blue-800 border-white border-2 border-solid p-2">
                     <a href="/gpts">
                         {"FREE GPTs"}
                     </a>
-                </h5>
+                </h4>
             </div>
         </div>
     }
