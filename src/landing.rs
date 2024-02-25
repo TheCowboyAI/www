@@ -49,8 +49,8 @@ pub fn Landing() -> impl IntoView {
                 <h2 class="mt-10 font-bold text-white text-4xl md:text-6xl">
                     {"Cowboy AI: Pioneering Data Frontier"}
                 </h2>
-                <ul class="text-black text-2xl md:text-3xl py-2">
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                <ul class="mt-3 text-black text-2xl md:text-3xl py-2">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/modeledintelligence">
                             {"Unleash your True Data's Potential"}
                         </a>
@@ -58,7 +58,7 @@ pub fn Landing() -> impl IntoView {
                             {"Begin with a deep dive into your business DNA for tailored AI Solutions"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/workflow">
                             {"Automate Intelligently"}
                         </a>
@@ -66,7 +66,7 @@ pub fn Landing() -> impl IntoView {
                             {"Inject our AI expertise to streamline and elevate your workflows"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/decisionmaking">
                             {"Empower Decisions"}
                         </a>
@@ -74,7 +74,7 @@ pub fn Landing() -> impl IntoView {
                             {"Equip your strategy with our top-tier analytics and AI memory"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/predictions">
                             {"Drive Results"}
                         </a>
@@ -82,7 +82,7 @@ pub fn Landing() -> impl IntoView {
                             {"Superior data for your AI means outpreforming the competition, every time."}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/realtimemonitoring">
                             {"Cost Efficiant Cloud"}
                         </a>
@@ -90,7 +90,7 @@ pub fn Landing() -> impl IntoView {
                             {"Migrate to smarter hosting for leaner costs with Cowboy AI's unique infrastructure"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/gametheory">
                             {"Optemized Performance"}
                         </a>
@@ -98,7 +98,7 @@ pub fn Landing() -> impl IntoView {
                             {"Our Cloud prowess fuels your AI, cutting expenses without compromise"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/">
                             {"Command Excellence"}
                         </a>
@@ -106,7 +106,7 @@ pub fn Landing() -> impl IntoView {
                             {"Access Advaced AI tools that set your business operations apart"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/">
                             {"Transform your Trajectory"}
                         </a>
