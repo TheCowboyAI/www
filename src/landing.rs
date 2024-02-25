@@ -3,7 +3,7 @@ use leptos::*;
 #[component]
 pub fn Landing() -> impl IntoView {
     view! {
-        <div class="h-screen flex items-center animate-fadeIn">
+        <div class="mt-5 h-screen flex items-center animate-fadeIn">
             <div class="flex-col"> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                     <a href="/aiintegration">
@@ -16,7 +16,7 @@ pub fn Landing() -> impl IntoView {
                         <a href="/cim">
                             {"AI Integration and Automation"}
                         </a>
-                        <p>
+                        <p class="text-black text-sm">
                             {"For Small-Medium sized Businesses"}
                         </p>
                     </li>
@@ -66,7 +66,7 @@ pub fn Landing() -> impl IntoView {
                         </a>
                     </li>
                 </ul>
-                <h3 class="mt-10 font-bold text-red-500 text-4xl md:text-6xl">
+                <h3 class="mt-10 font-bold text-red-300 text-4xl md:text-6xl">
                     {"Ransomeware"}
                 </h3>
                 <p>
