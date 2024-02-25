@@ -12,25 +12,37 @@ pub fn Landing() -> impl IntoView {
                 </h1>
 
                 <ul>
-                    <li class="mt-2 font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                        <a href="/cim">
+                            {"AI Integration and Automation"}
+                        </a>
+                        <p>
+                            {"For Small-Medium sized Businesses"}
+                        </p>
+                    </li>
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/businessevolution">
-                            {"Identify and Evaluate"}
+                            {"Evaluate & Identify"}
                         </a>
+                        <p>
+                            {"Processes for AI Automation"}
+                        </p>
                     </li>
-                    <li class="mt-5">
-                        <details class="font-bold text-black text-xl md:text-2xl">
-                            <summary>
-                                {"Integrate and Automate"}
-                            </summary>
-                            <p>
-                                {"Integrate all the parts of your system. Make them talk seamlessly as if they were written together."}
-                            </p>
-                        </details>
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                        <a href="/newfunctionality">
+                            {"Superior Data and Business Intelligence"}
+                        </a>
+                        <p>
+                            {"For Projections, Predictions and Intelligent Decision Making"}
+                        </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/workflow">
-                            {"Turn Data into Information"}
+                            {"Cost Efficient Hosting"}
                         </a>
+                        <p>
+                            {"For the increased costs associated with the use of AI"}
+                        </p>
                     </li>
                 </ul>
 
