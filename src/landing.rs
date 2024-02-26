@@ -3,14 +3,13 @@ use leptos::*;
 #[component]
 pub fn Landing() -> impl IntoView {
     view! {
-        <div class="h-screen flex justify-start items-center animate-fadeIn">
+        <div class="mt-10 h-screen flex justify-start items-center animate-fadeIn">
             <div class="flex-col"> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                     <a href="/aiintegration">
                         {"IT Starts with IntenT"}
                     </a>
                 </h1>
-
                 <ul>
                     <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/cim">
