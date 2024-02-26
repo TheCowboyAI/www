@@ -5,7 +5,7 @@ pub fn Landing() -> impl IntoView {
     view! {
         <div class="mt-5 h-screen flex justify-center items-center animate-fadeIn">
             <div class="flex-col"> 
-                <h1 class="margin-top: 20px; font-bold justify-start text-white text-4xl md:text-6xl">
+                <h1 style="margin-top: 20px; font-bold justify-start text-white" class="text-4xl md:text-6xl">
                     <a href="/aiintegration">
                         {"IT Starts with IntenT"}
                     </a>
