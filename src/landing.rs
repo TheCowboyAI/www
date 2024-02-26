@@ -46,7 +46,7 @@ pub fn Landing() -> impl IntoView {
                 </ul>
 
                 <h2 class="mt-10 font-bold text-white text-4xl md:text-6xl">
-                    {"Cowboy AI: Pioneering Data Frontier"}
+                    {"Cowboy AI: Release your potential"}
                 </h2>
                 <ul class="mt-3 text-black text-2xl md:text-3xl py-2">
                     <li class="mt-3 font-bold text-black text-xl md:text-2xl">
