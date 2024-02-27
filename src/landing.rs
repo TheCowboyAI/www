@@ -11,7 +11,7 @@ pub fn Landing() -> impl IntoView {
                     </a>
                 </h1>
                 <ul>
-                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <li class="padding-top: 10px; font-bold text-black text-xl md:text-2xl">
                         <a href="/cim">
                             {"AI Integration and Automation"}
                         </a>
@@ -19,7 +19,7 @@ pub fn Landing() -> impl IntoView {
                             {"For Small-Medium sized Businesses"}
                         </p>
                     </li>
-                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <li class="pt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/businessevolution">
                             {"Evaluate & Identify"}
                         </a>
@@ -27,7 +27,7 @@ pub fn Landing() -> impl IntoView {
                             {"Processes for AI Automation"}
                         </p>
                     </li>
-                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <li class="padding-top: 10px; font-bold text-black text-xl md:text-2xl">
                         <a href="/newfunctionality">
                             {"Superior Data and Business Intelligence"}
                         </a>
@@ -35,7 +35,7 @@ pub fn Landing() -> impl IntoView {
                             {"For Projections, Predictions and Intelligent Decision Making"}
                         </p>
                     </li>
-                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <li class="padding-top: 10px; font-bold text-black text-xl md:text-2xl">
                         <a href="/workflow">
                             {"Cost Efficient Hosting"}
                         </a>
