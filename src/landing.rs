@@ -6,10 +6,10 @@ pub fn Landing() -> impl IntoView {
         <div class="h-screen flex animate-fadeIn">
             <div class="flex-col"> 
             <a href="/aiintegration">
-            <h1 class="mt-10 p-3 font-bold justify-start text-white text-4xl md:text-6xl">
+                <h1 class="mt-10 p-3 font-bold justify-start text-white text-4xl md:text-6xl">
                         {"IT Starts with IntenT"}
                 </h1>
-                </a>
+            </a>
                 <ul>
                     <li class="font-bold text-black text-xl md:text-2xl">
                         <a href="/cim">
@@ -83,7 +83,7 @@ pub fn Landing() -> impl IntoView {
                     </li>
                     <li class="font-bold text-black text-xl md:text-2xl">
                         <a href="/realtimemonitoring">
-                            {"Cost Efficiant Cloud"}
+                            {"Cost Efficient Cloud"}
                         </a>
                         <p class="text-black text-sm">
                             {"Migrate to smarter hosting for leaner costs with Cowboy AI's unique infrastructure"}
@@ -91,7 +91,7 @@ pub fn Landing() -> impl IntoView {
                     </li>
                     <li class="font-bold text-black text-xl md:text-2xl">
                         <a href="/gametheory">
-                            {"Optemized Performance"}
+                            {"Optimized Performance"}
                         </a>
                         <p class="text-black text-sm">
                             {"Our Cloud prowess fuels your AI, cutting expenses without compromise"}
@@ -102,7 +102,7 @@ pub fn Landing() -> impl IntoView {
                             {"Command Excellence"}
                         </a>
                         <p class="text-black text-sm">
-                            {"Access Advaced AI tools that set your business operations apart"}
+                            {"Access Advanced AI tools that set your business operations apart"}
                         </p>
                     </li>
                     <li class="font-bold text-black text-xl md:text-2xl">
@@ -118,7 +118,7 @@ pub fn Landing() -> impl IntoView {
                     {"Ransomware"}
                 </h3>
                     <p>
-                    {"ASK US ABOUT our Proactive Ransomeware Prevention and Protection"}
+                    {"ASK US ABOUT our Proactive Ransomware Prevention and Protection"}
                     </p>
                 <h4 class="p-3 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid">
                     <a href="/gpts">
