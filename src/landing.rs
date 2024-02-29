@@ -5,7 +5,7 @@ pub fn Landing() -> impl IntoView {
     view! {
         <div class="h-screen flex items-center animate-fadeIn">
             <div class="flex-col"> 
-                <h1 style="padding-3 font-bold justify-start text-white" class="text-4xl md:text-6xl">
+            <h1 class="p-3 font-bold justify-start text-white text-4xl md:text-6xl">
                     <a href="/aiintegration">
                         {"IT Starts with IntenT"}
                     </a>
@@ -46,7 +46,7 @@ pub fn Landing() -> impl IntoView {
                 </ul>
 
                 <h2 class="padding-3 font-bold text-white text-4xl md:text-6xl">
-                    {"Cowboy AI: Release your potential"}
+                    {"Cowboy AI: Capture your Data"}
                 </h2>
                 <ul class="text-black text-2xl md:text-3xl py-2">
                     <li class="font-bold text-black text-xl md:text-2xl">
