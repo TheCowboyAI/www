@@ -120,9 +120,9 @@ pub fn Landing() -> impl IntoView {
                     <p>
                     {"ASK US ABOUT our Proactive Ransomware Prevention and Protection"}
                     </p>
-                <h4 class="mt-10 p-3 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid">
+                <h4 class="mt-10 mb-20 p-3 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid">
                     <a href="/gpts">
-                        {"FREE GPTs"}
+                        {"FREE GPT's"}
                     </a>
                 </h4>
             </div>
