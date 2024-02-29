@@ -118,10 +118,10 @@ pub fn Landing() -> impl IntoView {
                 </ul>
                 </div>
                 <div>
-                    <h3 class="mt-10 mb-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
+                    <h3 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
                         {"Ransomware"}
                     </h3>
-                    <p>
+                    <p class="mb-10">
                     {"ASK US ABOUT our Proactive Ransomware Prevention and Protection"}
                     </p>
                 </div>
