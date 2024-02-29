@@ -11,7 +11,7 @@ pub fn Landing() -> impl IntoView {
                 </h1>
             </a>
                 <ul>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/cim">
                             {"AI Integration and Automation"}
                         </a>
@@ -19,7 +19,7 @@ pub fn Landing() -> impl IntoView {
                             {"For Small-Medium sized Businesses"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/businessevolution">
                             {"Evaluate & Identify"}
                         </a>
@@ -27,7 +27,7 @@ pub fn Landing() -> impl IntoView {
                             {"Processes for AI Automation"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/newfunctionality">
                             {"Superior Data and Business Intelligence"}
                         </a>
@@ -35,7 +35,7 @@ pub fn Landing() -> impl IntoView {
                             {"For Projections, Predictions and Intelligent Decision Making"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/workflow">
                             {"Cost Efficient Hosting"}
                         </a>
@@ -45,10 +45,10 @@ pub fn Landing() -> impl IntoView {
                     </li>
                 </ul>
 
-                <h2 class="p-3 font-bold text-white text-4xl md:text-6xl">
+                <h2 class="mt-10 p-3 font-bold text-white text-4xl md:text-6xl">
                     {"Cowboy AI: Capture your Data"}
                 </h2>
-                <ul class="text-black text-2xl md:text-3xl py-2">
+                <ul class="mt-3 text-black text-2xl md:text-3xl py-2">
                     <li class="font-bold text-black text-xl md:text-2xl">
                         <a href="/modeledintelligence">
                             {"Unleash your True Data's Potential"}
@@ -57,7 +57,7 @@ pub fn Landing() -> impl IntoView {
                             {"Begin with a deep dive into your business DNA for tailored AI Solutions"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/workflow">
                             {"Automate Intelligently"}
                         </a>
@@ -65,7 +65,7 @@ pub fn Landing() -> impl IntoView {
                             {"Inject our AI expertise to streamline and elevate your workflows"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/decisionmaking">
                             {"Empower Decisions"}
                         </a>
@@ -73,7 +73,7 @@ pub fn Landing() -> impl IntoView {
                             {"Equip your strategy with our top-tier analytics and AI memory"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/predictions">
                             {"Drive Results"}
                         </a>
@@ -81,7 +81,7 @@ pub fn Landing() -> impl IntoView {
                             {"Superior data for your AI means outpreforming the competition, every time."}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/realtimemonitoring">
                             {"Cost Efficient Cloud"}
                         </a>
@@ -89,7 +89,7 @@ pub fn Landing() -> impl IntoView {
                             {"Migrate to smarter hosting for leaner costs with Cowboy AI's unique infrastructure"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/gametheory">
                             {"Optimized Performance"}
                         </a>
@@ -97,7 +97,7 @@ pub fn Landing() -> impl IntoView {
                             {"Our Cloud prowess fuels your AI, cutting expenses without compromise"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/">
                             {"Command Excellence"}
                         </a>
@@ -105,7 +105,7 @@ pub fn Landing() -> impl IntoView {
                             {"Access Advanced AI tools that set your business operations apart"}
                         </p>
                     </li>
-                    <li class="font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/">
                             {"Transform your Trajectory"}
                         </a>
@@ -114,13 +114,13 @@ pub fn Landing() -> impl IntoView {
                         </p>
                     </li>
                 </ul>
-                <h3 class="p-3 font-bold text-red-500 text-4xl md:text-6xl">
+                <h3 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
                     {"Ransomware"}
                 </h3>
                     <p>
                     {"ASK US ABOUT our Proactive Ransomware Prevention and Protection"}
                     </p>
-                <h4 class="p-3 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid">
+                <h4 class="mt-10 p-3 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid">
                     <a href="/gpts">
                         {"FREE GPTs"}
                     </a>
