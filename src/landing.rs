@@ -11,6 +11,7 @@ pub fn Landing() -> impl IntoView {
                         {"IT Starts with IntenT"}
                 </h1>
             </a>
+            </div>
                 <ul>
                     <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/cim">
@@ -45,7 +46,6 @@ pub fn Landing() -> impl IntoView {
                         </p>
                     </li>
                 </ul>
-                </div>
                 <div>
                 <h2 class="mt-10 p-3 font-bold text-white text-4xl md:text-6xl">
                     {"Cowboy AI: Capture your Data"}
@@ -126,9 +126,11 @@ pub fn Landing() -> impl IntoView {
                     </p>
                 </div>
                     <a href="/gpts" class="mt-10 mb-20 p-3 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid">
+                       <div>
                         <h4>
                             {"FREE GPT's"}
                         </h4>
+                        </div>
                     </a>
             </div>
         </div>
