@@ -118,20 +118,40 @@ pub fn Landing() -> impl IntoView {
                 </ul>
                 </div>
                 <div>
-                <h3 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
-                    {"Ransomware"}
-                </h3>
+                    <h3 class="mt-10 mb-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
+                        {"Ransomware"}
+                    </h3>
                     <p>
                     {"ASK US ABOUT our Proactive Ransomware Prevention and Protection"}
                     </p>
                 </div>
-                    <a href="/gpts" class="mt-10 mb-20 p-3 font-bold text-center text-xl rounded-lg bg-white text-blue-800 border-white border-2 border-solid">
-                       <div>
-                        <h4>
-                            {"FREE GPT's"}
-                        </h4>
-                        </div>
-                    </a>
+                <div>
+                <a href="/gpts">
+                <button
+                            class="
+                              text-white 
+                              bg-gradient-to-br 
+                              from-purple-600 
+                              to-blue-500 
+                              hover:bg-gradient-to-bl 
+                              focus:ring-4 
+                              focus:outline-none 
+                              focus:ring-blue-300 
+                              dark:focus:ring-blue-800 
+                              font-bold 
+                              rounded-lg 
+                              text-base 
+                              px-5 
+                              py-2.5 
+                              text-center 
+                              mt-5
+                              mx-20" 
+                              type="button"
+                          >
+                            FREE GPTs
+                          </button>
+                </a>
+                </div>
             </div>
         </div>
     }
