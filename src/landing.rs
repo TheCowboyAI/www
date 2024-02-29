@@ -145,7 +145,8 @@ pub fn Landing() -> impl IntoView {
                               py-2.5 
                               text-center 
                               mt-5
-                              mx-20" 
+                              mx-20
+                              mb-10" 
                               type="button"
                           >
                             FREE GPTs
