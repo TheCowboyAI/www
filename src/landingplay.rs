@@ -125,7 +125,6 @@ pub fn Landing() -> impl IntoView {
 
 
 
-Cut from landing.rs
 <div>
                 <h2 class="mt-10 p-3 font-bold text-white text-4xl md:text-6xl">
                     {"Cowboy AI: Capture your Data"}
