@@ -123,10 +123,7 @@ pub fn Landing() -> impl IntoView {
 
 
 
-
-
-<div>
-                <h2 class="mt-10 p-3 font-bold text-white text-4xl md:text-6xl">
+               <h2 class="mt-10 p-3 font-bold text-white text-4xl md:text-6xl">
                     {"Cowboy AI: Capture your Data"}
                 </h2>
                 <ul class="mt-3 text-black text-2xl md:text-3xl py-2">
