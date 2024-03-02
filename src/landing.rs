@@ -51,7 +51,7 @@ pub fn Landing() -> impl IntoView {
                 </ul>
                 <div>
                     <a href="/security">
-                    <h2 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
+                    <h2 class="mt-10 p-3 font-bold text-red-300 text-4xl md:text-6xl">
                         {"Ransomware"}
                     </h2>
                     </a>
@@ -62,7 +62,7 @@ pub fn Landing() -> impl IntoView {
                 </div>
                 <div>
                 <a href="/customgpts">
-                <h3 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
+                <h3 class="mt-10 p-3 font-bold text-white text-4xl md:text-6xl">
                     {"Personal AI Assistants"}
                 </h3>
                 </a>
