@@ -18,7 +18,7 @@ pub fn Landing() -> impl IntoView {
                             {"AI Integration and Automation"}
                         </a>
                         <p class="text-black text-sm">
-                            {"For Small-Medium sized Businesses"}
+                            {"For Small & Medium sized Businesses"}
                         </p>
                     </li>
                     <li class="mt-3 font-bold text-black text-xl md:text-2xl">
@@ -31,10 +31,12 @@ pub fn Landing() -> impl IntoView {
                     </li>
                     <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                         <a href="/newfunctionality">
-                            {"Superior Data and Business Intelligence"}
+                            {"Superior Data and Business 
+                              Intelligence"}
                         </a>
                         <p class="text-black text-sm">
-                            {"For Projections, Predictions and Intelligent Decision Making"}
+                            {"For Projections, Predictions and
+                              Intelligent Decision Making"}
                         </p>
                     </li>
                     <li class="mt-3 font-bold text-black text-xl md:text-2xl">
@@ -42,16 +44,18 @@ pub fn Landing() -> impl IntoView {
                             {"Cost Efficient Hosting"}
                         </a>
                         <p class="text-black text-sm">
-                            {"For the increased costs associated with the use of AI"}
+                            {"For the increased costs associated with 
+                              the use of AI"}
                         </p>
                     </li>
                 </ul>
                 <div>
-                    <h3 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
+                    <h2 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
                         {"Ransomware"}
-                    </h3>
+                    </h2>
                     <p class="mb-10">
-                    {"ASK US ABOUT our Proactive Ransomware Prevention and Protection"}
+                    {"ASK US ABOUT our Proactive Ransomware Prevention
+                      and Protection"}
                     </p>
                 </div>
                 <div>
