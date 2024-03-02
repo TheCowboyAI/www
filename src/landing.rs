@@ -50,14 +50,26 @@ pub fn Landing() -> impl IntoView {
                     </li>
                 </ul>
                 <div>
+                    <a href="/security">
                     <h2 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
                         {"Ransomware"}
                     </h2>
-                    <p class="mb-10">
+                    </a>
+                    <p class="mt-3 font-bold text-black text-xl md:text-2xl">
                     {"ASK US ABOUT our Proactive Ransomware Prevention
                       and Protection"}
                     </p>
                 </div>
+                <div>
+                <a href="/customgpts">
+                <h3 class="mt-10 p-3 font-bold text-red-500 text-4xl md:text-6xl">
+                    {"Personal AI Assistants"}
+                </h3>
+                </a>
+                <p class="mt-3 font-bold text-black text-xl md:text-2xl">
+                {"Your vision, our AI expertise"}
+                </p>
+            </div>
                 <div>
                 <a href="/gpts">
                 <button
