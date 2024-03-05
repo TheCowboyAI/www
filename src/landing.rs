@@ -56,8 +56,7 @@ pub fn Landing() -> impl IntoView {
                     </h2>
                     </a>
                     <p class="mt-3 font-bold text-black text-xl md:text-2xl">
-                    {"ASK US ABOUT our Proactive Ransomware Prevention
-                      and Protection"}
+                    {"Proactive Ransomware Prevention and Protection"}
                     </p>
                 </div>
                 <div>
@@ -78,7 +77,7 @@ pub fn Landing() -> impl IntoView {
                               bg-gradient-to-br 
                               from-purple-600 
                               to-blue-500 
-                              hover:bg-gradient-to-bl 
+                              hover:bg-purple-700 
                               focus:ring-4 
                               focus:outline-none 
                               focus:ring-blue-300 
