@@ -77,7 +77,8 @@ pub fn Landing() -> impl IntoView {
                               bg-gradient-to-br 
                               from-purple-600 
                               to-blue-500 
-                              hover:bg-purple-700 
+                              hover:bg-violet-600 
+                              active:bg-violet-700
                               focus:ring-4 
                               focus:outline-none 
                               focus:ring-blue-300 
