@@ -51,7 +51,7 @@ pub fn Landing() -> impl IntoView {
                 </ul>
                 <div>
                     <a href="/security">
-                    <h2 class="mt-5 p-3 font-bold text-purple text-4xl md:text-6xl">
+                    <h2 class="mt-5 p-3 font-bold text-purple-700 text-4xl md:text-6xl">
                         {"Ransomware"}
                     </h2>
                     </a>
