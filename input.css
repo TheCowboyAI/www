@@ -39,17 +39,20 @@ footer, header, hgroup, menu, nav, section {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.electric-blue {
+    background: #0077ff;
+}
 
 html {
     min-height: 100%;
-    background: #0077ff;
+    background: #489dff;
 }
 
 body {
     min-height: 100%;
     line-height: 1;
     margin: 0;
-    background: #0077ff;
+    background: #489dff;
 }
 
 .app {
@@ -71,17 +74,17 @@ body {
 }
 
 .cowboy-blue {
-    background-color: #0077ff;
+    background-color: #489dff;
     color: white;
 }
 
 .cowboy-white {
     background-color: white;
-    color: #0077ff;    
+    color: #489dff;    
 }
 
 .caption {
-    color:#0077ff;
+    color:#489dff;
     font-weight: bold;
 }
 
