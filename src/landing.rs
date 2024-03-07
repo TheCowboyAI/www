@@ -81,7 +81,7 @@ pub fn Landing() -> impl IntoView {
                           font-bold 
                           rounded-lg 
                           text-base 
-                          px-5 
+                          px-3 
                           py-2.5 
                           text-center 
                           mx-20
@@ -121,7 +121,7 @@ pub fn Landing() -> impl IntoView {
                               font-bold 
                               rounded-lg 
                               text-base 
-                              px-5 
+                              px-3
                               py-2.5 
                               text-center 
                               mt-5
