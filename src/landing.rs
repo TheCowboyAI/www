@@ -40,7 +40,7 @@ pub fn Landing() -> impl IntoView {
                         </p>
                     </li>
                     <li class="mt-3 font-bold text-black text-xl md:text-2xl">
-                        <a href="/workflow">
+                        <a href="/realtimemonitoring">
                             {"Cost Efficient Hosting"}
                         </a>
                         <p class="text-black text-sm">
