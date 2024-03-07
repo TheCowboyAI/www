@@ -51,7 +51,7 @@ pub fn Landing() -> impl IntoView {
                 </ul>
                 <div>
                     <a href="/security">
-                    <h2 class="mt-5 p-3 font-bold text-violet-500 text-4xl md:text-6xl">
+                    <h2 class="mt-5 p-3 font-bold text-purple-500 text-4xl md:text-6xl">
                         {"Ransomware"}
                     </h2>
                     </a>
@@ -84,8 +84,8 @@ pub fn Landing() -> impl IntoView {
                               bg-gradient-to-br 
                               from-purple-600 
                               to-blue-500 
-                              hover:bg-violet-600 
-                              active:bg-violet-700
+                              hover:bg-purple-600 
+                              active:bg-purple-700
                               focus:ring-4 
                               focus:outline-none 
                               focus:ring-blue-300 
