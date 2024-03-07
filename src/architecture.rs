@@ -16,7 +16,7 @@ pub fn Architecture() -> impl IntoView {
         <details>
             <summary class="font-bold text-white text-lg" id="benthos">{"Benthos"}</summary>
             <div>
-                <p class="">{"We can make decisions on message traffic and translate foreign APIs with"} <a href="https://www.benthos.dev/">{"benthos"}</a></p>
+                <p class="">{"We can make decisions on message traffic and translate foreign APIs with: "} <a href="https://www.benthos.dev/">{"benthos"}</a></p>
                 <p class="mt-2"><img src="./assets/what-is-blob.svg" alt="what is benthos?" /></p>
                 <p class="mt-2">{"Benthos sits on the nats pipeline. Any message sent to nats can be transformed by benthos or create branches and triggers to spawn new functionality."}</p>
             </div>
@@ -38,7 +38,7 @@ pub fn Architecture() -> impl IntoView {
         <details>
             <summary class="font-bold text-white text-lg" id="nixos">{"NixOS"}</summary>
             <div>
-                <p class="mt-2">{"Finally we have NixOS which enables us to create any deployment infrastructures the CIM requires in a deterministic fashion created with configuration files."} <a href="https://nixos.org/">{"Nixos"}</a></p>
+                <p class="mt-2">{"Finally we have NixOS which enables us to create any deployment infrastructures the CIM requires in a deterministic fashion created with configuration files. see: "} <a href="https://nixos.org/">{"Nixos"}</a></p>
                 <p class="mt-2"><img src="./assets/NixOS.png" alt="NixOS" /></p>
                 <p class="mt-2">{"The Nix Packages collection"} <a href="https://github.com/NixOS/nixpkgs">{"Nixpkgs"}</a> {"is a set of over 80,000 packages for the Nix package manager."}</p>
                 <p class="mt-2">{"With these three components we have a completely portable and self contained knowledge system."}</p>
@@ -57,6 +57,11 @@ pub fn Architecture() -> impl IntoView {
             <div>
                 <p class="mt-2">{"CIM is also a tool that will help you generate code. Whether you let it operate behind the scenes or you require human developers to incorporate templates. Sage helps build ideas into software quickly by not only leveraging a workflow solution, but also creating the source code and machine deployments necessary to take that idea into production."}</p>
                 <p class="mt-2">{"This is not traditional String Replacement of templates as you may have seen in the past, but a full language for creating source code and verifying it's correctness."}</p>
+                <div class="my-5 flex flex-col text-center items-center">
+                   <img src="./assets/list.png" /> 
+                   <span class="my-5">{"becomes"}</span>
+                   <img src="./assets/rust-enum.png" />
+                </div>
             </div>
         </details>
         <details>
