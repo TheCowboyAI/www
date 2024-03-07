@@ -61,7 +61,7 @@ pub fn Landing() -> impl IntoView {
                 </div>
                 <div>
                 <a href="/architecture">
-                <button
+                    <button
                         class="
                           mt-5 
                           p-3 
@@ -86,10 +86,10 @@ pub fn Landing() -> impl IntoView {
                           text-center 
                           mx-20
                           mb-10"
-                          type="button">
-                >
+                          type="button"
+                    >
                         How It Works...
-                </button>    
+                    </button>    
                 </a>
             </div>
                 <div>
