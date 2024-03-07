@@ -51,7 +51,7 @@ pub fn Landing() -> impl IntoView {
                 </ul>
                 <div>
                     <a href="/security">
-                    <h2 class="mt-5 p-3 font-bold text-purple-500 text-4xl md:text-6xl">
+                    <h2 class="mt-5 p-3 font-bold text-purple text-4xl md:text-6xl">
                         {"Ransomware"}
                     </h2>
                     </a>
@@ -61,9 +61,35 @@ pub fn Landing() -> impl IntoView {
                 </div>
                 <div>
                 <a href="/architecture">
-                    <h3 class="mt-5 p-3 font-bold text-white text-2xl md:text-4xl">
-                        {"How It Works..."}
-                    </h3>
+                <button
+                        class="
+                          mt-5 
+                          p-3 
+                          font-bold 
+                          text-white 
+                          text-2xl 
+                          md:text-4xl
+                          bg-gradient-to-br 
+                          from-purple-600 
+                          to-blue-500 
+                          hover:bg-purple-600 
+                          active:bg-purple-700
+                          focus:ring-4 
+                          focus:outline-none 
+                          focus:ring-blue-300 
+                          dark:focus:ring-blue-800 
+                          font-bold 
+                          rounded-lg 
+                          text-base 
+                          px-5 
+                          py-2.5 
+                          text-center 
+                          mx-20
+                          mb-10"
+                          type="button">
+                >
+                        How It Works...
+                </button>    
                 </a>
             </div>
                 <div>
@@ -81,6 +107,8 @@ pub fn Landing() -> impl IntoView {
                 <button
                             class="
                               text-white 
+                              text-2xl 
+                              md:text-4xl
                               bg-gradient-to-br 
                               from-purple-600 
                               to-blue-500 
