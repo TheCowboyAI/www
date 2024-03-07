@@ -74,15 +74,15 @@ pub fn Architecture() -> impl IntoView {
                 <p class="mt-2">{"We operate on the notion of a State Machine, where any change is only brought about by changing the State of the system. State transitions are represented as a sequential series of Events."}</p>
                 <p class="mt-2">{"We have three types of messages:"}</p>
                 <ul>
-                <li>{"Command:"}<ul><li>{"Tell the system to change state"}</li></ul></li>
-                <li>{"Query:"}<ul><li>{"Ask the system it's current state"}</li></ul></li>
-                <li>{"Event:"}<ul><li>{"A change in state has occurred"}</li></ul></li>
+                <li><span class="pl-5 font-bold">{"Command: "}</span>{"Tell the system to change state"}</li>
+                <li><span class="pl-5 font-bold">{"Query: "}</span>{"Ask the system it's current state"}</li>
+                <li><span class="pl-5 font-bold">{"Event: "}</span>{"A change in state has occurred"}</li>
                 </ul>
                 <p class="mt-2">{"We also have the notion of:"}</p>
                 <ul>
-                <li>{"Operator:"}<ul><li>{"Owner of the CIM (admin)"}</li></ul></li>
-                <li>{"Account:"}<ul><li>{"Organization Tenant under the Operator"}</li></ul></li>
-                <li>{"User:"}<ul><li>{"Individual Tenant under the Account"}</li></ul></li>
+                <li><span class="pl-5 font-bold">{"Operator: "}</span>{"Owner of the CIM (admin)"}</li>
+                <li><span class="pl-5 font-bold">{"Account: "}</span>{"Organization Tenant under the Operator"}</li>
+                <li><span class="pl-5 font-bold">{"User: "}</span>{"Individual Tenant under the Account"}</li>
                 </ul>
                 <p class="mt-2">{"Every Message has either an Operator, Account or User associated with it as the Owner of the Message."}</p>
                 <p class="mt-2">{"This allows for fine-grained authorization of each Message."}</p>
