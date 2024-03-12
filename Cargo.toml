@@ -8,3 +8,13 @@ leptos = { version = "0.5", features = ["csr"] }
 leptos_meta = "0.5.7"
 leptos_router = { version = "0.5", features = ["csr"] }
 
+# Defines a size-optimized profile for the WASM bundle in release mode
+[profile.wasm-release]
+inherits = "release"
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[package.metadata.leptos]
+tailwind-input-file = "input.css"
