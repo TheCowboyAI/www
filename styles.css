@@ -917,27 +917,26 @@ video {
 
 html {
   min-height: 100%;
-  background: #489dff;
+  background-color: #489dff;
+  background-image: url("assets/bubble-galaxy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
   min-height: 100%;
   line-height: 1;
   margin: 0;
-  background: #489dff;
 }
 
 .app {
-  background-image: url("assets/bubble-galaxy.jpg");
-  background: #489dff;
-  background-repeat: no-repeat;
   /* background: linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
-    background: -webkit-linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
-    background: -moz-linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: fixed; */
+      background: -webkit-linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
+      background: -moz-linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: fixed; */
   min-height: 100vh;
   width: 100vw;
   z-index: -1
