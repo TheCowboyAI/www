@@ -13,37 +13,37 @@ pub fn Landing() -> impl IntoView {
             </a>
             </div>
                 <ul>
-                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold bbblue-text text-xl md:text-2xl">
                         <a href="/cim">
                             {"AI Integration and Automation"}
                         </a>
-                        <p class="text-black text-sm">
+                        <p class="bbblue-text text-sm">
                             {"For Small & Medium sized Businesses"}
                         </p>
                     </li>
-                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold bbblue-text text-xl md:text-2xl">
                         <a href="/businessevolution">
                             {"Evaluate & Identify"}
                         </a>
-                        <p class="text-black text-sm">
+                        <p class="bbblue-text text-sm">
                             {"Processes for AI Automation"}
                         </p>
                     </li>
-                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold bbblue-text text-xl md:text-2xl">
                         <a href="/newfunctionality">
                             {"Superior Data and Business 
                               Intelligence"}
                         </a>
-                        <p class="text-black text-sm">
+                        <p class="bbblue-text text-sm">
                             {"For Projections, Predictions and
                               Intelligent Decision Making"}
                         </p>
                     </li>
-                    <li class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <li class="mt-3 font-bold bbblue-text text-xl md:text-2xl">
                         <a href="/realtimemonitoring">
                             {"Cost Efficient Hosting"}
                         </a>
-                        <p class="text-black text-sm">
+                        <p class="bbblue-text text-sm">
                             {"For the increased costs associated with 
                               the use of AI"}
                         </p>
@@ -51,11 +51,11 @@ pub fn Landing() -> impl IntoView {
                 </ul>
                 <div>
                     <a href="/security">
-                    <h2 class="mt-5 p-3 font-bold text-purple-700 text-4xl md:text-6xl">
+                    <h2 class="mt-5 p-3 font-bold bbblue-text text-4xl md:text-6xl">
                         {"Ransomware"}
                     </h2>
                     </a>
-                    <p class="mt-3 font-bold text-black text-xl md:text-2xl">
+                    <p class="mt-3 font-bold bbblue-text text-xl md:text-2xl">
                     {"Proactive Ransomware Prevention and Protection"}
                     </p>
                 </div>
@@ -94,11 +94,11 @@ pub fn Landing() -> impl IntoView {
             </div>
                 <div>
                 <a href="/customgpts">
-                <h3 class="mt-5 p-3 font-bold text-white text-4xl md:text-6xl">
+                <h3 class="mt-5 p-3 font-bold bbblue-text text-4xl md:text-6xl">
                     {"Personal AI Assistants"}
                 </h3>
                 </a>
-                <p class="mt-3 font-bold text-black text-xl md:text-2xl">
+                <p class="mt-3 font-bold bbblue-text text-xl md:text-2xl">
                 {"Your vision, our AI expertise"}
                 </p>
             </div>

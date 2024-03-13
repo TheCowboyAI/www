@@ -49,6 +49,8 @@ html {
     background-image: url("assets/fort_lock.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
   }
   
   body {
@@ -141,4 +143,10 @@ html {
 
 .button:active {
     transform: scale(1.1); /* Scale up on touch */
+}
+
+@media (max-width: 600px) {
+    html {
+        background-size: auto 100%;
+    }
 }
