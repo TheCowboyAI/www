@@ -84,6 +84,10 @@ html {
     color: #489dff;    
 }
 
+.cyan {
+    color:cyan
+}
+
 .caption {
     color:#489dff;
     font-weight: bold;
