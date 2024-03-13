@@ -44,11 +44,11 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {
-    min-height: 100%;
-    background-color: #489dff;
-    /* background-image: url("assets/7555.jpg");
+    /*min-height: 100%;
+    background-color: #489dff;*/
+    background-image: url("assets/fort_lock.webp");
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
   }
   
   body {
