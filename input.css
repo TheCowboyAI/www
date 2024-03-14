@@ -49,7 +49,7 @@ html {
     background-image: url("assets/rb_corner.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center center;
     background-attachment: fixed;
   }
   
