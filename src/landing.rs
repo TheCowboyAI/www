@@ -7,7 +7,7 @@ pub fn Landing() -> impl IntoView {
             <div class="flex-col"> 
             <div>
             <a href="/aiintegration">
-                <h1 class="mt-10 p-3 font-bold justify-start text-white text-4xl md:text-6xl">
+                <h1 class="mt-10 font-bold justify-start text-white text-4xl md:text-6xl">
                         {"IT Starts with IntenT"}
                 </h1>
             </a>
@@ -51,7 +51,7 @@ pub fn Landing() -> impl IntoView {
                 </ul>
                 <div>
                     <a href="/security">
-                    <h2 class="mt-5 p-3 font-bold text-white text-4xl md:text-6xl">
+                    <h2 class="mt-5 font-bold text-white text-4xl md:text-6xl">
                         {"Ransomware"}
                     </h2>
                     </a>
@@ -64,7 +64,6 @@ pub fn Landing() -> impl IntoView {
                     <button
                         class="
                           mt-5 
-                          p-3 
                           font-bold 
                           text-white 
                           text-2xl 
@@ -94,7 +93,7 @@ pub fn Landing() -> impl IntoView {
             </div>
                 <div>
                 <a href="/customgpts">
-                <h3 class="mt-5 p-3 font-bold text-white text-4xl md:text-6xl">
+                <h3 class="mt-5 font-bold text-white text-4xl md:text-6xl">
                     {"Personal AI Assistants"}
                 </h3>
                 </a>
