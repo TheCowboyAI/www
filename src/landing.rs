@@ -140,7 +140,7 @@ pub fn Landing() -> impl IntoView {
                 <div class="logo-container mt-10 flex justify-center">
                 /*Insert Microsoft MVP LOGO + Startup-HUB */
                     <a href="https://en.wikipedia.org/wiki/Microsoft_Most_Valuable_Professional">
-                        <img src="assets\microsoft_mvp_logo.png" 
+                        <img src="assets/microsoft_mvp_logo.png" 
                         alt="Microsoft MVP Logo" 
                         class="mr-5" 
                         />
