@@ -69,7 +69,7 @@ pub fn Landing() -> impl IntoView {
                             text-2xl 
                             md:text-4xl
                             bg-gradient-to-br 
-                            from-white 
+                            from-black-300 
                             to-black
                             hover:bg-purple-600 
                             active:bg-purple-700
@@ -110,7 +110,7 @@ pub fn Landing() -> impl IntoView {
                               md:text-4xl
                               bg-gradient-to-br 
                               from-black 
-                              to-white
+                              to-black-500
                               hover:bg-purple-600 
                               active:bg-purple-700
                               focus:ring-4 
@@ -133,7 +133,18 @@ pub fn Landing() -> impl IntoView {
                     </a>
                 </div>
                 <div>
+                    <a href="">
+                        {Member of Microsoft for Startups Founders Hub}    
+                    </a>
+                </div>
+                <div class="logo-container mt-10 flex justify-center">
                 /*Insert Microsoft MVP LOGO + Startup-HUB */
+                    <a href="https://en.wikipedia.org/wiki/Microsoft_Most_Valuable_Professional">
+                        <img src="assets\microsoft_mvp_logo.png" 
+                        alt="Microsoft MVP Logo" 
+                        class="mr-5" 
+                        />
+                    </a>
                 </div>
             </div>
         </div>
