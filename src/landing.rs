@@ -87,7 +87,7 @@ pub fn Landing() -> impl IntoView {
                             mb-10"
                             type="button"
                             >
-                        How It Works...
+                        {"How It Works..."}
                         </button>    
                     </a>
                 </div>
@@ -128,13 +128,13 @@ pub fn Landing() -> impl IntoView {
                               mb-10" 
                               type="button"
                         >
-                            FREE GPTs
+                            {"FREE GPTs"}
                         </button>
                     </a>
                 </div>
                 <div>
                     <a href="https://www.microsoft.com/en-us/startups/">
-                        {Member of Microsoft for Startups Founders Hub}    
+                        {"Member of Microsoft for Startups Founders Hub"}    
                     </a>
                 </div>
                 <div class="logo-container mt-10 flex justify-center">
