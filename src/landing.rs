@@ -133,7 +133,7 @@ pub fn Landing() -> impl IntoView {
                     </a>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="https://www.microsoft.com/en-us/startups/">
                         {Member of Microsoft for Startups Founders Hub}    
                     </a>
                 </div>
