@@ -136,12 +136,12 @@ pub fn Landing() -> impl IntoView {
                     view! {
                         <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                             <a href="https://www.microsoft.com/en-us/startups/" 
-                            target="_blank" 
-                            rel="noopener noreferrer">{"Visit Example"}>
-                                {"Member of Microsoft for Startups Founders Hub"}    
-                            </a>
-                        </li>
-                    }        
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                {"Member of Microsoft for Startups Founders Hub"}
+                             </a>
+                         </li>
+                    }  
                 </div>
                 <div class="logo-container mt-10 flex justify-center">
                     <a href="https://en.wikipedia.org/wiki/Microsoft_Most_Valuable_Professional">
