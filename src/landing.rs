@@ -133,7 +133,7 @@ pub fn Landing() -> impl IntoView {
                     </a>
                 </div>
                 <div>
-                    view! {
+                    view! { 
                         <li class="mt-3 font-bold text-black text-xl md:text-2xl">
                             <a href="https://www.microsoft.com/en-us/startups/" 
                                 target="_blank" 
