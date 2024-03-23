@@ -49,6 +49,7 @@ pub mod nixoswork;
 pub mod aiintegration;
 pub mod landingplay;
 pub mod architecture;
+pub mod textbutton;
 
 use crate::navigate::Navigate;
 use crate::landing::Landing;
