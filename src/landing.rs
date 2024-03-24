@@ -98,7 +98,7 @@ pub fn Landing() -> impl IntoView {
           <h3 class="font-bold font-black text-2xl">{"Awards:"}</h3>
         </div>
         <div class="logo-container">
-          <a class="font-bold" href="https://mvp.microsoft.com/en-US/">
+          <a class="font-bold mb-20" href="https://mvp.microsoft.com/en-US/">
             <img
               src="assets/mvp_alumni_logo.png"
               alt="Microsoft MVP Logo"
