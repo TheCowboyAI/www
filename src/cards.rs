@@ -28,7 +28,7 @@ pub fn Card(
       />
     </a>
     <div class="p-6">
-      <h5 class="text-black mb-2 text-xl font-medium leading-tight">{title}</h5>
+      <h5 class="text-black font-bold mb-3 text-2xl">{title}</h5>
       <p class="text-black mb-4 text-base">
         {text}
       </p>
