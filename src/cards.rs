@@ -27,9 +27,9 @@ pub fn Card(
         alt={imgalt} // "Palm Springs Road" />
       />
     </a>
-    <div class="p-6">
+    <div class="p-6 shadow-lg">
       <h5 class="text-black font-bold mb-3 text-2xl">{title}</h5>
-      <p class="text-black mb-4 text-base">
+      <p class="shadow-lg shadow-black rounded-lg p-3 text-black mb-4 text-base">
         {text}
       </p>
     </div>
