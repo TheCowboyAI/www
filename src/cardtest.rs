@@ -5,6 +5,7 @@ use crate::cards::Card;
 #[component]
 pub fn CardTest() -> impl IntoView {
   view! {
+    <h1 class="opacity-80 mx-3 rounded-xl py-2 font-bold mt-5 text-4xl text-center text-white shadow-lg shadow-black">{"It's a Brave, New World"}</h1>
     <div class="grid-cols-1 sm:grid md:grid-cols-3 items-center">
       <Card
         route="/architecture".to_string()
