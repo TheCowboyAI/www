@@ -11,7 +11,7 @@ pub fn CardTest() -> impl IntoView {
         imgsrc="assets/CIM-Card.png".to_string() 
         imgalt="CIM".to_string()
         title="Composable Information Machine".to_string()
-        text="CIM is a new way to see the world of information. We are transitioning from the world of Location-based Hierarchical Files, Rows and Columns, to something else.".to_string()
+        text="CIM is a new way to see the world of information. We are transitioning from the world of Location-based Hierarchical Files, Rows and Columns, to something else...".to_string()
         footer="Model your success".to_string()
       />
       <Card
@@ -27,7 +27,7 @@ pub fn CardTest() -> impl IntoView {
         imgsrc="assets/bizevo.png".to_string() 
         imgalt="evolution".to_string()
         title="Business Evolution".to_string()
-        text="Business evolution refers to the continuous transformation and adaptation of a business to meet changing market demands, technology advancements, and shifts in consumer behavior.".to_string()
+        text="Business evolution refers to the continuous transformation and adaptation of a business to meet changing market demands, technology advancements, and shifts in consumer behavior. Your Business Model is the key.".to_string()
         footer="Automated Excellence".to_string()
       />
       <Card
@@ -35,7 +35,7 @@ pub fn CardTest() -> impl IntoView {
         imgsrc="assets/FOSS.png".to_string() 
         imgalt="open source".to_string()
         title="FREE and Open Source".to_string()
-        text="This is a machine to control your information and how it is processed. When we say machine... think of the entire internet as a single machine. This is a new enabling technology that we will guide you to create a personal information system capable of semantic engagement with all your information, no matter where you choose to create it or store it.".to_string()
+        text="This is a machine to control your information and how it is processed. When we say machine... think of the entire internet as a single machine. This is a new enabling technology that will guide you to create a personal information system capable of semantic engagement with all your information, no matter where you choose to create it or store it.".to_string()
         footer="Software freedom for all".to_string()
       />
       <Card
@@ -59,7 +59,7 @@ pub fn CardTest() -> impl IntoView {
         imgsrc="assets/mvp_alumni_logo.png".to_string() 
         imgalt="MVP Alumni".to_string()
         title="MVP Alumni".to_string()
-        text="We recognize exceptional community leaders for your technical expertise, positive influence on those around you and commitment to solving real world challenges with cutting-edge technology.".to_string()
+        text="Microsoft recognizes exceptional community leaders for their technical expertise, positive influence on those around them and commitment to solving real world challenges with cutting-edge technology.".to_string()
         footer="10 Consecutive Years".to_string()
       />
       <div class="mb-10">
