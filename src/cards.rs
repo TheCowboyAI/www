@@ -19,7 +19,7 @@ pub fn Card(
 ) -> impl IntoView {
   view!{
     <div
-    class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-xl shadow-black dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 shadow-xl">
+    class="mx-3 mt-6 flex flex-col rounded-lg bg-transparent text-surface shadow-xl shadow-black sm:shrink-0 sm:grow sm:basis-0">
     <a href={route}>
       <img
         class="rounded-t-lg"
@@ -29,11 +29,11 @@ pub fn Card(
     </a>
     <div class="p-6 shadow-lg">
       <h5 class="text-black font-bold mb-3 text-2xl">{title}</h5>
-      <p class="shadow-lg shadow-black rounded-lg p-3 text-black mb-4 text-base">
+      <p class="shadow-lg shadow-black rounded-lg p-3 bg-slate-100 text-black mb-4 text-base">
         {text}
       </p>
     </div>
-    <div class="text-black mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10">
+    <div class="bg-slate-300 rounded-lg text-black mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10">
       <small>{footer}</small>
     </div>
   </div>
