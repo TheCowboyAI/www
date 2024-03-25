@@ -111,11 +111,11 @@ fn main() {
 #[component]
 fn App() -> impl IntoView {
     view! {
-        <div class="app flex min-width-100">
+        <div class="app flex min-width-100 overflow-hidden">
             <aside class="sticky top-0 left-0">
                 <Navigate />
             </aside>
-            <main class="pl-5">
+            <main class="pl-5 overflow-auto">
                 <Router>
                     <Routes>
                         <Route path="/" view=Landing />

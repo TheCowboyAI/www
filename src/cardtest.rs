@@ -12,7 +12,7 @@ pub fn CardTest() -> impl IntoView {
         imgsrc="assets/CIM-Card.png".to_string() 
         imgalt="CIM".to_string()
         title="Composable Information Machine".to_string()
-        text="CIM is a new way to see the world of information. We are transitioning from the world of Location-based Hierarchical Files, Rows and Columns, to something else...".to_string()
+        text="CIM is a new way to see the world of information. We are transitioning from the world of location-based hierarchical files with rows and columns, to something else...".to_string()
         footer="Model your success".to_string()
       />
       <Card
@@ -51,7 +51,7 @@ pub fn CardTest() -> impl IntoView {
         route="https://www.microsoft.com/en-us/startups/".to_string()
         imgsrc="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31".to_string() 
         imgalt="Startup Hub".to_string()
-        title="Startup Hub Member".to_string()
+        title="Founders Hub Member".to_string()
         text="Microsoft for Startups Founders Hub helps startups radically accelerate innovation by providing access to industry-leading AI services, expert guidance, and the essential technology needed to build a future-proofed startup.".to_string()
         footer="Build the future".to_string()
       />
