@@ -50,7 +50,10 @@ pub mod aiintegration;
 pub mod landingplay;
 pub mod architecture;
 pub mod textbutton;
+pub mod cards;
+pub mod cardtest;
 
+use crate::cardtest::CardTest;
 use crate::navigate::Navigate;
 use crate::landing::Landing;
 use crate::dashboard::Dashboard;
@@ -161,6 +164,7 @@ fn App() -> impl IntoView {
                         <Route path="/nixoswork" view=NixOSWork />
                         <Route path="/landingplay" view=LandingPlay />
                         <Route path="/architecture" view=Architecture />
+                        <Route path="/cards" view=CardTest />
                         <Route path="/*any" view=Landing />
                                             </Routes>
                 </Router>
