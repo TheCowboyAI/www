@@ -19,7 +19,7 @@ pub fn Card(
 ) -> impl IntoView {
   view!{
     <div
-    class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
+    class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 shadow-xl">
     <a href={route}>
       <img
         class="rounded-t-lg"
