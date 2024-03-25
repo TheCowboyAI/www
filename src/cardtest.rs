@@ -20,7 +20,7 @@ pub fn CardTest() -> impl IntoView {
         imgalt="AI Integration".to_string()
         title="AI Integration".to_string()
         text="Cowboy AI stands at the forefront of AI integration, expertly navigating the complexities of artificial intelligence to tailor solutions that are perfectly aligned with your business needs. As AI Integration Experts, Cowboy AI ensures that your systems are intelligent, efficient, and strategically designed to drive growth and innovation.".to_string()
-        footer="Automated Excellence".to_string()
+        footer="Integrated Integrity".to_string()
       />
       <Card
         route="/businessevolution".to_string()
