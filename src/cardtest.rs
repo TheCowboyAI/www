@@ -46,6 +46,22 @@ pub fn CardTest() -> impl IntoView {
         text="Cowboy AI excels in creating tailored GPTs and AI Agents that are not just technologically advanced but also intricately aligned with your business model. These intelligent agents are designed to understand your business's unique landscape, communicate with each other, and securely access internal company data to drive informed decisions and actions.".to_string()
         footer="Personal AI Assistants".to_string()
       />
+      <Card
+        route="https://www.microsoft.com/en-us/startups/".to_string()
+        imgsrc="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31".to_string() 
+        imgalt="Startup Hub".to_string()
+        title="Startup Hub Member".to_string()
+        text="Microsoft for Startups Founders Hub helps startups radically accelerate innovation by providing access to industry-leading AI services, expert guidance, and the essential technology needed to build a future-proofed startup.".to_string()
+        footer="Build the future".to_string()
+      />
+      <Card
+        route="https://mvp.microsoft.com/en-US/".to_string()
+        imgsrc="assets/mvp_alumni_logo.png".to_string() 
+        imgalt="MVP Alumni".to_string()
+        title="MVP Alumni".to_string()
+        text="We recognize exceptional community leaders for your technical expertise, positive influence on those around you and commitment to solving real world challenges with cutting-edge technology.".to_string()
+        footer="10 Consecutive Years".to_string()
+      />
       <div class="mb-10">
       </div>  
     </div>
