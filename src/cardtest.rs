@@ -16,7 +16,7 @@ pub fn CardTest() -> impl IntoView {
       />
       <Card
         route="/aiintegration".to_string()
-        imgsrc="assets/hands.jpg".to_string() 
+        imgsrc="assets/hands.png".to_string() 
         imgalt="AI Integration".to_string()
         title="AI Integration".to_string()
         text="Cowboy AI stands at the forefront of AI integration, expertly navigating the complexities of artificial intelligence to tailor solutions that are perfectly aligned with your business needs. As AI Integration Experts, Cowboy AI ensures that your systems are intelligent, efficient, and strategically designed to drive growth and innovation.".to_string()
@@ -24,7 +24,7 @@ pub fn CardTest() -> impl IntoView {
       />
       <Card
         route="/businessevolution".to_string()
-        imgsrc="assets/evolution.png".to_string() 
+        imgsrc="assets/bizevo.png".to_string() 
         imgalt="evolution".to_string()
         title="Business Evolution".to_string()
         text="Business evolution refers to the continuous transformation and adaptation of a business to meet changing market demands, technology advancements, and shifts in consumer behavior.".to_string()
