@@ -6,7 +6,7 @@ pub fn Navigate() -> impl IntoView {
     view! {
         <nav class="
         flex fixed w-full h-16 rounded-lg rounded-b items-center justify-between 
-        px-6 theme_bg-1-bg-4 text-black border-b border-black border-solid z-10
+        px-6 theme_bg-1-bg-3 text-black z-10
         ">
             <div id="logo" class="p-2">
                 <a href="/">

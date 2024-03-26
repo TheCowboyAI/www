@@ -245,7 +245,7 @@ body {
       transform: translateX(-50%) scale(0);
       transform-origin: center;
       transition: all 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
-      background-color: #74A7C1;
+      background-color: #4E84A6;
       color: #000;
       width: 300px;
       left: 50%;
