@@ -45,13 +45,27 @@ footer, header, hgroup, menu, nav, section {
 
 html {
     /*min-height: 100%;
-    background-color: #489dff;*/
-    background-image: url("assets/bwave65.png");
+    background-color: #699EBF;*/
+    background-image: url("assets/bg-1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
   }
+
+/* Color Theme Swatches in Hex */
+.theme_bg-1-bg-1 { background-color: #294973; }
+.theme_bg-1-bg-2 { background-color: #274259; }
+.theme_bg-1-bg-3 { background-color: #4E84A6; }
+.theme_bg-1-bg-4 { background-color: #8FCBD9; }
+.theme_bg-1-bg-5 { background-color: #D8D9C1; }
+
+.theme_bg-1-color-1 { color: #294973; }
+.theme_bg-1-color-2 { color: #274259; }
+.theme_bg-1-color-3 { color: #4E84A6; }
+.theme_bg-1-color-4 { color: #8FCBD9; }
+.theme_bg-1-color-5 { color: #D8D9C1; }
+
 
 /* 
   // Color Theme Swatches in Hex
@@ -69,13 +83,6 @@ body {
   }
   
   .app {
-    /* background: linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
-      background: -webkit-linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
-      background: -moz-linear-gradient(135deg,#4c1d95 0%, #00a9ff 60%, #000000 100%);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      position: fixed; */
     min-height: 100vh;
     width: 100vw;
     z-index: -1
@@ -130,16 +137,29 @@ body {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 .animate-fadeIn {
-    animation: fadeIn 1.5s ease forwards;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 2s ease forwards;
 }
 
 .button {
@@ -154,11 +174,11 @@ body {
     transform: scale(1.1); /* Scale up on touch */
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     html {
         background-size: auto 100%;
     }
-}
+} */
   .hamburger {
     position: relative;
     width: 50px;
@@ -177,9 +197,9 @@ body {
       right: 0;
       bottom: 0;
       border-radius: 20px;
-      background: #7ED0D9;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #73AABF, #7ED0D9);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #73AABF, #7ED0D9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #4E84A6;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #294973, #4E84A6);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #294973, #4E84A6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       transform: rotate(0deg);
       transition: all 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
     }

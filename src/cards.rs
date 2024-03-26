@@ -21,7 +21,7 @@ pub fn Card(
   view!{
     <div
       class="
-        bg-[#699EBF]
+        theme_bg-1-bg-3
         mx-3 mt-6 p-1
         border border-black border-solid
         flex flex-col
@@ -43,7 +43,7 @@ pub fn Card(
     </a>
     <div class="p-2">
       <h5 class="text-black font-bold mb-3 text-xl">{title}</h5>
-      <p class="shadow-lg shadow-black rounded-lg p-3 bg-[#5B83A6] text-black mb-4 text-base">
+      <p class="shadow-lg shadow-black rounded-lg p-3 theme_bg-1-bg-1 theme_bg-1-color-5 mb-4 text-base">
         {text}
       </p>
     </div>
@@ -53,7 +53,7 @@ pub fn Card(
               class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
           </div>
           <a href={footlink} title="Would you like to know more?"
-              class="relative inline-flex items-center justify-center px-8 py-2 text-base text-white transition-all duration-200 bg-slate-700 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              class="relative inline-flex items-center justify-center px-8 py-2 text-base theme_bg-1-color-5 transition-all duration-200 theme_bg-1-bg-2 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
               role="button">{footer}
           </a>
       </div>

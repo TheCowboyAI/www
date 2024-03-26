@@ -7,10 +7,10 @@ pub fn Landing() -> impl IntoView {
   view! {
     <div class="animate-fadeIn flex flex-col">
       <div>
-        <h1 class="bg-[#699EBF] mx-3 rounded-xl py-2 font-bold mt-5 text-3xl text-center text-white shadow-lg shadow-black">
+        <h1 class="theme_bg-1-bg-3 mx-3 rounded-xl py-2 font-bold mt-5 text-3xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
           {"It's a Brave, New World"}
         </h1>
-        <h2 class="bg-[#699EBF] mx-3 rounded-xl py-2 font-bold mt-5 text-xl text-center text-white shadow-lg shadow-black">
+        <h2 class="theme_bg-1-bg-3 mx-3 rounded-xl py-2 font-bold mt-5 text-xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
           {"Overcome Information Overload"}
         </h2>
       </div>
@@ -61,6 +61,14 @@ pub fn Landing() -> impl IntoView {
         footer="Personal AI Assistants".to_string()
         footlink="/askquestions".to_string()
       />
+
+      <div class="md:col-span-3 theme_bg-1-bg-3 font-bold rounded-xl theme_bg-1-color-5 shadow-lg shadow-black mt-10 py-3 px-3 mx-3 flex items-center text-sm before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:before:border-gray-600 dark:after:border-gray-600">
+        {" Community Involvement "}
+      </div>
+
+      // social logos
+      // blog, github, discord, X, Facebook, mastadon?
+
       <Card
         route="https://microsoft.com/en-US/ai".to_string()
         imgsrc="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31".to_string() 

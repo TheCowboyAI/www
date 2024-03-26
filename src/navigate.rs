@@ -6,7 +6,7 @@ pub fn Navigate() -> impl IntoView {
     view! {
         <nav class="
         flex fixed w-full h-16 rounded-lg rounded-b items-center justify-between 
-        px-6 bg-[#74A7C1] text-black border-b border-black border-solid z-10
+        px-6 theme_bg-1-bg-4 text-black border-b border-black border-solid z-10
         ">
             <div id="logo" class="p-2">
                 <a href="/">
@@ -17,15 +17,20 @@ pub fn Navigate() -> impl IntoView {
             </div>
 
             <div id="title">
-                <span class="font-bold text-4xl text-black">{"Cowboy AI"}</span>
+                <span class="font-bold text-4xl theme_bg-1-color-2">{"Cowboy AI"}</span>
             </div>
 
             <div>
-                <label class="menu-button-wrapper" for="">
-                    <input type="checkbox" class="menu-button"/>
+                <label class="menu-button-wrapper" for="menubutton">
+                    <input 
+                        id="menubutton"
+                        type="checkbox" 
+                        class="menu-button"                        
+                    />
+
                     <div class="icon-wrapper">
                         <label class="hamburger">
-                            <input class="hamburger-input" type="checkbox"/>
+                            <input class="hamburger-input" type="checkbox" />
                             <span class="hamburger-line first"></span>
                             <span class="hamburger-line second"></span>
                             <span class="hamburger-line third"></span>
