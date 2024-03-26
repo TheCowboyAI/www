@@ -12,11 +12,11 @@ pub fn Architecture() -> impl IntoView {
             <p class="mt-2">{"These dependencies enable us to work with an infinite range of connections to a central nervous system."}</p>
             <p class="mt-2"><img src="./assets/CIMArchitecture.svg" alt="Architecture" /></p>
             <p class="mt-2">{"We control the central nervous system, tools enable it to function. We favor Open Source software we control, as to not be vendor-locked into a business decision we are forced to perform. If you prefer a different tool in these positions, they are adaptable, but heavily opinionated in this current version of CIM."} </p>
-            <p class="mb-5 font-bold">{"For the latest developments on the CIM Architecture see:"}<a href="http://www.cimlabs.org/technology.html">{"CIM Labs"}</a></p>
+            <p class="mt-3 mb-5 font-bold">{"For the latest developments on the CIM Architecture see: "}<a href="http://www.cimlabs.org/technology.html">{"CIM Labs"}</a></p>
         </div>
 
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
-            <summary class="inline font-bold theme_bg-1-color-5 text-lg" id="benthos">
+            <summary class="cursor-pointer inline font-bold theme_bg-1-color-5 text-lg" id="benthos">
                 <img src="assets/logo_hero.svg" class="w-16 h-16" />
                 {"Benthos"}
             </summary>
@@ -28,7 +28,7 @@ pub fn Architecture() -> impl IntoView {
         </details>
         
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
-            <summary class="inline font-bold theme_bg-1-color-5 text-lg" id="nats">
+            <summary class="cursor-pointer inline font-bold theme_bg-1-color-5 text-lg" id="nats">
                 <img src="assets/nats-horizontal-color.png" class="w-36 h-16" />
                 {"Nats"}
             </summary>
@@ -46,7 +46,7 @@ pub fn Architecture() -> impl IntoView {
         </details>
         
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
-            <summary class="inline font-bold theme_bg-1-color-5 text-lg" id="nixos">
+            <summary class="cursor-pointer inline font-bold theme_bg-1-color-5 text-lg" id="nixos">
                 <img src="assets/nixos-hires.png" class="w-64 h-24" />
                 {"NixOS"}
             </summary>
@@ -59,7 +59,7 @@ pub fn Architecture() -> impl IntoView {
         </details>
         
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
-            <summary class="inline font-bold theme_bg-1-color-5 text-lg" id="operational-workbench---sage">
+            <summary class="cursor-pointer inline font-bold theme_bg-1-color-5 text-lg" id="operational-workbench---sage">
                 <img src="assets/logo.svg" class="h-24 w-24" />
                 {"Operational Workbench - Sage"}
             </summary>
@@ -71,7 +71,7 @@ pub fn Architecture() -> impl IntoView {
         </details>
         
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
-            <summary class="inline font-bold theme_bg-1-color-5 text-lg" id="advanced-code-generation">
+            <summary class="cursor-pointer inline font-bold theme_bg-1-color-5 text-lg" id="advanced-code-generation">
                 <img src="assets/settings.svg" class="h-24 w-24" />
                 {"Advanced Code Generation"}
             </summary>
@@ -87,7 +87,7 @@ pub fn Architecture() -> impl IntoView {
         </details>
         
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
-            <summary class="inline font-bold theme_bg-1-color-5 text-lg" id="cim-operational-structure">
+            <summary class="cursor-pointer inline font-bold theme_bg-1-color-5 text-lg" id="cim-operational-structure">
                 <img src="assets/science.svg" class="h-24 w-24" />
                 {"CIM Operational Structure"}
             </summary>
@@ -100,7 +100,7 @@ pub fn Architecture() -> impl IntoView {
         </details>
         
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
-            <summary class="inline font-bold theme_bg-1-color-5 text-lg" id="messaging">
+            <summary class="cursor-pointer inline font-bold theme_bg-1-color-5 text-lg" id="messaging">
                 <img src="assets/chat.svg" class="h-24 w-24" />
                 {"Messaging"}
             </summary>
@@ -129,8 +129,8 @@ pub fn Architecture() -> impl IntoView {
         </details>
         
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
-            <summary class="inline font-bold theme_bg-1-color-5 text-lg" id="command-flow">
-                <img src="assets/command.svg" class="h-24 w-64" />
+            <summary class="cursor-pointer inline font-bold theme_bg-1-color-5 text-lg" id="command-flow">
+                <img src="assets/command.svg" class="h-24 w-24" />
                 {"Command Flow"}
             </summary>
             <div>
