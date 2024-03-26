@@ -17,15 +17,6 @@ pub fn Landing() -> impl IntoView {
     </div>
     <div class="grid-cols-1 grid md:grid-cols-3 items-justify">
       <Card
-        route="/cim".to_string()
-        imgsrc="assets/CIM-Card.png".to_string() 
-        imgalt="CIM".to_string()
-        title="Composable Information Machine".to_string()
-        text="CIM is a new way to see the world of information. We are transitioning from the world of location-based hierarchical files with rows and columns, to something else...".to_string()
-        footer="Model your success".to_string()
-        footlink="/architecture".to_string()
-      />
-      <Card
         route="/aiintegration".to_string()
         imgsrc="assets/hands.png".to_string() 
         imgalt="AI Integration".to_string()
@@ -42,6 +33,15 @@ pub fn Landing() -> impl IntoView {
         text="A live Business Model lets you evolve. Business evolution is the continuous transformation and adaptation of a business to meet changing market demands, technology advancements, and shifts in consumer behavior. Cowboy AI delivers a model that works today and will continue to transform with you going forward.".to_string()
         footer="Automated Excellence".to_string()
         footlink="businessmodel".to_string()
+      />
+      <Card
+        route="/cim".to_string()
+        imgsrc="assets/CIM-Card.png".to_string() 
+        imgalt="CIM".to_string()
+        title="Composable Information Machine".to_string()
+        text="CIM is a new way to see the world of information. We are transitioning from the world of location-based hierarchical files with rows and columns, to something else...".to_string()
+        footer="Model your success".to_string()
+        footlink="/architecture".to_string()
       />
       <Card
         route="/existingapps".to_string()
