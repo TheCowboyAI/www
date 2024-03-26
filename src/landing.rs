@@ -62,7 +62,7 @@ pub fn Landing() -> impl IntoView {
         footlink="/askquestions".to_string()
       />
     </div>
-    <div class="grid-cols-1 grid md:grid-cols-3 items-justify">
+    <div class="grid-cols-1 grid sm: md:grid-cols-3 items-justify">
       <Card
         route="https://microsoft.com/en-US/ai".to_string()
         imgsrc="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31".to_string() 
