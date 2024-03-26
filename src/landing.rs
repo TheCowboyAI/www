@@ -71,6 +71,7 @@ pub fn Landing() -> impl IntoView {
         text="Microsoft for Startups Founders Hub helps startups radically accelerate innovation by providing access to industry-leading AI services, expert guidance, and the essential technology needed to build a future-proofed startup.".to_string()
         footer="Build the future".to_string()
         footlink="https://www.microsoft.com/en-us/startups/".to_string()
+        imgstyle="width:20%;".to_string() /* This assumes your Card component accepts an `imgstyle` prop.*/
       />
       <Card
         route="https://mvp.microsoft.com/en-US/".to_string()
