@@ -47,7 +47,7 @@ pub fn WorkRequestForm() -> impl IntoView {
             class="
               text-white 
               bg-gradient-to-br 
-              from-purple-600 
+              from-blue-900 
               to-blue-500 
               hover:bg-gradient-to-bl 
               focus:ring-4 

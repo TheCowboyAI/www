@@ -7,7 +7,7 @@ pub fn GptAccessForm() -> impl IntoView {
       class="mr-5" 
       action="https://formsubmit.co/support@thecowboy.ai" method="POST"
     >
-      <div class="my-5 p-5 flex flex-col border-black border-2 border-solid rounded-lg">
+      <div class="flex flex-col font-bold rounded-lg shadow shadow-black p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 text-xl">
         <h2 class="text-lg font-bold">
         {"Gain Access"}
         </h2>
@@ -47,8 +47,8 @@ pub fn GptAccessForm() -> impl IntoView {
             class="
               text-white 
               bg-gradient-to-br 
-              from-purple-600 
-              to-blue-500 
+              from-blue-900 
+              to-blue-600 
               hover:bg-gradient-to-bl 
               focus:ring-4 
               focus:outline-none 

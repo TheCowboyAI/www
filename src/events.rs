@@ -3,46 +3,28 @@ use leptos::*;
 #[component]
 pub fn Events() -> impl IntoView {
     view! {
-        <div class="mt-10 flex flex-col items-center animate-fadeIn">
-            <div class=""> 
-                <h1 class="font-bold text-white text-4xl md:text-6xl">
-                    <a href="/eventsourcing">
+        <div class="mt-5 animate-fadeIn">
+        <div class="flex flex-col theme_bg-1-bg-3 gap-4 rounded-xl p-3 shadow-xl shadow-black">
+            <h1 class="font-bold rounded-lg shadow shadow-black p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 text-xl" id="architecture">
+                <a href="/eventsourcing">
                     {"It's all Events..."}
-                    </a>
+                </a>
                 </h1>
-                <ul 
-                  class=" 
-                    mt-10 mr-5 py-2
-                    text-black text-xl md:text-2xl lg:text-3xl 
-                  "
-                >                
-                    <li>
-                        <a href="/audittrail">
-                        {"Audit Trail"}
-                        </a>
-                    </li>
-                    <li class="mt-5">
-                        <a href="/historicalinsight">
-                        {"Historical Insight"}
-                        </a>
-                    </li>
-                    <li class="mt-5">
-                        <a href="/projections">
-                        {"Projections"}
-                        </a>
-                    </li>
-                    <li class="mt-5">
-                        <a href="/eventstreams">
-                        {"Undo and Replay"}
-                        </a>
-                    </li>
-                    <li class="mt-5">
-                        <a href="predictions">
-                        {"Predictions"}
-                        </a>
-                    </li>
-                </ul>
-                // <Next />
+                <a href="/audittrail">
+                {"Audit Trail"}
+                </a>
+                <a href="/historicalinsight">
+                {"Historical Insight"}
+                </a>
+                <a href="/projections">
+                {"Projections"}
+                </a>
+                <a href="/eventstreams">
+                {"Undo and Replay"}
+                </a>
+                <a href="predictions">
+                {"Predictions"}
+                </a>
             </div>
         </div>
     }

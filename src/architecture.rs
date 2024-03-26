@@ -3,9 +3,11 @@ use leptos::*;
 #[component]
 pub fn Architecture() -> impl IntoView {
     view! {
-      <div class="mt-5 flex flex-col items-center animate-fadeIn">
-        <div class="theme_bg-1-bg-3 rounded-xl p-3 shadow-xl shadow-black">
-            <h1 class="font-bold rounded-lg shadow shadow-black p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 text-xl" id="architecture">{"Architecture"}</h1>
+      <div class="mt-5 animate-fadeIn">
+        <div class="flex flex-col gap-4 theme_bg-1-bg-3 rounded-xl p-3 shadow-xl shadow-black">
+            <h1 class="font-bold rounded-lg shadow shadow-black p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 text-xl" id="architecture">
+                {"Architecture"}
+            </h1>
             <p class="mt-2">{"Cowboy AI uses the concept of a CIM, a Composable Information Machine."}</p>
             <p class="mt-2">{"The Composable Information Machine relies on some dependencies, which have a fitness function for replacement."}</p>
             <p class="mt-2">{"Primarily the CIM is driven by Word Lists, Messages and Relationships. We need a way to make all these communicate and generate a working system, for that we use industry proven tools."}</p>
@@ -36,12 +38,15 @@ pub fn Architecture() -> impl IntoView {
                 <p class="mt-2">{"Our main pipeline is "} 
                     <a href="https://nats.io/">{"nats"}</a>:
                     <img class="mt-5" src="./assets/nats.png" alt="nats" /></p>
-                <p class="mt-2">{"Nats servers 3 purposes for us:"}</p>
-                <ul>
-                    <li>{"message bus"}</li>
-                    <li>{"storage gateway"}</li>
-                    <li>{"event store"}</li>
-                </ul>
+                <p class="mt-2"><a href="https://nats.io">{"Nats is an amazing tool"}</a></p>
+                <ul class="gap gap-justify">
+                    <li>{"It serves as a message bus"}</li>
+                    <li>{"Traffic is Subject based"}</li>
+                    <li>{"We use it as a storage gateway"}</li>
+                    <li>{"It takes care of our event store"}</li>
+                    <li>{"It is our cross-domain communications tool"}</li>
+                    <li>{"it makes our 'serverless' domain functions possible"}</li>
+                    </ul>
             </div>
         </details>
         

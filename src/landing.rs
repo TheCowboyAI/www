@@ -7,10 +7,10 @@ pub fn Landing() -> impl IntoView {
   view! {
     <div class="animate-fadeIn flex flex-col">
       <div>
-        <h1 class="theme_bg-1-bg-3 mx-3 rounded-xl py-2 font-bold mt-5 text-3xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
+        <h1 class="theme_bg-1-bg-2 mx-3 rounded-xl py-2 font-bold mt-5 text-3xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
           {"It's a Brave, New World"}
         </h1>
-        <h2 class="theme_bg-1-bg-3 mx-3 rounded-xl py-2 font-bold mt-5 text-xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
+        <h2 class="theme_bg-1-bg-3 mx-3 rounded-xl py-2 font-bold mt-2 text-xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
           {"Overcome Information Overload"}
         </h2>
       </div>
