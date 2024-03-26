@@ -2,7 +2,7 @@ pub mod navigate;
 pub mod footer;
 pub mod svgbutton;
 pub mod tooling;
-pub mod landing;
+pub mod oldlanding;
 pub mod workflow;
 pub mod dashboard;
 pub mod events;
@@ -51,9 +51,8 @@ pub mod landingplay;
 pub mod architecture;
 pub mod textbutton;
 pub mod cards;
-pub mod cardtest;
+pub mod landing;
 
-use crate::cardtest::CardTest;
 use crate::footer::Footer;
 use crate::navigate::Navigate;
 use crate::landing::Landing;
@@ -117,7 +116,7 @@ fn App() -> impl IntoView {
     <main class="flex flex-col flex-1 p-3 mt-10">
       <Router>
         <Routes>
-          <Route path="/" view=CardTest />
+          <Route path="/" view=Landing />
           <Route path="/tooling" view=Tooling />
           <Route path="/dashboard" view=Dashboard />
           <Route path="/workflow" view=Workflow />
@@ -163,8 +162,7 @@ fn App() -> impl IntoView {
           <Route path="/nixoswork" view=NixOSWork />
           <Route path="/landingplay" view=LandingPlay />
           <Route path="/architecture" view=Architecture />
-          <Route path="/cards" view=CardTest />
-          <Route path="/*any" view=CardTest />
+          <Route path="/*any" view=Landing />
         </Routes>
       </Router>
     </main>

@@ -227,7 +227,7 @@ body {
       transition: all 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
       background-color: #74A7C1;
       color: #000;
-      width: 200px;
+      width: 300px;
       left: 50%;
       padding: 15px 0;
       text-align: left;
