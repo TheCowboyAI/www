@@ -11,7 +11,7 @@ pub fn Landing() -> impl IntoView {
           {"It's a Brave, New World"}
         </h1>
         <h2 class="bg-[#699EBF] mx-3 rounded-xl py-2 font-bold mt-5 text-xl text-center text-white shadow-lg shadow-black">
-          {"Overcome Information Overload"} /*The Code that runs your business should have your business's inent at it's core; the programs should  */
+          {"Overcome Information Overload"} /*The Code that runs your business should have your business's inent at it's core; your software and hardware should help you do your business your way not interfere */
         </h2>
       </div>
     </div>
