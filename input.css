@@ -221,7 +221,7 @@ body {
     
     .item-list {
       position: absolute;
-      top: 90px;
+      top: 60px;
       transform: translateX(-50%) scale(0);
       transform-origin: center;
       transition: all 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
