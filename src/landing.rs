@@ -11,7 +11,7 @@ pub fn Landing() -> impl IntoView {
           {"It's a Brave, New World"}
         </h1>
         <h2 class="bg-[#699EBF] mx-3 rounded-xl py-2 font-bold mt-5 text-xl text-center text-white shadow-lg shadow-black">
-          {"Overcome Information Overload"}
+          {"Overcome Information Overload"} /*The Code that runs your business should have your business's inent at it's core; the programs should  */
         </h2>
       </div>
     </div>
@@ -61,6 +61,8 @@ pub fn Landing() -> impl IntoView {
         footer="Personal AI Assistants".to_string()
         footlink="/askquestions".to_string()
       />
+    </div>
+    <div class="grid-cols-1 grid md:grid-cols-3 items-justify">
       <Card
         route="https://microsoft.com/en-US/ai".to_string()
         imgsrc="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31".to_string() 
