@@ -5,8 +5,8 @@ use crate::workform::WorkRequestForm;
 #[component]
 pub fn Solutions() -> impl IntoView {
     view! {
-        <div class="flex items-center animate-fadeIn mt-5">
-            <div class="flex-row">
+        <div class="flex flex-col items-center animate-fadeIn mt-5">
+            <div class="">
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                 {"Solutions"}
                 </h1>

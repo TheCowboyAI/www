@@ -3,8 +3,8 @@ use leptos::*;
 #[component]
 pub fn Tooling() -> impl IntoView {
     view! {
-        <div class="mt-10 flex items-center animate-fadeIn">
-            <div class="flex-row"> 
+        <div class="mt-10 flex flex-col items-center animate-fadeIn">
+            <div class=""> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                 <a href="/modeledintelligence">
                 {"Modeled Intelligence"}

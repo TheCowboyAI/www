@@ -3,8 +3,8 @@ use leptos::*;
 #[component]
 pub fn Workflow() -> impl IntoView {
     view! {
-        <div class="flex items-center animate-fadeIn">
-            <div class="mt-10 flex-row"> 
+        <div class="flex flex-col items-center animate-fadeIn">
+            <div class="mt-10"> 
                 <h1 class="font-bold text-white text-4xl md:text-6xl">
                 {"Workflows"}
                 </h1>
