@@ -13,6 +13,9 @@ pub fn OurGPTs() -> impl IntoView {
                 <h3 class="mt-5 text-center text-2xl md:text-3xl lg:text-4xl font-bold">
                 {"Library of Agents"}
                 </h3>
+                <h3 class="mt-5 text-center text-lg lg:text-xl font-bold">
+                {"Available on OpenAI and with API Access"}
+                </h3>
                 <img src="assets/gpts.png" class="mt-5 rounded-lg shadow-lg shadow-black" />
                 <GptAccessForm />
             </div>
