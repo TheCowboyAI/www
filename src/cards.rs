@@ -31,6 +31,7 @@ pub fn Card(
         shadow-black 
         sm:shrink-0 
         sm:grow sm:basis-0
+        items-center
       "
     >
     <a href={route}>

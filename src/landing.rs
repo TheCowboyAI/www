@@ -71,7 +71,7 @@ pub fn Landing() -> impl IntoView {
         footlink="https://www.microsoft.com/en-us/startups/".to_string()
       />
       <Card
-        route="https://mvp.microsoft.com/en-US/".to_string()
+        route="https://www.microsoft.com/en-us/ai".to_string()
         imgsrc="assets/mvp_alumni_logo.png".to_string() 
         imgalt="MVP Alumni".to_string()
         title="MVP Alumni".to_string()
