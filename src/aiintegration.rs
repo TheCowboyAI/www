@@ -3,10 +3,10 @@ use leptos::*;
 #[component]
 pub fn AIIntegration() -> impl IntoView {
     view! {
-        <div class="mt-10 flex items-center animate-fadeIn">
-        <div class="flex-row"> 
-            <h1 class="font-bold text-white text-4xl md:text-6xl">
-                {"Cowboy AI: Your AI Integration Experts"}
+        <div class="mt-10 flex flex-col items-center animate-fadeIn">
+        <div class="theme_bg-1-bg-3 rounded-xl p-3 shadow-xl shadow-black"> 
+        <h1 class="font-bold rounded-lg p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 shadow-lg shadow-black text-2xl md:text-4xl">
+            {"AI Integration Experts"}
             </h1>
             <p class="mt-5">
                 {"Cowboy AI stands at the forefront of AI integration, expertly navigating the complexities of artificial intelligence to tailor solutions that are perfectly aligned with your business needs. As AI Integration Experts, Cowboy AI ensures that your systems are intelligent, efficient, and strategically designed to drive growth and innovation."}
@@ -19,7 +19,7 @@ pub fn AIIntegration() -> impl IntoView {
             >
                 <li class="mt-5">                    
                     <details class="text-black text-sm">
-                        <summary class="text-white text-base font-bold">
+                        <summary class="theme_bg-1-color-5 text-base font-bold">
                             {"Tailored AI Solutions"}
                         </summary>
                         <p>
@@ -29,7 +29,7 @@ pub fn AIIntegration() -> impl IntoView {
                 </li>
                 <li class="mt-5">                    
                     <details class="text-black text-sm">
-                        <summary class="text-white text-base font-bold">
+                        <summary class="theme_bg-1-color-5 text-base font-bold">
                             {"Seamless System Integration"}
                         </summary>
                         <p>
@@ -39,7 +39,7 @@ pub fn AIIntegration() -> impl IntoView {
                 </li>
                 <li class="mt-5">                    
                     <details class="text-black text-sm">
-                        <summary class="text-white text-base font-bold">
+                        <summary class="theme_bg-1-color-5 text-base font-bold">
                             {"Strategic Business Alignment"}
                         </summary>
                         <p>

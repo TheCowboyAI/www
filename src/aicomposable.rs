@@ -3,11 +3,11 @@ use leptos::*;
 #[component]
 pub fn AIComposable() -> impl IntoView {
     view! {
-      <div class="mt-10 flex items-center animate-fadeIn">
-      <div class="flex-row"> 
-          <h1 class="font-bold text-white text-4xl md:text-6xl">
+      <div class="mt-10 flex flex-col items-center animate-fadeIn">
+      <div class="theme_bg-1-bg-3 rounded-xl p-3 shadow-xl shadow-black"> 
+          <h1 class="font-bold rounded-lg p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 shadow-lg shadow-black text-2xl md:text-4xl">
               {"AI Composable Insights"}
-          </h1>
+          </h1> 
           <p class="mt-5">
               {"AI Composable Insights represent a modular approach in AI, where insights are generated through the assembly and reuse of various AI components. This method promotes flexibility, adaptability, and efficiency in AI-driven solutions."}
           </p>
@@ -19,7 +19,7 @@ pub fn AIComposable() -> impl IntoView {
           >
               <li class="mt-5">                    
                   <details class="text-black text-sm">
-                      <summary class="text-white text-base font-bold">
+                      <summary class="theme_bg-1-color-5 text-base font-bold">
                           {"Modularity"}
                       </summary>
                       <p>
@@ -29,7 +29,7 @@ pub fn AIComposable() -> impl IntoView {
               </li>
               <li class="mt-5">                    
                   <details class="text-black text-sm">
-                      <summary class="text-white text-base font-bold">
+                      <summary class="theme_bg-1-color-5 text-base font-bold">
                           {"Flexibility & Adaptability"}
                       </summary>
                       <p>
@@ -39,7 +39,7 @@ pub fn AIComposable() -> impl IntoView {
               </li>
               <li class="mt-5">                    
                   <details class="text-black text-sm">
-                      <summary class="text-white text-base font-bold">
+                      <summary class="theme_bg-1-color-5 text-base font-bold">
                           {"Efficiency & Scalability"}
                       </summary>
                       <p>
