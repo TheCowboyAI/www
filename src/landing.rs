@@ -62,7 +62,7 @@ pub fn Landing() -> impl IntoView {
         footlink="/askquestions".to_string()
       />
       <Card
-        route="https://microsoft.com".to_string()
+        route="https://microsoft.com/en-US/ai".to_string()
         imgsrc="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31".to_string() 
         imgalt="Startup Hub".to_string()
         title="Founders Hub Member".to_string()
@@ -71,7 +71,7 @@ pub fn Landing() -> impl IntoView {
         footlink="https://www.microsoft.com/en-us/startups/".to_string()
       />
       <Card
-        route="https://www.microsoft.com/en-us/ai".to_string()
+        route="https://mvp.microsoft.com/en-US/".to_string()
         imgsrc="assets/mvp_alumni_logo.png".to_string() 
         imgalt="MVP Alumni".to_string()
         title="MVP Alumni".to_string()

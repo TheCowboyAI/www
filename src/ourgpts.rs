@@ -5,7 +5,7 @@ use crate::gptaccessform::GptAccessForm;
 #[component]
 pub fn OurGPTs() -> impl IntoView {
     view! {
-        <div class="mt-5 flex items-center animate-fadeIn">
+        <div class="mt-5 flex flex-col items-center animate-fadeIn">
             <div class="flex-row">
                 <h2 class="font-bold text-white text-4xl lg:text-6xl text-center">
                     {"Custom GPTs"}
