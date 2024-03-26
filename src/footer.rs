@@ -3,9 +3,8 @@ use leptos::*;
 #[component]
 pub fn Footer() -> impl IntoView {
     view! {
-        <div class="rounded-lg leading-6 p-2 text-black border-black border border-solid">
-            <p class="text-xs">Copyright 2024</p>
-            <p class="text-xs">Cowboy AI</p>
+        <div class="m-2 rounded-lg p-2 text-black border-black border border-solid">
+            <p class="text-[8px]">{"Copyright 2024 - Cowboy AI"}</p>
         </div>
     }
 }
