@@ -245,8 +245,8 @@ body {
       transform: translateX(-50%) scale(0);
       transform-origin: center;
       transition: all 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
-      background-color: #4E84A6;
-      color: #000;
+      background-color: #274259;
+      color: #D8D9C1;
       width: 300px;
       left: 50%;
       padding: 15px 0;
@@ -298,4 +298,8 @@ body {
     }
   }
   
-  
+.icon-stroke {
+  fill: #D8D9C1;
+  stroke-width: 2;
+  stroke: #D8D9C1;
+}

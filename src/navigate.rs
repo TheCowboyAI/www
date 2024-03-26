@@ -37,11 +37,11 @@ pub fn Navigate() -> impl IntoView {
                         </label>
                     </div>
                     <div class="item-list">
-                        <ul class="text-black text-base">
+                        <ul class="theme_bg-1-color-5 text-base">
                             <li>
                                 <a href="/tooling" 
                                     class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                    <img src="assets/tools.svg" class="w-8" />
+                                    <img src="assets/tools.svg" class="icon-stroke w-8" />
                                     <span class="ml-3">
                                         {"Tooling"}
                                     </span>
@@ -50,7 +50,7 @@ pub fn Navigate() -> impl IntoView {
                             <li>
                                 <a href="/dashboard"
                                 class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/dashboard.svg" class="w-8" />
+                                <img src="assets/dashboard.svg" class="icon-stroke w-8" />
                                 <span class="ml-3">
                                     {"Dashboard"}
                                 </span>
@@ -59,7 +59,7 @@ pub fn Navigate() -> impl IntoView {
                             <li>
                                 <a href="/workflow"
                                 class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/workflow.svg" class="w-8" />
+                                <img src="assets/workflow.svg" class="icon-stroke w-8" />
                                 <span class="ml-3">{"Workflow"}</span>
                                 
                                 </a>
@@ -67,28 +67,28 @@ pub fn Navigate() -> impl IntoView {
                             <li>
                                 <a href="/events"
                                 class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/events.svg" class="w-8" />
+                                <img src="assets/events.svg" class="icon-stroke w-8" />
                                 <span class="ml-3">{"Events"}</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="/people"
                                 class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/people.svg" class="w-8" />
+                                <img src="assets/people.svg" class="icon-stroke w-8" />
                                 <span class="ml-3">{"People"}</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="/gpts"
                                 class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/science.svg" class="w-8" />
+                                <img src="assets/science.svg" class="icon-stroke w-8" />
                                 <span class="ml-3">{"Personal Agents"}</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="/customwork"
                                 class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/settings.svg" class="w-8" />
+                                <img src="assets/settings.svg" class="icon-stroke w-8" />
                                 <span class="ml-3">{"Solutions"}</span>
                                 </a>
                             </li>

@@ -11,7 +11,8 @@ pub fn Architecture() -> impl IntoView {
             <p class="mt-2">{"Primarily the CIM is driven by Word Lists, Messages and Relationships. We need a way to make all these communicate and generate a working system, for that we use industry proven tools."}</p>
             <p class="mt-2">{"These dependencies enable us to work with an infinite range of connections to a central nervous system."}</p>
             <p class="mt-2"><img src="./assets/CIMArchitecture.svg" alt="Architecture" /></p>
-            <p class="mb-5">{"We control the central nervous system, tools enable it to function. We favor Open Source software we control, as to not be vendor-locked into a business decision we are forced to perform. If you prefer a different tool in these positions, they are adaptable, but heavily opinionated in this current version of CIM. For the latest developments on the CIM Architecture "} <span class="font-bold">see: </span><a href="http://www.cimlabs.org">{"CIM Labs"}</a></p>
+            <p class="mt-2">{"We control the central nervous system, tools enable it to function. We favor Open Source software we control, as to not be vendor-locked into a business decision we are forced to perform. If you prefer a different tool in these positions, they are adaptable, but heavily opinionated in this current version of CIM."} </p>
+            <p class="mb-5 font-bold">{"For the latest developments on the CIM Architecture see:"}<a href="http://www.cimlabs.org/technology.html">{"CIM Labs"}</a></p>
         </div>
 
         <details class="w-full text-left theme_bg-1-bg-3 rounded-xl mt-5 p-3 shadow-xl shadow-black">
