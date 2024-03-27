@@ -5,8 +5,8 @@ use crate::footer::Footer;
 pub fn Navigate() -> impl IntoView {
     view! {
         <nav class="
-        flex fixed w-full h-16 rounded-lg rounded-b items-center justify-between 
-        px-6 theme_bg-1-bg-3 text-black z-10
+        flex fixed w-full h-16 rounded-xl items-center justify-between 
+        px-6 theme_bg-1-bg-3 text-black z-10 shadow shadow-black
         ">
             <div id="logo" class="p-2">
                 <a href="/">
