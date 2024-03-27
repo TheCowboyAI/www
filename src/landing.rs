@@ -22,7 +22,7 @@ pub fn Landing() -> impl IntoView {
               </h2>
           </div>
       </div>
-      <div class="grid-cols-1 grid md:grid-cols-3 items-justify">
+      <div class="grid-cols-1 grid md:grid-cols-3">
           <Card
               route="/aiintegration".to_string()
               imgsrc="assets/hands.png".to_string()
