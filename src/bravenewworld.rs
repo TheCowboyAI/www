@@ -9,7 +9,7 @@ pub fn NewWorld() -> impl IntoView {
               {"The Brave, New World"}
                 </h1>
                 <p>
-                    {"The challenge is to harness the immense potential of technology in a way that enhances individual freedom and creativity while also addressing the critical issues of resource management and sustainability. Through thoughtful design, governance, and cooperation, it's possible to navigate these complex dynamics and create a digital ecosystem that benefits everyone."}
+                    {"We're on a mission to make tech work for you and me in a way that lets us express ourselves freely and creatively, without messing up our planet or using up all our stuff carelessly. By carefully crafting our digital tools, setting smart rules, and all of us pitching in together, we can build a digital world that's better for all of us."}
                 </p>
                 <details class="text-black text-sm">
                     <summary class="theme_bg-1-color-5 text-base font-bold">
@@ -52,7 +52,7 @@ pub fn NewWorld() -> impl IntoView {
                 <h2 class="font-bold italic text-lg">
                 {"Cowboy AI changes the landscape."}                </h2>
                 <p>
-                    {"We use a Business Model coupled with known standards of configuring and deploying compute resources in real-time. You create configurations... No, not by hand, but instead with real guidance drawn directly from the Applications and Workflows that are important to you."}
+                    {"We've got a game plan that uses a solid business strategy along with the usual ways of setting up and running computer stuff on the fly. You get to tweak settings... But chill, you don't have to do it from scratch. You'll get legit pointers straight from the apps and tasks you actually care about carfully filtered through AI to optimize your experience."}
                 </p>
 
                 <a href="https://github.com/TheCowboyAI/cim-start">
