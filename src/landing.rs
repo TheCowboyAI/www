@@ -7,6 +7,7 @@ pub fn Landing() -> impl IntoView {
   view! {
       <div class="animate-fadeIn flex flex-col">
           <div>
+          <a href="/newworld">
               <h1 class="
                 theme_bg-1-bg-2 theme_bg-1-color-5
                 mx-3 rounded-xl py-2 mt-5  
@@ -15,6 +16,7 @@ pub fn Landing() -> impl IntoView {
                 ">
                   {"It's a Brave, New World"}
               </h1>
+            </a>
               <h2 class="theme_bg-1-bg-3 mx-3 shadow-text-black rounded-xl py-2 font-bold mt-2 text-xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
                   {"Overcome Information Overload"}
               </h2>

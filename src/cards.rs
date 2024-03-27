@@ -29,7 +29,9 @@ pub fn Card(
       sm:grow sm:basis-0
       items-center
       ">
-          <a href=route>
+          <a href={route}
+            title="Would you like to know more?"
+          >
               <img class="rounded-lg" src=imgsrc alt=imgalt/>
           </a>
           <div class="p-2">

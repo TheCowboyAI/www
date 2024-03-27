@@ -52,6 +52,7 @@ pub mod architecture;
 pub mod textbutton;
 pub mod cards;
 pub mod landing;
+pub mod bravenewworld;
 
 use crate::footer::Footer;
 use crate::navigate::Navigate;
@@ -100,6 +101,7 @@ use crate::nixoswork::NixOSWork;
 use crate::aiintegration::AIIntegration;
 use crate::landingplay::LandingPlay;
 use crate::architecture::Architecture;
+use crate::bravenewworld::NewWorld;
 
 use leptos::*;
 use leptos_router::*;
@@ -111,9 +113,9 @@ fn main() {
 #[component]
 fn App() -> impl IntoView {
   view! {
-      <div class="bg flex flex-col">
+      <div class="bg flex flex-col flex-1">
           <Navigate/>
-          <main class="flex flex-col flex-1 p-3 mt-10">
+          <main class="flex flex-col gap-4 flex-1 p-3 mt-10">
               <Router>
                   <Routes>
                       <Route path="/" view=Landing/>
@@ -162,11 +164,12 @@ fn App() -> impl IntoView {
                       <Route path="/nixoswork" view=NixOSWork/>
                       <Route path="/landingplay" view=LandingPlay/>
                       <Route path="/architecture" view=Architecture/>
+                      <Route path="/newworld" view=NewWorld/>
                       <Route path="/*any" view=Landing/>
                   </Routes>
               </Router>
           </main>
-          <Footer/>
+          <Footer />
       </div>
   }
 }
