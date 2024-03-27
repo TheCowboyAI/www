@@ -11,6 +11,7 @@ pub fn Events() -> impl IntoView {
                 >
                     <a href="/eventsourcing">{"It's all Events..."}</a>
                 </h1>
+                <a href="/context">{"Event Modeling"}</a>
                 <a href="/audittrail">{"Audit Trail"}</a>
                 <a href="/historicalinsight">{"Historical Insight"}</a>
                 <a href="/projections">{"Projections"}</a>
