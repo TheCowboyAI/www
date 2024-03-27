@@ -44,8 +44,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {
-    /*min-height: 100%;
-    background-color: #699EBF;*/
+    background-color: #274259;
     background-image: url("assets/bg-1.webp");
     background-size: cover;
     background-repeat: no-repeat;
