@@ -54,15 +54,18 @@ pub fn NewWorld() -> impl IntoView {
                 <p>
                     {"We use a Business Model coupled with known standards of configuring and deploying compute resources in real-time. You create configurations... No, not by hand, but instead with real guidance drawn directly from the Applications and Workflows that are important to you."}
                 </p>
-                <p class="shadow-text-black rounded-lg shadow shadow-black p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 text-lg">
-                <span class="font-bold italic">
-                  {"It's a paradigm shift in innovation."}
-                </span>
-                <br/>
-                <span>
-                  {"We can create our own platform and not get lost in the maintenance."}
-                </span>
-                </p>
+
+                <a href="https://github.com/TheCowboyAI/cim-start">
+                  <p class="shadow-text-black rounded-lg shadow shadow-black p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 text-lg">
+                    <span class="font-bold italic">
+                      {"It's a paradigm shift in innovation."}
+                    </span>
+                    <br/>
+                    <span>
+                      {"We can create our own platform and not get lost in the maintenance."}
+                    </span>
+                  </p>
+                </a>
             </div>
         </div>
     }
