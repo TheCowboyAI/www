@@ -32,22 +32,27 @@ pub fn NewWorld() -> impl IntoView {
                         {"Just keeping up with the daily industry changes is a full-time job. It doesn't matter what Operating System you choose, or where you put things, it's all changed."}
                       </p>
                       <p>
-                      {"The cloud changes everything, but it's also the same.  We just shifted platforms. Hardware became a commodity we can rent or I can do a bunch of things with IOT that used to need full PCs. I don't need to go buy a giant workstation to do some work, then get stuck with it not being utilized for a long time."}
+                        {"We would have to buy new equipment every few years just to keep up with the steady march of Moore's Law. This is not only impractical for most people, it's become something we don't 'need'."}
                       </p>
                       <p>
-                      {"We would have to buy new equipment every few years just to keep up with the steady march of Moore's Law. This is not only impractical for most people, it's become something we don't 'need'."}
+                        {"I'm certainly not saying you should throw everything away and use the cloud for everything... We usually have some blend of equipment and that in itself becomes a nightmare to maintain."}
                       </p>
                       <p>
-                      {"I'm certainly not saying you should throw everything away and use the cloud for everything... We usually have some blend of equipment and that in itself becomes a nightmare to maintain."}
+                        {"Shift to Containers, became the battle-cry a few years ago, that's lovely... Now, how do I manage a hundred containers and keep them all up to date?"}
                       </p>
                       <p>
-                      {"Shift to Containers, became the battle-cry a few years ago, that's lovely... Now, how do I manage a hundred containers and keep them all up to date?"}
+                        {"The cloud changes everything, but it's also the same.  We just shifted platforms. Hardware became a commodity we can rent or I can do a bunch of things with IOT that used to need full PCs. I don't need to go buy a giant workstation to do some work, then get stuck with it not being utilized for a long time."}
+                      </p>
+                      <p>
+                        <span class="font-bold">{"Enter AI - "}</span>
+                        <span>{"AI truly changes everything, and I am not just referring to things like ChatGPT and Co-pilot, we are talking about internal, tuned engines that can be instructed to perform amazing language based tasks."}</span>
                       </p>
                     </div>
                 </details>
-
+                <h2 class="font-bold italic text-lg">
+                {"Cowboy AI changes the landscape."}                </h2>
                 <p>
-                    {"Cowboy AI uses a Business Model coupled with known standards of configuring and deploying compute resources in real-time. You create configurations... No, not by hand, but instead with real guidance drawn directly from the Applications and Workflows that are important to you."}
+                    {"We use a Business Model coupled with known standards of configuring and deploying compute resources in real-time. You create configurations... No, not by hand, but instead with real guidance drawn directly from the Applications and Workflows that are important to you."}
                 </p>
                 <p class="shadow-text-black rounded-lg shadow shadow-black p-2 text-center theme_bg-1-bg-2 theme_bg-1-color-5 text-lg">
                 <span class="font-bold italic">
