@@ -303,3 +303,21 @@ body {
   stroke-width: 2;
   stroke: #D8D9C1;
 }
+
+.shadow-text-light {
+  text-shadow: 1px 1px 3px #D8D9C1;
+}
+
+.shadow-text-black {
+  text-shadow: 1px 1px 3px black;
+}
+
+.logo-shadow {
+    -webkit-filter: drop-shadow( 1px 1px 2px #D8D9C1);
+    filter: drop-shadow( 1px 1px 2px #D8D9C1);
+}
+
+.menu-shadow {
+  -webkit-filter: drop-shadow( 2px 2px 3px #D8D9C1);
+  filter: drop-shadow( 2px 2px 3px #D8D9C1);
+}

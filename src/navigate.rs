@@ -10,18 +10,18 @@ pub fn Navigate() -> impl IntoView {
         ">
             <div id="logo" class="p-2">
                 <a href="/">
-                    <div class="py-4 flex items-center w-14">
+                    <div class="py-4 flex items-center w-14 logo-shadow">
                         <img src="assets/logo.svg" alt="Cowboy AI Logo" title="Cowboy AI"/>
                     </div>
                 </a>
             </div>
 
             <div id="title">
-                <span class="font-bold text-4xl theme_bg-1-color-2">{"Cowboy AI"}</span>
+                <span class="font-bold shadow-text-light text-4xl theme_bg-1-color-2">{"Cowboy AI"}</span>
             </div>
 
             <div>
-                <label class="menu-button-wrapper" for="menubutton">
+                <label class="menu-button-wrapper menu-shadow" for="menubutton">
                     <input id="menubutton" type="checkbox" class="menu-button"/>
 
                     <div class="icon-wrapper">

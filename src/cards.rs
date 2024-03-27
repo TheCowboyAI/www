@@ -33,7 +33,7 @@ pub fn Card(
               <img class="rounded-lg" src=imgsrc alt=imgalt/>
           </a>
           <div class="p-2">
-              <h5 class="text-black font-bold mb-3 text-xl">{title}</h5>
+              <h5 class="text-black shadow-text-light font-bold mb-3 text-2xl">{title}</h5>
               <p class="shadow-lg shadow-black rounded-lg p-3 theme_bg-1-bg-1 theme_bg-1-color-5 mb-4 text-base">
                   {text}
               </p>

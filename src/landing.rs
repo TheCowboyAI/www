@@ -7,10 +7,15 @@ pub fn Landing() -> impl IntoView {
   view! {
       <div class="animate-fadeIn flex flex-col">
           <div>
-              <h1 class="theme_bg-1-bg-2 mx-3 rounded-xl py-2 font-bold mt-5 text-3xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
+              <h1 class="
+                theme_bg-1-bg-2 theme_bg-1-color-5
+                mx-3 rounded-xl py-2 mt-5  
+                font-bold text-3xl text-center
+                shadow-lg shadow-black shadow-text-black
+                ">
                   {"It's a Brave, New World"}
               </h1>
-              <h2 class="theme_bg-1-bg-3 mx-3 rounded-xl py-2 font-bold mt-2 text-xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
+              <h2 class="theme_bg-1-bg-3 mx-3 shadow-text-black rounded-xl py-2 font-bold mt-2 text-xl text-center theme_bg-1-color-5 shadow-lg shadow-black">
                   {"Overcome Information Overload"}
               </h2>
           </div>
@@ -67,7 +72,7 @@ pub fn Landing() -> impl IntoView {
               footlink="/askquestions".to_string()
           />
 
-          <div class="md:col-span-3 theme_bg-1-bg-3 font-bold rounded-xl theme_bg-1-color-5 shadow-lg shadow-black mt-10 py-3 px-3 mx-3 flex items-center text-sm before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:before:border-gray-600 dark:after:border-gray-600">
+          <div class="shadow-text-black md:col-span-3 theme_bg-1-bg-3 font-bold rounded-xl theme_bg-1-color-5 shadow-lg shadow-black mt-10 py-3 px-3 mx-3 flex items-center text-sm before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:before:border-gray-600 dark:after:border-gray-600">
               {" Community Involvement "}
           </div>
 
