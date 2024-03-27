@@ -7,9 +7,9 @@ pub fn CimSvg() -> impl IntoView {
 
     view! {
         <div class="mt-5 items-center justify-center
-            ">
+        ">
             <a href="/cim" class="">
-            <div class="svg-container" inner_html={svg_content} />
+                <div class="svg-container" inner_html=svg_content></div>
             </a>
         </div>
     }

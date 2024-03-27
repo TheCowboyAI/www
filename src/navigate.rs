@@ -22,15 +22,11 @@ pub fn Navigate() -> impl IntoView {
 
             <div>
                 <label class="menu-button-wrapper" for="menubutton">
-                    <input 
-                        id="menubutton"
-                        type="checkbox" 
-                        class="menu-button"                        
-                    />
+                    <input id="menubutton" type="checkbox" class="menu-button"/>
 
                     <div class="icon-wrapper">
                         <label class="hamburger">
-                            <input class="hamburger-input" type="checkbox" />
+                            <input class="hamburger-input" type="checkbox"/>
                             <span class="hamburger-line first"></span>
                             <span class="hamburger-line second"></span>
                             <span class="hamburger-line third"></span>
@@ -39,57 +35,67 @@ pub fn Navigate() -> impl IntoView {
                     <div class="item-list">
                         <ul class="theme_bg-1-color-5 text-base">
                             <li>
-                                <a href="/tooling" 
-                                    class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                    <img src="assets/tools.svg" class="icon-stroke w-8" />
-                                    <span class="ml-3">
-                                        {"Tooling"}
-                                    </span>
+                                <a
+                                    href="/tooling"
+                                    class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black"
+                                >
+                                    <img src="assets/tools.svg" class="icon-stroke w-8"/>
+                                    <span class="ml-3">{"Tooling"}</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/dashboard"
-                                class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/dashboard.svg" class="icon-stroke w-8" />
-                                <span class="ml-3">
-                                    {"Dashboard"}
-                                </span>
+                                <a
+                                    href="/dashboard"
+                                    class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black"
+                                >
+                                    <img src="assets/dashboard.svg" class="icon-stroke w-8"/>
+                                    <span class="ml-3">{"Dashboard"}</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/workflow"
-                                class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/workflow.svg" class="icon-stroke w-8" />
-                                <span class="ml-3">{"Workflow"}</span>
-                                
+                                <a
+                                    href="/workflow"
+                                    class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black"
+                                >
+                                    <img src="assets/workflow.svg" class="icon-stroke w-8"/>
+                                    <span class="ml-3">{"Workflow"}</span>
+
                                 </a>
                             </li>
                             <li>
-                                <a href="/events"
-                                class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/events.svg" class="icon-stroke w-8" />
-                                <span class="ml-3">{"Events"}</span>
+                                <a
+                                    href="/events"
+                                    class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black"
+                                >
+                                    <img src="assets/events.svg" class="icon-stroke w-8"/>
+                                    <span class="ml-3">{"Events"}</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/people"
-                                class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/people.svg" class="icon-stroke w-8" />
-                                <span class="ml-3">{"People"}</span>
+                                <a
+                                    href="/people"
+                                    class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black"
+                                >
+                                    <img src="assets/people.svg" class="icon-stroke w-8"/>
+                                    <span class="ml-3">{"People"}</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/gpts"
-                                class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/science.svg" class="icon-stroke w-8" />
-                                <span class="ml-3">{"Personal Agents"}</span>
+                                <a
+                                    href="/gpts"
+                                    class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black"
+                                >
+                                    <img src="assets/science.svg" class="icon-stroke w-8"/>
+                                    <span class="ml-3">{"Personal Agents"}</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/customwork"
-                                class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black">
-                                <img src="assets/settings.svg" class="icon-stroke w-8" />
-                                <span class="ml-3">{"Solutions"}</span>
+                                <a
+                                    href="/customwork"
+                                    class="flex flex-row px-2 py-1 border border-transparent border-solid border-1 hover:border-black"
+                                >
+                                    <img src="assets/settings.svg" class="icon-stroke w-8"/>
+                                    <span class="ml-3">{"Solutions"}</span>
                                 </a>
                             </li>
                         </ul>

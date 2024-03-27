@@ -111,62 +111,62 @@ fn main() {
 #[component]
 fn App() -> impl IntoView {
   view! {
-  <div class="app flex flex-col">
-    <Navigate />
-    <main class="flex flex-col flex-1 p-3 mt-10">
-      <Router>
-        <Routes>
-          <Route path="/" view=Landing />
-          <Route path="/tooling" view=Tooling />
-          <Route path="/dashboard" view=Dashboard />
-          <Route path="/workflow" view=Workflow />
-          <Route path="/events" view=Events />
-          <Route path="/people" view=People />
-          <Route path="/gpts" view=OurGPTs />
-          <Route path="/customwork" view=Solutions />
-          <Route path="/solutions" view=Solutions />
-          <Route path="/businessmodel" view=BusinessModel />
-          <Route path="/simplewords" view=SimpleWords />
-          <Route path="/businessevolution" view=BusinessEvolution />
-          <Route path="/aicomposable" view=AIComposable />
-          <Route path="/aiintegration" view=AIIntegration />
-          <Route path="/eventsourcing" view=EventSourcing />
-          <Route path="/modeledintelligence" view=ModeledIntelligence />
-          <Route path="/gametheory" view=GameTheory />
-          <Route path="/generatecontent" view=GenerateContent />
-          <Route path="/context" view=Context />
-          <Route path="/naturallanguage" view=NaturalLanguage />
-          <Route path="/deterministic" view=Deterministic />
-          <Route path="/askquestions" view=AskQuestions />
-          <Route path="/codegeneration" view=CodeGeneration />
-          <Route path="/existingapps" view=ExistingApps />
-          <Route path="/newfunctionality" view=NewFunctionality />
-          <Route path="/cim" view=Cim />
-          <Route path="/audittrail" view=AuditTrail />
-          <Route path="/historicalinsight" view=HistoricalInsight />
-          <Route path="/projections" view=Projections />
-          <Route path="/eventstreams" view=EventStreams />
-          <Route path="/predictions" view=Predictions />
-          <Route path="/realtimemonitoring" view=RealTimeMonitoring />
-          <Route path="/pushtomobile" view=PushToMobile />
-          <Route path="/decisionmaking" view=DecisionMaking />
-          <Route path="/communications" view=Communications />
-          <Route path="/security" view=Security />
-          <Route path="/visualize" view=Visualize />
-          <Route path="/collaborate" view=Collaborate />
-          <Route path="/ubiquitouslanguage" view=UbiquitousLanguage />
-          <Route path="/customersupport" view=CustomerSupport />
-          <Route path="/customgpts" view=CustomGPTs />
-          <Route path="/workshops" view=Workshops />
-          <Route path="/workshopform" view=WorkshopForm />
-          <Route path="/nixoswork" view=NixOSWork />
-          <Route path="/landingplay" view=LandingPlay />
-          <Route path="/architecture" view=Architecture />
-          <Route path="/*any" view=Landing />
-        </Routes>
-      </Router>
-    </main>
-    <Footer />
-  </div>
+      <div class="app flex flex-col">
+          <Navigate/>
+          <main class="flex flex-col flex-1 p-3 mt-10">
+              <Router>
+                  <Routes>
+                      <Route path="/" view=Landing/>
+                      <Route path="/tooling" view=Tooling/>
+                      <Route path="/dashboard" view=Dashboard/>
+                      <Route path="/workflow" view=Workflow/>
+                      <Route path="/events" view=Events/>
+                      <Route path="/people" view=People/>
+                      <Route path="/gpts" view=OurGPTs/>
+                      <Route path="/customwork" view=Solutions/>
+                      <Route path="/solutions" view=Solutions/>
+                      <Route path="/businessmodel" view=BusinessModel/>
+                      <Route path="/simplewords" view=SimpleWords/>
+                      <Route path="/businessevolution" view=BusinessEvolution/>
+                      <Route path="/aicomposable" view=AIComposable/>
+                      <Route path="/aiintegration" view=AIIntegration/>
+                      <Route path="/eventsourcing" view=EventSourcing/>
+                      <Route path="/modeledintelligence" view=ModeledIntelligence/>
+                      <Route path="/gametheory" view=GameTheory/>
+                      <Route path="/generatecontent" view=GenerateContent/>
+                      <Route path="/context" view=Context/>
+                      <Route path="/naturallanguage" view=NaturalLanguage/>
+                      <Route path="/deterministic" view=Deterministic/>
+                      <Route path="/askquestions" view=AskQuestions/>
+                      <Route path="/codegeneration" view=CodeGeneration/>
+                      <Route path="/existingapps" view=ExistingApps/>
+                      <Route path="/newfunctionality" view=NewFunctionality/>
+                      <Route path="/cim" view=Cim/>
+                      <Route path="/audittrail" view=AuditTrail/>
+                      <Route path="/historicalinsight" view=HistoricalInsight/>
+                      <Route path="/projections" view=Projections/>
+                      <Route path="/eventstreams" view=EventStreams/>
+                      <Route path="/predictions" view=Predictions/>
+                      <Route path="/realtimemonitoring" view=RealTimeMonitoring/>
+                      <Route path="/pushtomobile" view=PushToMobile/>
+                      <Route path="/decisionmaking" view=DecisionMaking/>
+                      <Route path="/communications" view=Communications/>
+                      <Route path="/security" view=Security/>
+                      <Route path="/visualize" view=Visualize/>
+                      <Route path="/collaborate" view=Collaborate/>
+                      <Route path="/ubiquitouslanguage" view=UbiquitousLanguage/>
+                      <Route path="/customersupport" view=CustomerSupport/>
+                      <Route path="/customgpts" view=CustomGPTs/>
+                      <Route path="/workshops" view=Workshops/>
+                      <Route path="/workshopform" view=WorkshopForm/>
+                      <Route path="/nixoswork" view=NixOSWork/>
+                      <Route path="/landingplay" view=LandingPlay/>
+                      <Route path="/architecture" view=Architecture/>
+                      <Route path="/*any" view=Landing/>
+                  </Routes>
+              </Router>
+          </main>
+          <Footer/>
+      </div>
   }
 }
