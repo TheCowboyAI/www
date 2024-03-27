@@ -111,7 +111,7 @@ fn main() {
 #[component]
 fn App() -> impl IntoView {
   view! {
-      <div class="app flex flex-col">
+      <div class="bg flex flex-col">
           <Navigate/>
           <main class="flex flex-col flex-1 p-3 mt-10">
               <Router>
