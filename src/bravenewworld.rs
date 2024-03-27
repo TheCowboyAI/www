@@ -52,7 +52,7 @@ pub fn NewWorld() -> impl IntoView {
                 <h2 class="font-bold italic text-lg">
                 {"Cowboy AI changes the landscape."}                </h2>
                 <p>
-                    {"We've got a game plan that uses a solid business strategy along with the usual ways of setting up and running computer stuff on the fly. You get to tweak settings... But chill, you don't have to do it from scratch. You'll get legit pointers straight from the apps and tasks you actually care about carfully filtered through AI to optimize your experience."}
+                    {"We've got a game plan that uses a solid business strategy along with the usual ways of setting up and running computer stuff on the fly. You get to tweak settings... But chill, you don't have to do it from scratch. You'll get legit pointers straight from the apps and tasks you actually care about carefully filtered through AI to optimize your experience."}
                 </p>
 
                 <a href="https://github.com/TheCowboyAI/cim-start">
