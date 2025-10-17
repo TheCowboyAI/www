@@ -7,247 +7,289 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">COWBOY AI</div>
-            <ul class="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#cognition">Cognition</a></li>
-                <li><a href="#problems">Problems</a></li>
-                <li><a href="#platform">Platform</a></li>
-                <li><a href="#sage">SAGE</a></li>
-                <li><a href="#trust">Trust</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Progress Indicator -->
+    <div class="progress-indicator">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="hero" class="parallax-section hero-section">
-        <div class="parallax-bg" data-speed="0.5"></div>
-        <div class="content-wrapper">
-            <h1 class="glitch" data-text="Cowboy AI">Cowboy AI</h1>
-            <h2 class="subtitle">The Platform For Composable, Cognitive, Audit-Grade AI Swarms</h2>
-            <p class="tagline">Your New Business Brain & Nervous System. Cognition. Evolution. Security. Trust.</p>
-            <p class="description">No-Code Composable Multi-AI Agent Orchestration At Scale</p>
-            <div class="warning-box">
-                <p><strong>Disclaimer & Warning:</strong></p>
-                <p>You can now ask and command the system to do anything. In plain English. And it will.</p>
+    <!-- Navigation Dots -->
+    <div class="nav-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        <span class="dot" data-slide="4"></span>
+        <span class="dot" data-slide="5"></span>
+        <span class="dot" data-slide="6"></span>
+        <span class="dot" data-slide="7"></span>
+        <span class="dot" data-slide="8"></span>
+    </div>
+
+    <!-- Slide 1: Hero -->
+    <section class="slide active" id="slide-0">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-000.png')"></div>
+        <div class="slide-content">
+            <div class="hero-content">
+                <h1 class="hero-title">Cowboy AI</h1>
+                <h2 class="hero-subtitle">The Platform For Composable, Cognitive, Audit-Grade AI Swarms</h2>
+                <div class="hero-divider"></div>
+                <p class="hero-tagline">Your New Business Brain & Nervous System. Cognition. Evolution. Security. Trust.</p>
+                <p class="hero-description">No-Code Composable Multi-AI Agent Orchestration At Scale</p>
+                <div class="hero-warning">
+                    <p><strong>Disclaimer & Warning:</strong></p>
+                    <p>You can now ask and command the system to do anything. In plain English. And it will.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Cognition Section -->
-    <section id="cognition" class="parallax-section cognition-section">
-        <div class="parallax-bg" data-speed="0.3"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">No Cognition? - No AGI!</h2>
-            <p class="section-subtitle">Intelligence Alone Isn't Enough—Cognition Is the Missing Piece.</p>
+    <!-- Slide 2: Cognition -->
+    <section class="slide" id="slide-1">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-008.png')"></div>
+        <div class="slide-content">
+            <h2 class="slide-title">No Cognition? - No AGI!</h2>
+            <p class="slide-subtitle">Intelligence Alone Isn't Enough—Cognition Is the Missing Piece.</p>
             
-            <div class="quadrants">
-                <div class="quadrant q1">
-                    <h3>Hardware</h3>
-                    <p>Horsepower</p>
+            <div class="cognition-diagram">
+                <div class="diagram-center">
+                    <img src="images/cowboy-pdf-009.png" alt="Brain" class="brain-img">
                 </div>
-                <div class="quadrant q2">
-                    <h3>LLM</h3>
-                    <p>Raw tooling</p>
-                </div>
-                <div class="quadrant q3">
-                    <h3>Cognition</h3>
-                    <p>Awareness of tools & State</p>
-                </div>
-                <div class="quadrant q4">
-                    <h3>Your World - The Data</h3>
-                    <p>Clean, Holistic, Accessible, Mathematically Proven</p>
+                <div class="quadrant-container">
+                    <div class="quadrant top-left">
+                        <div class="quadrant-number">1</div>
+                        <h3>Hardware</h3>
+                        <p>Horsepower</p>
+                    </div>
+                    <div class="quadrant top-right">
+                        <div class="quadrant-number">2</div>
+                        <h3>LLM</h3>
+                        <p>Raw tooling</p>
+                    </div>
+                    <div class="quadrant bottom-right">
+                        <div class="quadrant-number">3</div>
+                        <h3>Cognition</h3>
+                        <p>Awareness of tools & State</p>
+                    </div>
+                    <div class="quadrant bottom-left">
+                        <div class="quadrant-number">4</div>
+                        <h3>Your World - The Data</h3>
+                        <p>Clean, Holistic, Accessible, Mathematically Proven</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="explanation-text">
+            
+            <div class="cognition-text">
                 <p>For true AGI, systems must <strong>learn, adapt, and evolve</strong>—not just process data.</p>
                 <p>Today's AI is trapped in silos, built on imperfect math, with no structure or guardrails.</p>
-                <p class="highlight">That's why it keeps failing.</p>
-                <p class="solution">We solved it.</p>
+                <p class="text-highlight">That's why it keeps failing.</p>
+                <p class="text-success">We solved it.</p>
                 <p>By embedding <strong>cognition at the core</strong>, Cowboy AI creates an adaptive, composable architecture that continuously learns, evolves, and safeguards decision-making.</p>
-                <p class="breakthrough">This is the breakthrough that makes AGI possible.</p>
+                <p class="text-breakthrough">This is the breakthrough that makes AGI possible.</p>
             </div>
         </div>
     </section>
 
-    <!-- Problems Section -->
-    <section id="problems" class="parallax-section problems-section">
-        <div class="parallax-bg" data-speed="0.4"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">AI Is Breaking at Scale</h2>
+    <!-- Slide 3: Problems -->
+    <section class="slide" id="slide-2">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-019.png')"></div>
+        <div class="slide-content">
+            <h2 class="slide-title">AI Is Breaking at Scale</h2>
             
-            <div class="problem-cards">
-                <div class="problem-card">
+            <div class="problems-grid">
+                <div class="problem-box">
                     <h3>Fragmentation kills velocity</h3>
                     <p>Businesses juggle many applications & tools, re-enter data, and never achieve true sync.</p>
                 </div>
-                <div class="problem-card">
+                <div class="problem-box">
                     <h3>The last 10% explodes compute</h3>
                     <p>Teams reach 85–90% automation, then costs and fragility spike without the right structures.</p>
                 </div>
-                <div class="problem-card">
+                <div class="problem-box">
                     <h3>Lock-in & opacity</h3>
                     <p>Cloud-centric AI → runaway spend, brittle workflows, and audits no one can pass.</p>
                 </div>
             </div>
 
             <div class="problems-table">
-                <div class="table-header">
-                    <span>Root Cause</span>
-                    <span>Symptom</span>
-                </div>
-                <div class="table-row">
-                    <span>Fragmented & proprietary stacks</span>
-                    <span>Siloed data → duplication waste and a hard throughput ceiling.</span>
-                </div>
-                <div class="table-row">
-                    <span>Vendor lock-in & cloud-only ops</span>
-                    <span>Exploding costs at scale; switching costs paralyze change.</span>
-                </div>
-                <div class="table-row">
-                    <span>Brittle translations/APIs</span>
-                    <span>Scale-load failures; throttling/egress fees bleed budgets.</span>
-                </div>
-                <div class="table-row">
-                    <span>Imperfect-math / nondeterministic code paths</span>
-                    <span>Inconsistent outputs; expensive debugging caps reliability.</span>
-                </div>
-                <div class="table-row">
-                    <span>Weak governance & no single source of truth</span>
-                    <span>Untraceable decisions; audit exposure inflates compliance spend.</span>
-                </div>
-                <div class="table-row">
-                    <span>Scale threshold ("last 10%")</span>
-                    <span>Compute spikes and instability; ROI collapses at ~85–90% automation.</span>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Root Cause</th>
+                            <th>Symptom</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fragmented & <strong>proprietary</strong> stacks</td>
+                            <td>Siloed data → duplication waste and a hard throughput ceiling.</td>
+                        </tr>
+                        <tr>
+                            <td>Vendor lock-in & cloud-only ops</td>
+                            <td>Exploding costs at scale; switching costs paralyze change.</td>
+                        </tr>
+                        <tr>
+                            <td>Brittle translations/APIs</td>
+                            <td>Scale-load failures; throttling/egress fees bleed budgets.</td>
+                        </tr>
+                        <tr>
+                            <td>Imperfect-math / nondeterministic code paths</td>
+                            <td>Inconsistent outputs; expensive debugging caps reliability.</td>
+                        </tr>
+                        <tr>
+                            <td>Weak governance & no single source of truth</td>
+                            <td>Untraceable decisions; audit exposure inflates compliance spend.</td>
+                        </tr>
+                        <tr>
+                            <td>Scale threshold ("last 10%")</td>
+                            <td>Compute spikes and instability; ROI collapses at ~85–90% automation.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
 
-    <!-- Platform Section -->
-    <section id="platform" class="parallax-section platform-section">
-        <div class="parallax-bg" data-speed="0.5"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">Platform First — Cowboy AI CIM</h2>
-            <p class="section-subtitle">The platform for building, governing, and scaling your business with AI swarms.</p>
+    <!-- Slide 4: Platform -->
+    <section class="slide" id="slide-3">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-030.png')"></div>
+        <div class="slide-content">
+            <h2 class="slide-title">Platform First — Cowboy AI CIM</h2>
+            <p class="slide-subtitle">The platform for building, governing, and scaling your business with AI swarms.</p>
             
-            <div class="platform-features">
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <div class="card-icon">📊</div>
                     <h3>Build Once, Replicate Anywhere</h3>
                     <p>We're proving it in private lending/fintech first.</p>
-                    <p>Repeatable & Reproduceable.</p>
+                    <p class="card-subtext">Repeatable & Reproduceable.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
+                
+                <div class="platform-card">
+                    <div class="card-icon">🔓</div>
                     <h3>Open for Builders</h3>
                     <p>Publish domain packs, swarms, and connectors other teams can adopt.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📈</div>
+                
+                <div class="platform-card">
+                    <div class="card-icon">📊</div>
                     <h3>Proven Milestones</h3>
                     <p>8M+ micro-transactions processed; hybrid runtime targeting >90% lower AI compute vs cloud-only baselines.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤖</div>
+                
+                <div class="platform-card">
+                    <div class="card-icon">👤</div>
                     <h3>No-code, modular agent swarms</h3>
                     <p>Like little building blocks AI agents assemble and compose on the fly to execute any task.</p>
                 </div>
-                <div class="feature-card full-width">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Immutable, Security First</h3>
-                    <p>Immutable records, ransomware-resistant architecture</p>
+            </div>
+            
+            <div class="security-banner">
+                <div class="card-icon">🔒</div>
+                <h3>Immutable, Security First</h3>
+                <p>Immutable records, ransomware-resistant architecture</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 5: Stack -->
+    <section class="slide" id="slide-4">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-040.png')"></div>
+        <div class="slide-content">
+            <h2 class="slide-title">Who's Who in the Stack</h2>
+            
+            <div class="stack-pyramid">
+                <div class="pyramid-level level-1">
+                    <div class="pyramid-number">1</div>
+                    <div class="pyramid-content">
+                        <h3>SAGE - Agent Orchestrator</h3>
+                        <p class="pyramid-subtitle">The Brain</p>
+                        <p>Composes and drives swarms of AIs with proof-first reasoning and event-sourced state. CIM - Platform</p>
+                    </div>
+                </div>
+                
+                <div class="pyramid-level level-2">
+                    <div class="pyramid-number">2</div>
+                    <div class="pyramid-content">
+                        <h3>Alchemist Ontology - Information System</h3>
+                        <p class="pyramid-subtitle">The Nervous System</p>
+                        <p>Your real-time knowledge graph: assets, tasks + relationships; audit-ready by design.</p>
+                    </div>
+                </div>
+                
+                <div class="pyramid-level level-3">
+                    <div class="pyramid-number">3</div>
+                    <div class="pyramid-content">
+                        <h3>CIM - Platform</h3>
+                        <p class="pyramid-subtitle">The Body</p>
+                        <p>Your CIM, Composable Information Machine, Governed by composable rules and events; model-agnostic; security-first.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SAGE Section -->
-    <section id="sage" class="parallax-section sage-section">
-        <div class="parallax-bg" data-speed="0.3"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">SAGE</h2>
-            <h3 class="section-subtitle">Universal Development Intelligence Platform</h3>
-            <p class="section-tagline">Orchestrating 100+ Specialized AI Experts from Silicon to Solution</p>
+    <!-- Slide 6: Breakthrough -->
+    <section class="slide" id="slide-5">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-050.png')"></div>
+        <div class="slide-content">
+            <h2 class="slide-title">Our Breakthrough — Swarm AI that actually scales</h2>
             
-            <div class="sage-features">
-                <div class="sage-card">
-                    <h4>🎯 Complete Stack Mastery</h4>
-                    <ul>
-                        <li><strong>Nix Expert:</strong> Kernel to cloud expertise with deterministic, reproducible builds</li>
-                        <li><strong>Resource Expert:</strong> Real-world aware - optimizes for actual memory, CPU, bandwidth constraints</li>
-                        <li><strong>Domain & DDD Experts:</strong> Extract business essence through Event Storming and mathematical boundaries</li>
-                        <li><strong>Infrastructure Experts:</strong> Network topology, NATS messaging, distributed systems architecture</li>
-                    </ul>
+            <div class="breakthrough-grid">
+                <div class="breakthrough-card">
+                    <div class="card-icon-small">🔄</div>
+                    <h3>Repeatable</h3>
+                    <p>Commutative-diagram checks ensure different execution paths produce the same outcome.</p>
                 </div>
                 
-                <div class="sage-card">
-                    <h4>🔬 Mathematical Foundation</h4>
-                    <ul>
-                        <li><strong>Provable Correctness:</strong> Category Theory and Graph Theory backed decisions</li>
-                        <li><strong>CID Chain Coherence:</strong> Cryptographically linked, immutable audit trail via IPLD</li>
-                        <li><strong>Verified State Transitions:</strong> Mathematically guaranteed system invariants</li>
-                        <li><strong>Algebraic Message Routing:</strong> Subject hierarchies optimized with mathematical precision</li>
-                    </ul>
+                <div class="breakthrough-card">
+                    <div class="card-icon-small">🔍</div>
+                    <h3>Explainable & Auditable</h3>
+                    <p>Every state change is an immutable event, traceable end-to-end.</p>
                 </div>
                 
-                <div class="sage-card">
-                    <h4>🌐 Distributed Intelligence</h4>
-                    <ul>
-                        <li><strong>Zero Single Points of Failure:</strong> NATS JetStream based central nervous system</li>
-                        <li><strong>Auto-Healing Architecture:</strong> Lose a node or datacenter - system adapts instantly</li>
-                        <li><strong>Multi-Agent Orchestration:</strong> Symphonic coordination of specialized expertise</li>
-                        <li><strong>Event-Sourced Truth:</strong> Every decision recorded, every state reversible</li>
-                    </ul>
+                <div class="breakthrough-card">
+                    <div class="card-icon-small">⚡</div>
+                    <h3>Model-Hot-Swap with Continuity</h3>
+                    <p>Flip between Claude / GPT / Llama / Mistral / Groq / Ollama without losing state.</p>
                 </div>
                 
-                <div class="sage-card">
-                    <h4>🚀 Development Acceleration</h4>
-                    <ul>
-                        <li><strong>Proactive Guidance:</strong> Anticipates needs, prevents architectural mistakes</li>
-                        <li><strong>Living Documentation:</strong> BDD/TDD experts ensure specs, tests, and docs stay synchronized</li>
-                        <li><strong>Compliance by Design:</strong> HIPAA, PCI DSS, GDPR built-in, not bolted-on</li>
-                        <li><strong>Context Preservation:</strong> Seamless conversations across sessions and agents</li>
-                    </ul>
+                <div class="breakthrough-card">
+                    <div class="card-icon-small">💰</div>
+                    <h3>90% Cheaper (Projected)</h3>
+                    <p>Hybrid runtime + intelligent routing = dramatic cost downs vs cloud-only.</p>
                 </div>
-            </div>
-            
-            <div class="sage-difference">
-                <h4>🧠 The SAGE Difference</h4>
-                <ul>
-                    <li>100+ Specialized AI Agent Experts scaling to billions</li>
-                    <li>Mathematical Proofs not promises</li>
-                    <li>Distributed Resilience not single points of failure</li>
-                    <li>Orchestrated Intelligence not isolated tools. Like small Lego Blocks</li>
-                    <li>Domain Mastery not generic solutions</li>
-                </ul>
-                <p class="sage-cta">Transform your development with orchestrated intelligence.<br>
-                Deploy with confidence. Scale with certainty. Evolve with intelligence.</p>
+                
+                <div class="breakthrough-card">
+                    <div class="card-icon-small">🧩</div>
+                    <h3>Modular Building Blocks</h3>
+                    <p>Atomic functions → Extreme reuse</p>
+                </div>
+                
+                <div class="breakthrough-card">
+                    <div class="card-icon-small">🚀</div>
+                    <h3>AI Amplification</h3>
+                    <p>Every employee gets an AI team on the fly</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Section -->
-    <section id="trust" class="parallax-section trust-section">
-        <div class="parallax-bg" data-speed="0.4"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">Trust by Design:</h2>
-            <h3 class="section-subtitle">Security, Control, and Explainability at the Core</h3>
+    <!-- Slide 7: Trust -->
+    <section class="slide" id="slide-6">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-060.png')"></div>
+        <div class="slide-content">
+            <h2 class="slide-title">Trust by Design:</h2>
+            <h3 class="slide-subtitle">Security, Control, and Explainability at the Core</h3>
             
             <p class="trust-intro">Cowboy AI delivers secure-by-default automation through a modern, composable architecture engineered for financial-grade integrity and adaptability—on your terms.</p>
             
-            <div class="trust-pillars">
-                <div class="trust-card">
-                    <h4>🏗 Infrastructure of Integrity</h4>
+            <div class="trust-grid">
+                <div class="trust-box">
+                    <div class="trust-icon">🏗</div>
+                    <h3>Infrastructure of Integrity</h3>
                     <ul>
                         <li>Apple M3 Ultra + NixDarwin for deterministic environments</li>
                         <li>Rust + Bevy Runtime for memory-safe orchestration</li>
@@ -255,8 +297,9 @@
                     </ul>
                 </div>
                 
-                <div class="trust-card">
-                    <h4>🔐 Security That Scales</h4>
+                <div class="trust-box">
+                    <div class="trust-icon">🔐</div>
+                    <h3>Security That Scales</h3>
                     <ul>
                         <li>YubiKey Hardware Auth + ECC Encryption for transaction-level trust</li>
                         <li>MinIO + Wasabi providing immutable, ransomware-resistant storage</li>
@@ -264,8 +307,9 @@
                     </ul>
                 </div>
                 
-                <div class="trust-card">
-                    <h4>🧠 Explainable Intelligence</h4>
+                <div class="trust-box">
+                    <div class="trust-icon">🧠</div>
+                    <h3>Explainable Intelligence</h3>
                     <ul>
                         <li>Neo4j Graph Engine + Event Sourcing for auditable decisions</li>
                         <li>Functional Programming + TDD ensuring provable correctness</li>
@@ -273,8 +317,9 @@
                     </ul>
                 </div>
                 
-                <div class="trust-card">
-                    <h4>📐 Mathematics of Trust</h4>
+                <div class="trust-box">
+                    <div class="trust-icon">📐</div>
+                    <h3>Mathematics of Trust</h3>
                     <ul>
                         <li>Category Theory & Graph Theory ensuring formal correctness</li>
                         <li>Gradient Descent Programming for optimized agent decisions</li>
@@ -285,80 +330,83 @@
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="parallax-section team-section">
-        <div class="parallax-bg" data-speed="0.5"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">Our Leadership Team</h2>
+    <!-- Slide 8: Team -->
+    <section class="slide" id="slide-7">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-080.png')"></div>
+        <div class="slide-content">
+            <h2 class="slide-title">Our Leadership Team</h2>
             
             <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-avatar"></div>
+                <div class="team-card">
+                    <div class="team-avatar" style="background-image: url('images/cowboy-pdf-081.png')"></div>
                     <h4>Jacob Kopilovitch</h4>
-                    <span class="role">CEO</span>
+                    <span class="team-role">CEO</span>
                     <p>Serial entrepreneur with over 20 years of experience driving strategic vision, business growth, and organizational leadership across multiple industries.</p>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-avatar"></div>
+                <div class="team-card">
+                    <div class="team-avatar" style="background-image: url('images/cowboy-pdf-082.png')"></div>
                     <h4>David Kopilovitch</h4>
-                    <span class="role">COO</span>
+                    <span class="team-role">COO</span>
                     <p>Operations executive with 17+ years of expertise in back office management, process optimization, and detailed execution of complex business operations.</p>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-avatar"></div>
+                <div class="team-card">
+                    <div class="team-avatar" style="background-image: url('images/cowboy-pdf-083.png')"></div>
                     <h4>Steele Price</h4>
-                    <span class="role">CSO</span>
+                    <span class="team-role">CSO</span>
                     <p>Technology visionary with 40+ years of experience, including 10 years as Microsoft MVP and core team member for .NET language development.</p>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-avatar"></div>
+                <div class="team-card">
+                    <div class="team-avatar" style="background-image: url('images/cowboy-pdf-084.png')"></div>
                     <h4>Kathryn Freeman</h4>
-                    <span class="role">CBO</span>
+                    <span class="team-role">CBO</span>
                     <p>Accomplished entrepreneur and senior advisor with 17+ years guiding fintech and lending companies.</p>
                 </div>
-                
-                <div class="team-member">
-                    <div class="member-avatar"></div>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar" style="background-image: url('images/cowboy-pdf-085.png')"></div>
                     <h4>Mark Sonnenklar</h4>
-                    <span class="role">CLO</span>
-                    <p>Premier business and intellectual property attorney with 25+ years of experience in corporate and private law across the West Coast.</p>
+                    <span class="team-role">CLO</span>
+                    <p>Premier business and intellectual property attorney with 25+ years of experience.</p>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-avatar"></div>
+                <div class="team-card">
+                    <div class="team-avatar" style="background-image: url('images/cowboy-pdf-086.png')"></div>
                     <h4>Ryan Plemons</h4>
-                    <span class="role">Senior Architect & AI Lead</span>
-                    <p>Veteran technology leader with 30+ years as a senior engineer, specializing in AI implementation and product development strategy.</p>
+                    <span class="team-role">Senior Architect & AI Lead</span>
+                    <p>Veteran technology leader with 30+ years as a senior engineer.</p>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-avatar"></div>
+                <div class="team-card">
+                    <div class="team-avatar" style="background-image: url('images/cowboy-pdf-087.png')"></div>
                     <h4>Blake</h4>
-                    <span class="role">Graphic Design</span>
-                    <p>Creative technologist with 12 years of experience spanning UI/UX design, Web Development, Marketing & Branding.</p>
+                    <span class="team-role">Graphic Design</span>
+                    <p>Creative technologist with 12 years of experience spanning UI/UX design.</p>
                 </div>
                 
-                <div class="team-member">
-                    <div class="member-avatar"></div>
+                <div class="team-card">
+                    <div class="team-avatar" style="background-image: url('images/cowboy-pdf-088.png')"></div>
                     <h4>Daniel</h4>
-                    <span class="role">Security Engineer</span>
-                    <p>Cybersecurity specialist with 15 years of experience in security infrastructure, PKI implementations, and Linux/NixOS systems administration.</p>
+                    <span class="team-role">Security Engineer</span>
+                    <p>Cybersecurity specialist with 15 years of experience.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="parallax-section roadmap-section">
-        <div class="parallax-bg" data-speed="0.3"></div>
-        <div class="content-wrapper">
-            <h2 class="section-title">Roadmap</h2>
+    <!-- Slide 9: Roadmap -->
+    <section class="slide" id="slide-8">
+        <div class="slide-bg" style="background-image: url('images/cowboy-pdf-090.png')"></div>
+        <div class="slide-content">
+            <h2 class="slide-title">Roadmap</h2>
             
-            <div class="roadmap-timeline">
-                <div class="timeline-item">
+            <div class="roadmap-container">
+                <div class="roadmap-section">
+                    <div class="roadmap-icon">🤝</div>
                     <h3>Next 6-12 months: Building the Foundation</h3>
                     <ul>
                         <li>Scale Private Lending Market Expansion</li>
@@ -367,7 +415,8 @@
                     </ul>
                 </div>
                 
-                <div class="timeline-item">
+                <div class="roadmap-section">
+                    <div class="roadmap-icon">📈</div>
                     <h3>12-18 months: Scaling and Expansion</h3>
                     <ul>
                         <li>Secure Second Funding Round & Cultivate Strategic Vertical Partners</li>
@@ -377,9 +426,18 @@
                 </div>
             </div>
             
-            <p class="roadmap-footer">Each milestone strengthens our position to <span class="highlight">dominate the AI orchestration market</span> with our significant head start.</p>
+            <p class="roadmap-footer">Each milestone strengthens our position to <span class="highlight-blue">dominate the AI orchestration market</span> with our significant head start.</p>
         </div>
     </section>
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">‹</button>
+        <button class="nav-btn next" onclick="changeSlide(1)">›</button>
+    </div>
+
+    <!-- Arrow Keys Hint -->
+    <div class="keyboard-hint">Use arrow keys to navigate</div>
 
     <script src="script.js"></script>
 </body>
