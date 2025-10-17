@@ -16,7 +16,7 @@
         address = "10.0.64.1";
         interface = "eth0";
       };
-      nameservers = [ "8.8.8.8" "1.1.1.1" ];
+      nameservers = [ "10.0.0.254" "1.1.1.1" ];
 
       interfaces.eth0.useDHCP = false;
       interfaces.eth0.ipv4.addresses = [ {
