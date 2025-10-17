@@ -1,14 +1,27 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
-  # Build the static site
-  staticSite = pkgs.stdenv.mkDerivation {
-    name = "cowboy-ai-static-site";
-    src = ./static;
+  # Build the WASM presentation
+  wasmPresentation = pkgs.stdenv.mkDerivation {
+    name = "cowboy-presentation-wasm";
+    version = "1.0.0";
+    
+    src = ./iced-wasm;
     
     installPhase = ''
       mkdir -p $out
-      cp -r * $out/
+      
+      # Copy the index.html
+      cp ${./iced-wasm}/index.html $out/
+      
+      # Copy the WASM package directory
+      cp -r ${./iced-wasm}/pkg $out/wasm-pkg
+      
+      # Fix the import path in index.html to match our structure
+      sed -i 's|./pkg/cowboy_presentation.js|./wasm-pkg/cowboy_presentation.js|g' $out/index.html
+      
+      # Ensure proper permissions
+      chmod -R 755 $out
     '';
   };
 
@@ -40,16 +53,37 @@ let
         PasswordAuthentication = false;
       };
     };
+    
+    # Add SSH key for root access
+    users.users.root = {
+      openssh.authorizedKeys.keys = [
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ2RaQ9cCyLZiPmm5FhzxCuSS8S2j2BW2T7h17zanOhw steele@nixos"
+      ];
+    };
 
     # Nginx configuration
     services.nginx = {
       enable = true;
+      recommendedGzipSettings = true;
+      recommendedOptimisation = true;
+      
       virtualHosts."_" = {
         default = true;
-        root = "${staticSite}";
+        root = "${wasmPresentation}";
         locations."/" = {
           index = "index.html";
           tryFiles = "$uri $uri/ /index.html";
+        };
+        locations."~ \\.wasm$" = {
+          extraConfig = ''
+            add_header Content-Type application/wasm;
+            add_header Cache-Control "public, max-age=31536000";
+          '';
+        };
+        locations."~ \\.js$" = {
+          extraConfig = ''
+            add_header Content-Type application/javascript;
+          '';
         };
       };
     };
@@ -71,8 +105,26 @@ let
     ];
   };
 
-  # Build the container
-  nixosSystem = pkgs.nixos containerConfig;
+  # Build the container system
+  nixosSystem = (pkgs.nixos containerConfig).config.system.build.toplevel;
+  
+  # Create LXC tarball
+  tarball = pkgs.runCommand "cowboy-ai-container.tar.gz" {
+    buildInputs = [ pkgs.gnutar pkgs.gzip ];
+  } ''
+    mkdir -p $out
+    
+    # Create container root
+    mkdir -p container/rootfs
+    
+    # Copy the NixOS system
+    cp -r ${nixosSystem}/* container/rootfs/ || true
+    
+    # Create the tarball
+    tar -czf $out/cowboy-ai-container.tar.gz -C container .
+    
+    echo "Container tarball created at $out/cowboy-ai-container.tar.gz"
+  '';
   
 in
-  nixosSystem.config.system.build.tarball
+  tarball

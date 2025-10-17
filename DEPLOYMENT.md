@@ -6,7 +6,7 @@ This project contains the Cowboy AI cognitive orchestration platform presentatio
 ## Current Infrastructure
 
 ### Server Details
-- **Host**: thecowboy.ai
+- **Host**: thecowboy.ai - 143.105.59.182
 - **Proxmox Host**: pve1
 - **SSH Port**: 22 (Proxmox host)
 - **SSH Key**: `~/.ssh/id_cim_thecowboyai`

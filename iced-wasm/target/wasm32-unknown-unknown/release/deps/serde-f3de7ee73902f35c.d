@@ -1,0 +1,14 @@
+/git/thecowboyai/www/iced-wasm/target/wasm32-unknown-unknown/release/deps/serde-f3de7ee73902f35c.d: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /git/thecowboyai/www/iced-wasm/target/wasm32-unknown-unknown/release/build/serde-7f2ce3c9da678296/out/private.rs
+
+/git/thecowboyai/www/iced-wasm/target/wasm32-unknown-unknown/release/deps/libserde-f3de7ee73902f35c.rlib: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /git/thecowboyai/www/iced-wasm/target/wasm32-unknown-unknown/release/build/serde-7f2ce3c9da678296/out/private.rs
+
+/git/thecowboyai/www/iced-wasm/target/wasm32-unknown-unknown/release/deps/libserde-f3de7ee73902f35c.rmeta: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /git/thecowboyai/www/iced-wasm/target/wasm32-unknown-unknown/release/build/serde-7f2ce3c9da678296/out/private.rs
+
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/git/thecowboyai/www/iced-wasm/target/wasm32-unknown-unknown/release/build/serde-7f2ce3c9da678296/out/private.rs:
+
+# env-dep:OUT_DIR=/git/thecowboyai/www/iced-wasm/target/wasm32-unknown-unknown/release/build/serde-7f2ce3c9da678296/out

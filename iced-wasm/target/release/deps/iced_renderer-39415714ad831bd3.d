@@ -1,0 +1,11 @@
+/git/thecowboyai/www/iced-wasm/target/release/deps/iced_renderer-39415714ad831bd3.d: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/compositor.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/geometry.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/geometry/cache.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/settings.rs
+
+/git/thecowboyai/www/iced-wasm/target/release/deps/libiced_renderer-39415714ad831bd3.rlib: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/compositor.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/geometry.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/geometry/cache.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/settings.rs
+
+/git/thecowboyai/www/iced-wasm/target/release/deps/libiced_renderer-39415714ad831bd3.rmeta: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/compositor.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/geometry.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/geometry/cache.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/settings.rs
+
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/lib.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/compositor.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/geometry.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/geometry/cache.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_renderer-0.12.1/src/settings.rs:

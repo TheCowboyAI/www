@@ -1,0 +1,12 @@
+/git/thecowboyai/www/iced-wasm/target/release/deps/drm_ffi-62cdfc79473f80c2.d: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/utils.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/gem.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/ioctl.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/mode.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/syncobj.rs
+
+/git/thecowboyai/www/iced-wasm/target/release/deps/libdrm_ffi-62cdfc79473f80c2.rlib: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/utils.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/gem.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/ioctl.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/mode.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/syncobj.rs
+
+/git/thecowboyai/www/iced-wasm/target/release/deps/libdrm_ffi-62cdfc79473f80c2.rmeta: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/utils.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/gem.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/ioctl.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/mode.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/syncobj.rs
+
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/lib.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/utils.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/gem.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/ioctl.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/mode.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/drm-ffi-0.8.0/src/syncobj.rs:

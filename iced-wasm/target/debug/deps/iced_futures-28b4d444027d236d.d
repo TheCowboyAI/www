@@ -1,0 +1,11 @@
+/git/thecowboyai/www/iced-wasm/target/debug/deps/iced_futures-28b4d444027d236d.d: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/command.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/runtime.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/executor.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/executor/null.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/subscription.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/subscription/tracker.rs
+
+/git/thecowboyai/www/iced-wasm/target/debug/deps/libiced_futures-28b4d444027d236d.rmeta: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/command.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/runtime.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/executor.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/executor/null.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/subscription.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/subscription/tracker.rs
+
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/lib.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/command.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/runtime.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/executor.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/executor/null.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/subscription.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced_futures-0.3.0/src/subscription/tracker.rs:

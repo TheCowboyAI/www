@@ -1,0 +1,29 @@
+[package]
+name = "cowboy-presentation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.12", features = ["canvas", "image", "svg", "webgl"] }
+iced_web = "0.4"
+wasm-bindgen = "0.2"
+web-sys = "0.3"
+getrandom = { version = "0.2", features = ["js"] }
+
+[dependencies.iced_aw]
+version = "0.9"
+default-features = false
+features = ["card", "badge", "tabs"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[[bin]]
+name = "cowboy-presentation"
+path = "src/main.rs"

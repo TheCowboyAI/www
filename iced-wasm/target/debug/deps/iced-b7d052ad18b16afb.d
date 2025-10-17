@@ -1,0 +1,13 @@
+/git/thecowboyai/www/iced-wasm/target/debug/deps/iced-b7d052ad18b16afb.d: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/error.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/sandbox.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/application.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/settings.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/time.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/window.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/window/icon.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/advanced.rs
+
+/git/thecowboyai/www/iced-wasm/target/debug/deps/libiced-b7d052ad18b16afb.rmeta: /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/lib.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/error.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/sandbox.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/application.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/settings.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/time.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/window.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/window/icon.rs /home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/advanced.rs
+
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/lib.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/error.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/sandbox.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/application.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/settings.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/time.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/window.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/window/icon.rs:
+/home/steele/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/iced-0.12.1/src/advanced.rs:

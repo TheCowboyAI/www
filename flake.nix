@@ -14,6 +14,8 @@
       inherit (self) inputs;
       inherit self;
     };
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
   in
   {
     nixosModules = {
@@ -21,9 +23,24 @@
       system = import ./nixosModules/system.nix flakeContext;
     };
 
+    nixosConfigurations = {
+      wwwlxc = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          (import ./nixosModules/system.nix flakeContext)
+        ];
+      };
+    };
+
     packages = {
       x86_64-linux = {
-        wwwlxc = import ./packages/www-lxc.nix flakeContext;  
+        wwwlxc = nixos-generators.nixosGenerate {
+          inherit system;
+          format = "proxmox-lxc";
+          modules = [
+            (import ./nixosModules/system.nix flakeContext)
+          ];
+        };
       };
     };
   } // flake-utils.lib.eachDefaultSystem (system:
