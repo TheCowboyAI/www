@@ -4,7 +4,7 @@ let
   # Build the static site
   staticSite = pkgs.stdenv.mkDerivation {
     name = "cowboy-ai-website";
-    src = ../static;
+    src = ../public;
     
     installPhase = ''
       mkdir -p $out
