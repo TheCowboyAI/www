@@ -1,0 +1,15 @@
+{
+  "name": "cowboy-presentation",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "cowboy_presentation_bg.wasm",
+    "cowboy_presentation.js",
+    "cowboy_presentation.d.ts"
+  ],
+  "main": "cowboy_presentation.js",
+  "types": "cowboy_presentation.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
