@@ -1,121 +1,93 @@
 {
+  description = "Cowboy AI Website";
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixos-generators.url = "github:nix-community/nixos-generators";
+    nixos-generators.inputs.nixpkgs.follows = "nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
-    rust-overlay = {
-      url = "github:oxalica/rust-overlay";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-utils.follows = "flake-utils";
-      };
-    };
-    llm-git = {
-      url = "github:rustformers/llm";
-      inputs.nixpkgs.follows = "nixpkgs";      
-    };
   };
 
-  outputs = { self, nixpkgs, flake-utils, rust-overlay, llm-git }:  
-    flake-utils.lib.eachDefaultSystem 
-      (system:
-        let
-          overlays = [ (import rust-overlay) ];
-          pkgs = import nixpkgs {
-            inherit system overlays;
-            config.allowUnfree = true;
-          };
-          stdenv = pkgs.clangStdenv;
-          rustToolchain = pkgs.pkgsBuildHost.rust-bin.fromRustupToolchainFile ./rust-toolchain.toml;
-       in
-        with pkgs;
-        {
-          llm = llm-git.packages."${system}".llm;
+  outputs = { self, nixpkgs, nixos-generators, flake-utils }:
+  let
+    flakeContext = {
+      inherit (self) inputs;
+      inherit self;
+    };
+  in
+  {
+    nixosModules = {
+      nginx = import ./nixosModules/nginx.nix flakeContext;
+      system = import ./nixosModules/system.nix flakeContext;
+    };
 
-          environment.systemPackages = with pkgs; [
-              llm
-            ];
-
-          modules = [
-            nix-ld.nixosModules.nix-ld
-            { programs.nix-ld.dev.enable = true; }
-          ];
-
-          hardware.pulseaudio.enable = true;
-          hardware.pulseaudio.package = pulseaudioFull;
-          hardware.opengl.extraPackages = [ mesa.drivers ];
-
-          services.xserver.enable = true;
-
-          fonts.packages = with pkgs; [
-            noto-fonts
-            noto-fonts-cjk
-            noto-fonts-emoji
-            liberation_ttf
-            fira-code
-            fira-code-symbols
-            mplus-outline-fonts.githubRelease
-            dina-font
-            proggyfonts
-          ];
-
-          devShells.default = mkShell {
-            buildInputs = [
-              rustToolchain
-              cargo-edit
-              cargo-expand
-              cargo-udeps
-              cargo-whatfeatures
-              cargo-leptos
-              cargo-generate
-              cargo-make
-              docker
-              docker-compose
-              cacert
-              trunk
-              direnv
-              lld
-              clang
-              gcc
-              zsh
-              git
-              act
-              just
-              starship
-              openssl
-              openssl.dev
-              pkg-config
-              zlib.dev
-              alsa-lib
-              xorg.libX11
-              xorg.libXi
-              xorg.libXcursor
-              libpulseaudio
-              libGL
-              libglvnd
-              libiconv
-              tailwindcss
-              sass
-              wasm-pack
-              nodejs_18.out
-              nodePackages.webpack
-              nodePackages.webpack-cli
-              nodePackages.npm
-            ];
-            
-            RUST_SRC_PATH = rustPlatform.rustLibSrc;
-            # see: https://discourse.nixos.org/t/running-a-rust-application-that-needs-egl-with-shell-nix/33245/3
-            LD_LIBRARY_PATH="${pkgs.libglvnd}/lib:/home/steele/git/cimlabs/drover/crates/ggml/sys/llama.cpp";
-
-          shellHook = ''
-            if [ -f .env ]; then
-              export $(grep -v '^#' .env | xargs)
-            fi
-            export GIT_CONFIG_NOSYSTEM=1
-            ZSH_CUSTOM=$HOME/.config/zsh
-            export PATH="$HOME/.cargo/bin:$PATH"
-            export LD_LIBRARY_PATH="${pkgs.libglvnd}/lib:/home/steele/git/cimlabs/drover/crates/ggml/sys/llama.cpp";
-            '';
-        };
-        }
-      );
+    packages = {
+      x86_64-linux = {
+        wwwlxc = import ./packages/www-lxc.nix flakeContext;  
+      };
+    };
+  } // flake-utils.lib.eachDefaultSystem (system:
+    let
+      pkgs = import nixpkgs {
+        inherit system;
+      };
+      
+      # Elm build script
+      buildElm = pkgs.writeShellScriptBin "build-elm" ''
+        echo "Building Elm application..."
+        elm make src/Main.elm --optimize --output=static/app.js
+        
+        echo "Minifying JavaScript..."
+        ${pkgs.esbuild}/bin/esbuild static/app.js \
+          --minify \
+          --outfile=static/app.min.js \
+          --allow-overwrite
+        
+        echo "Elm build complete! Files in ./static/"
+      '';
+      
+      # Development server
+      serveElm = pkgs.writeShellScriptBin "serve-elm" ''
+        echo "Starting Elm development server on http://localhost:8000"
+        elm-live src/Main.elm --open --dir=static -- --output=static/app.js --optimize
+      '';
+      
+      # Static server for testing
+      serveStatic = pkgs.writeShellScriptBin "serve-static" ''
+        echo "Serving static files on http://localhost:8080"
+        ${pkgs.python3}/bin/python3 -m http.server 8080 --directory ./static
+      '';
+      
+    in
+    with pkgs;
+    {
+      devShells.default = mkShell {
+        buildInputs = [
+          elmPackages.elm
+          elmPackages.elm-format
+          elmPackages.elm-live
+          elmPackages.elm-analyse
+          elmPackages.elm-test
+          nodePackages.elm-oracle
+          esbuild
+          python3
+        ];
+        
+        nativeBuildInputs = [
+          buildElm
+          serveElm
+          serveStatic
+        ];
+        
+        shellHook = ''
+          echo "Cowboy AI Elm Development Environment"
+          echo ""
+          echo "Available commands:"
+          echo "  build-elm     - Build and optimize the Elm application"
+          echo "  serve-elm     - Start Elm development server with live reload"
+          echo "  serve-static  - Serve the static files"
+          echo ""
+        '';
+      };
+    });
 }

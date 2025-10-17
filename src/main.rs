@@ -1,175 +1,166 @@
-pub mod navigate;
-pub mod footer;
-pub mod svgbutton;
-pub mod tooling;
-pub mod oldlanding;
-pub mod workflow;
-pub mod dashboard;
-pub mod events;
-pub mod people;
-pub mod ourgpts;
-pub mod solutions;
-pub mod workform;
-pub mod gptaccessform;
-pub mod businessmodel;
-pub mod businessevolution;
-pub mod simplewords;
-pub mod aicomposable;
-pub mod eventsourcing;
-pub mod modeledintelligence;
-pub mod gametheory;
-pub mod context;
-pub mod generatecontent;
-pub mod deterministic;
-pub mod naturallanguage;
-pub mod askquestions;
-pub mod codegeneration;
-pub mod existingapps;
-pub mod newfunctionality;
-pub mod cim;
-pub mod cimsvg;
-pub mod audittrail;
-pub mod historicalinsight;
-pub mod projections;
-pub mod eventstreams;
-pub mod predictions;
-pub mod realtimemonitoring;
-pub mod pushtomobile;
-pub mod decisionmaking;
-pub mod communications;
-pub mod security;
-pub mod visualize;
-pub mod collaborate;
-pub mod ubiquitouslanguage;
-pub mod customersupport;
-pub mod customgpts;
-pub mod workshops;
-pub mod workshopform;
-pub mod nixoswork;
-pub mod aiintegration;
-pub mod landingplay;
-pub mod architecture;
-pub mod textbutton;
-pub mod cards;
-pub mod landing;
-pub mod bravenewworld;
+use iced::Element;
+use iced::widget::{button, column, container, text, scrollable, row, Space};
 
-use crate::footer::Footer;
-use crate::navigate::Navigate;
-use crate::landing::Landing;
-use crate::dashboard::Dashboard;
-use crate::tooling::Tooling;
-use crate::workflow::Workflow;
-use crate::events::Events;
-use crate::people::People;
-use crate::solutions::Solutions;
-use crate::ourgpts::OurGPTs;
-use crate::businessmodel::BusinessModel;
-use crate::businessevolution::BusinessEvolution;
-use crate::simplewords::SimpleWords;
-use crate::aicomposable::AIComposable;
-use crate::eventsourcing::EventSourcing;
-use crate::modeledintelligence::ModeledIntelligence;
-use crate::gametheory::GameTheory;
-use crate::context::Context;
-use crate::generatecontent::GenerateContent;
-use crate::deterministic::Deterministic;
-use crate::naturallanguage::NaturalLanguage;
-use crate::askquestions::AskQuestions;
-use crate::codegeneration::CodeGeneration;
-use crate::existingapps::ExistingApps;
-use crate::newfunctionality::NewFunctionality;
-use crate::cim::Cim;
-use crate::audittrail::AuditTrail;
-use crate::historicalinsight::HistoricalInsight;
-use crate::projections::Projections;
-use crate::eventstreams::EventStreams;
-use crate::predictions::Predictions;
-use crate::realtimemonitoring::RealTimeMonitoring;
-use crate::pushtomobile::PushToMobile;
-use crate::decisionmaking::DecisionMaking;
-use crate::communications::Communications;
-use crate::security::Security;
-use crate::visualize::Visualize;
-use crate::collaborate::Collaborate;
-use crate::ubiquitouslanguage::UbiquitousLanguage;
-use crate::customersupport::CustomerSupport;
-use crate::customgpts::CustomGPTs;
-use crate::workshops::Workshops;
-use crate::workshopform::WorkshopForm;
-use crate::nixoswork::NixOSWork;
-use crate::aiintegration::AIIntegration;
-use crate::landingplay::LandingPlay;
-use crate::architecture::Architecture;
-use crate::bravenewworld::NewWorld;
-
-use leptos::*;
-use leptos_router::*;
-
-fn main() {
-  leptos::mount_to_body(App);
+pub fn main() -> iced::Result {
+    iced::application("Cowboy AI - Cognitive Orchestration Platform", App::update, App::view)
+        .theme(App::theme)
+        .window_size((1400.0, 900.0))
+        .run()
 }
 
-#[component]
-fn App() -> impl IntoView {
-  view! {
-      <div class="app flex flex-col flex-1">
-          <Navigate/>
-          <main class="flex flex-col gap-4 flex-1 p-3 mt-10">
-              <Router>
-                  <Routes>
-                      <Route path="/" view=Landing/>
-                      <Route path="/tooling" view=Tooling/>
-                      <Route path="/dashboard" view=Dashboard/>
-                      <Route path="/workflow" view=Workflow/>
-                      <Route path="/events" view=Events/>
-                      <Route path="/people" view=People/>
-                      <Route path="/gpts" view=OurGPTs/>
-                      <Route path="/customwork" view=Solutions/>
-                      <Route path="/solutions" view=Solutions/>
-                      <Route path="/businessmodel" view=BusinessModel/>
-                      <Route path="/simplewords" view=SimpleWords/>
-                      <Route path="/businessevolution" view=BusinessEvolution/>
-                      <Route path="/aicomposable" view=AIComposable/>
-                      <Route path="/aiintegration" view=AIIntegration/>
-                      <Route path="/eventsourcing" view=EventSourcing/>
-                      <Route path="/modeledintelligence" view=ModeledIntelligence/>
-                      <Route path="/gametheory" view=GameTheory/>
-                      <Route path="/generatecontent" view=GenerateContent/>
-                      <Route path="/context" view=Context/>
-                      <Route path="/naturallanguage" view=NaturalLanguage/>
-                      <Route path="/deterministic" view=Deterministic/>
-                      <Route path="/askquestions" view=AskQuestions/>
-                      <Route path="/codegeneration" view=CodeGeneration/>
-                      <Route path="/existingapps" view=ExistingApps/>
-                      <Route path="/newfunctionality" view=NewFunctionality/>
-                      <Route path="/cim" view=Cim/>
-                      <Route path="/audittrail" view=AuditTrail/>
-                      <Route path="/historicalinsight" view=HistoricalInsight/>
-                      <Route path="/projections" view=Projections/>
-                      <Route path="/eventstreams" view=EventStreams/>
-                      <Route path="/predictions" view=Predictions/>
-                      <Route path="/realtimemonitoring" view=RealTimeMonitoring/>
-                      <Route path="/pushtomobile" view=PushToMobile/>
-                      <Route path="/decisionmaking" view=DecisionMaking/>
-                      <Route path="/communications" view=Communications/>
-                      <Route path="/security" view=Security/>
-                      <Route path="/visualize" view=Visualize/>
-                      <Route path="/collaborate" view=Collaborate/>
-                      <Route path="/ubiquitouslanguage" view=UbiquitousLanguage/>
-                      <Route path="/customersupport" view=CustomerSupport/>
-                      <Route path="/customgpts" view=CustomGPTs/>
-                      <Route path="/workshops" view=Workshops/>
-                      <Route path="/workshopform" view=WorkshopForm/>
-                      <Route path="/nixoswork" view=NixOSWork/>
-                      <Route path="/landingplay" view=LandingPlay/>
-                      <Route path="/architecture" view=Architecture/>
-                      <Route path="/newworld" view=NewWorld/>
-                      <Route path="/*any" view=Landing/>
-                  </Routes>
-              </Router>
-          </main>
-          <Footer />
-      </div>
-  }
+#[derive(Debug, Clone)]
+pub enum Message {
+    NavigateTo(Page),
+}
+
+#[derive(Default)]
+struct App {
+    current_page: Page,
+}
+
+#[derive(Debug, Clone, PartialEq, Default)]
+pub enum Page {
+    #[default]
+    Hero,
+    Platform,
+    Team, 
+}
+
+impl App {
+    fn update(&mut self, message: Message) {
+        match message {
+            Message::NavigateTo(page) => {
+                self.current_page = page;
+            }
+        }
+    }
+
+    fn view(&self) -> Element<Message> {
+        let header = container(
+            row![
+                text("Cowboy AI").size(24),
+                Space::with_width(iced::Fill),
+                button(text("Home").size(14))
+                    .on_press(Message::NavigateTo(Page::Hero))
+                    .padding([8, 16]),
+                button(text("Platform").size(14))
+                    .on_press(Message::NavigateTo(Page::Platform))
+                    .padding([8, 16]),
+                button(text("Team").size(14))
+                    .on_press(Message::NavigateTo(Page::Team))
+                    .padding([8, 16]),
+            ]
+            .padding(20)
+            .align_y(iced::Alignment::Center)
+        )
+        .width(iced::Fill);
+        
+        let content = match self.current_page {
+            Page::Hero => self.hero_page(),
+            Page::Platform => self.platform_page(),
+            Page::Team => self.team_page(),
+        };
+
+        column![
+            header,
+            scrollable(content)
+                .height(iced::Fill)
+                .width(iced::Fill)
+        ]
+        .spacing(0)
+        .into()
+    }
+
+    fn hero_page(&self) -> Element<Message> {
+        container(
+            column![
+                Space::with_height(100),
+                text("Cowboy AI").size(72),
+                Space::with_height(20),
+                text("The Platform For Composable, Cognitive, Audit-Grade AI Swarms").size(32),
+                Space::with_height(10),
+                text("Your New Business Brain & Nervous System").size(20),
+                Space::with_height(30),
+                text("No-Code Composable Multi-AI Agent Orchestration At Scale").size(24),
+                Space::with_height(60),
+                container(
+                    column![
+                        text("Disclaimer & Warning:").size(16),
+                        Space::with_height(10),
+                        text("You can now ask and command the system to do anything. In plain English. And it will.").size(18),
+                    ]
+                    .align_x(iced::Alignment::Center)
+                )
+                .padding(30)
+                .max_width(800),
+                Space::with_height(100),
+            ]
+            .align_x(iced::Alignment::Center)
+            .width(iced::Fill)
+        )
+        .padding(40)
+        .center_x(iced::Fill)
+        .into()
+    }
+
+    fn platform_page(&self) -> Element<Message> {
+        container(
+            column![
+                Space::with_height(60),
+                text("Platform First — Cowboy AI CIM").size(48),
+                Space::with_height(20),
+                text("The platform for building, governing, and scaling your business with AI swarms.").size(24),
+                Space::with_height(60),
+                text("Build Once, Replicate Anywhere").size(24),
+                text("We're proving it in private lending/fintech first. Repeatable & Reproduceable.").size(16),
+                Space::with_height(20),
+                text("Open for Builders").size(24),
+                text("Publish domain packs, swarms, and connectors other teams can adopt.").size(16),
+                Space::with_height(20),
+                text("Proven Milestones").size(24),
+                text("8M+ micro-transactions processed; >90% lower AI compute vs cloud-only baselines.").size(16),
+                Space::with_height(20),
+                text("No-code, modular agent swarms").size(24),
+                text("Like little building blocks AI agents assemble and compose on the fly to execute any task.").size(16),
+                Space::with_height(40),
+                text("Immutable, Security First").size(28),
+                text("Immutable records, ransomware-resistant architecture").size(18),
+                Space::with_height(80),
+            ]
+            .align_x(iced::Alignment::Center)
+            .width(iced::Fill)
+        )
+        .padding(40)
+        .into()
+    }
+
+    fn team_page(&self) -> Element<Message> {
+        container(
+            column![
+                Space::with_height(60),
+                text("Our Leadership Team").size(48),
+                Space::with_height(40),
+                text("Jacob Kopilovitch - CEO").size(20),
+                text("Serial entrepreneur with over 20 years of experience").size(16),
+                Space::with_height(15),
+                text("David Kopilovitch - COO").size(20),
+                text("Operations executive with 17+ years of expertise").size(16),
+                Space::with_height(15),
+                text("Steele Price - CSO").size(20),
+                text("Technology visionary with 40+ years of experience, Microsoft MVP").size(16),
+                Space::with_height(15),
+                text("Kathryn Freeman - CBO").size(20),
+                text("Accomplished entrepreneur and senior advisor").size(16),
+                Space::with_height(80),
+            ]
+            .align_x(iced::Alignment::Center)
+            .width(iced::Fill)
+        )
+        .padding(40)
+        .into()
+    }
+
+    fn theme(&self) -> iced::Theme {
+        iced::Theme::Dark
+    }
 }
