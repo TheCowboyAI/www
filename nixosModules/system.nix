@@ -1,9 +1,20 @@
 { inputs, self, ... }@flakeContext:
-{ config, lib, pkgs, ... }: {
+{ config, lib, pkgs, modulesPath, ... }: {
   imports = [
     (import ./nginx.nix flakeContext)
+    (modulesPath + "/virtualisation/proxmox-lxc.nix")
   ];
   config = {
+    # LXC container settings
+    boot.isContainer = true;
+    
+    # Suppress systemd units that don't work in LXC
+    systemd.suppressedSystemUnits = [
+      "dev-mqueue.mount"
+      "sys-kernel-debug.mount"
+      "sys-fs-fuse-connections.mount"
+    ];
+    
     system.stateVersion = "24.05";
 
     networking = {

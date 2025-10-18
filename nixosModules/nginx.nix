@@ -6,6 +6,8 @@ let
     name = "cowboy-ai-website";
     src = ../iced-wasm;
     
+    buildInputs = [ pkgs.coreutils ];
+    
     installPhase = ''
       mkdir -p $out
       
@@ -15,32 +17,27 @@ let
       # Copy the WASM package from source
       cp -r $src/pkg $out/wasm-pkg
       
-      # Fix the import path in index.html
-      sed -i 's|./pkg/cowboy_presentation.js|./wasm-pkg/cowboy_presentation.js|g' $out/index.html
+      # Copy assets
+      cp ${../assets}/logo.svg $out/logo.svg
+      cp ${../assets}/favicon.ico $out/favicon.ico
+      
+      # The import path should already be correct in index.html
+      # No need to modify it
       
       # Ensure proper permissions
       chmod -R 755 $out
     '';
   };
   
-  # Hash certificates into Nix store
-  certificates = pkgs.stdenv.mkDerivation {
-    name = "thecowboy-ai-certificates";
-    src = ../certs;
-    
-    installPhase = ''
-      mkdir -p $out
-      cp thecowboy.ai.pem $out/thecowboy.ai.pem
-      cp thecowboy.ai.key $out/thecowboy.ai.key
-      chmod 644 $out/thecowboy.ai.pem
-      chmod 600 $out/thecowboy.ai.key
-    '';
-  };
+  # Certificate paths - these should be manually deployed to /etc/ssl/certs/
+  # NOT included in Nix store for security reasons
+  certPath = "/etc/ssl/certs/thecowboy.ai.pem";
+  keyPath = "/etc/ssl/private/thecowboy.ai.key";
 in
 {
   config = {
-    # Ensure certificates are included in the system closure
-    environment.systemPackages = [ certificates ];
+    # Note: SSL certificates must be manually deployed to the server
+    # Place them in /etc/ssl/certs/ and /etc/ssl/private/
     
     services.nginx = {
       enable = true;
@@ -51,11 +48,12 @@ in
       
       virtualHosts."thecowboy.ai" = {
         default = true;
-        forceSSL = true;
+        forceSSL = false;  # Don't force SSL - Cloudflare handles this
+        addSSL = true;     # Support both HTTP and HTTPS
         enableACME = false; # Using Cloudflare Origin certificates
         
-        sslCertificate = "${certificates}/thecowboy.ai.pem";
-        sslCertificateKey = "${certificates}/thecowboy.ai.key";
+        sslCertificate = certPath;
+        sslCertificateKey = keyPath;
         
         root = wasmSite;
         
@@ -64,20 +62,29 @@ in
           tryFiles = "$uri $uri/ /index.html";
         };
         
-        # Static file locations must come before catch-all
-        locations."~ \\.js$" = {
+        # Serve wasm-pkg directory with proper MIME types
+        locations."/wasm-pkg/" = {
           priority = 1;
-          tryFiles = "$uri =404";
+          alias = "${wasmSite}/wasm-pkg/";
           extraConfig = ''
-            add_header Content-Type application/javascript;
-            add_header Cache-Control "public, max-age=3600";
             add_header Access-Control-Allow-Origin *;
           '';
         };
         
+        locations."~ \\.js$" = {
+          priority = 2;
+          root = wasmSite;
+          extraConfig = ''
+            add_header Content-Type "application/javascript; charset=utf-8";
+            add_header Cache-Control "public, max-age=3600";
+            add_header Access-Control-Allow-Origin "*";
+            add_header Access-Control-Allow-Methods "GET, OPTIONS";
+          '';
+        };
+        
         locations."~ \\.wasm$" = {
-          priority = 1;
-          tryFiles = "$uri =404";
+          priority = 2;
+          root = wasmSite;
           extraConfig = ''
             add_header Content-Type application/wasm;
             add_header Cache-Control "public, max-age=31536000";
@@ -88,11 +95,12 @@ in
       
       # Also respond to www subdomain
       virtualHosts."www.thecowboy.ai" = {
-        forceSSL = true;
+        forceSSL = false;  # Don't force SSL - Cloudflare handles this
+        addSSL = true;     # Support both HTTP and HTTPS
         enableACME = false;
         
-        sslCertificate = "${certificates}/thecowboy.ai.pem";
-        sslCertificateKey = "${certificates}/thecowboy.ai.key";
+        sslCertificate = certPath;
+        sslCertificateKey = keyPath;
         
         root = wasmSite;
         
@@ -101,20 +109,29 @@ in
           tryFiles = "$uri $uri/ /index.html";
         };
         
-        # Static file locations must come before catch-all
-        locations."~ \\.js$" = {
+        # Serve wasm-pkg directory with proper MIME types
+        locations."/wasm-pkg/" = {
           priority = 1;
-          tryFiles = "$uri =404";
+          alias = "${wasmSite}/wasm-pkg/";
           extraConfig = ''
-            add_header Content-Type application/javascript;
-            add_header Cache-Control "public, max-age=3600";
             add_header Access-Control-Allow-Origin *;
           '';
         };
         
+        locations."~ \\.js$" = {
+          priority = 2;
+          root = wasmSite;
+          extraConfig = ''
+            add_header Content-Type "application/javascript; charset=utf-8";
+            add_header Cache-Control "public, max-age=3600";
+            add_header Access-Control-Allow-Origin "*";
+            add_header Access-Control-Allow-Methods "GET, OPTIONS";
+          '';
+        };
+        
         locations."~ \\.wasm$" = {
-          priority = 1;
-          tryFiles = "$uri =404";
+          priority = 2;
+          root = wasmSite;
           extraConfig = ''
             add_header Content-Type application/wasm;
             add_header Cache-Control "public, max-age=31536000";

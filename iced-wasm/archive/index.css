@@ -1,0 +1,12 @@
+/* Additional styles for Iced WASM canvas */
+canvas {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#iced canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

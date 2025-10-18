@@ -1,1 +1,0 @@
-{"rustc":16285725380928457773,"features":"[\"std\"]","declared_features":"[\"default\", \"std\"]","target":3001973476221773087,"profile":2241668132362809309,"path":10660800439123932362,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/xmlparser-8d1cc1cf4ef77e6a/dep-lib-xmlparser","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":0}

@@ -1,0 +1,15 @@
+[build]
+target = "index.html"
+# Must use dev mode for WASM - release mode requires wgpu which fails in browser
+release = false
+dist = "dist"
+public_url = "/"
+
+[serve]
+address = "127.0.0.1"
+port = 8090
+open = false
+
+[watch]
+watch = ["src", "Cargo.toml", "index.html"]
+ignore = ["dist"]

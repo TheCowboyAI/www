@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minimal Iced Test</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #iced {
+            width: 100vw;
+            height: 100vh;
+        }
+        canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="iced"></div>
+    
+    <script type="module">
+        import init, { run } from './pkg/cowboy_presentation.js';
+        
+        async function main() {
+            console.log('Initializing WASM...');
+            await init();
+            console.log('WASM initialized');
+            
+            console.log('Starting Iced...');
+            await run();
+            console.log('Iced started');
+            
+            // Debug: Check what's in the container after a short delay
+            setTimeout(() => {
+                const container = document.getElementById('iced');
+                console.log('Container children:', container.children);
+                console.log('Container innerHTML length:', container.innerHTML.length);
+                
+                // Check for canvas
+                const canvas = container.querySelector('canvas');
+                if (canvas) {
+                    console.log('Canvas found:', {
+                        width: canvas.width,
+                        height: canvas.height,
+                        clientWidth: canvas.clientWidth,
+                        clientHeight: canvas.clientHeight,
+                        style: canvas.style.cssText
+                    });
+                    
+                    // Try to force a resize
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                } else {
+                    console.log('No canvas found in container');
+                }
+            }, 1000);
+        }
+        
+        main().catch(console.error);
+    </script>
+</body>
+</html>

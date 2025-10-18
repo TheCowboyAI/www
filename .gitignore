@@ -1,9 +1,60 @@
-/target
-**/*.rs.bk
-bin/
+# Rust build artifacts
+target/
+**/target/
 pkg/
+**/pkg/
+
+# Wasm-pack artifacts
 wasm-pack.log
-.env
-/.direnv
-/dist
+
+# Trunk build artifacts
+dist/
+**/dist/
+
+# Node modules
 node_modules/
+**/node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+certs/*.key
+certs/*.pem
+certs/*.crt
+certs/*.cert
+*.key
+*.pem
+*.crt
+*.cert
+
+# Direnv
+.direnv/
+/.direnv
+
+# Nix results
+result
+result*
+result/**
+
+# Backup files
+**/*.rs.bk
+**/*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test artifacts
+.playwright-mcp/
+test-results/
+
+# Misc
+bin/
+*.log

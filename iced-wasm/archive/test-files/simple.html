@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simple Counter Test</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+        #iced {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="iced"></div>
+    
+    <script type="module">
+        import init, { run_simple } from './pkg/cowboy_presentation.js';
+        
+        async function main() {
+            try {
+                console.log('Init WASM...');
+                await init();
+                console.log('WASM ready');
+                
+                console.log('Starting counter...');
+                await run_simple();
+                console.log('Counter running');
+            } catch (e) {
+                console.error('Error:', e);
+            }
+        }
+        
+        main();
+    </script>
+</body>
+</html>

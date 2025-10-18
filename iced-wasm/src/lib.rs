@@ -1,22 +1,45 @@
 use iced::{
-    alignment, executor, font, widget::{button, column, container, row, text, scrollable, Column, Container, Row, Space},
-    Alignment, Application, Command, Element, Font, Length, Settings, Subscription, Theme,
-    Color, Background, Border,
+    widget::{button, column, container, row, text, scrollable, Space},
+    Alignment, Element, Length,
+    Color, Background, Task,
 };
-use iced::widget::svg;
 use wasm_bindgen::prelude::*;
+use wasm_bindgen::JsValue;
 
 pub mod presentation_theme;
 use presentation_theme::PresentationTheme;
 
-#[wasm_bindgen]
-pub fn run() {
-    CowboyPresentation::run(Settings::default()).unwrap();
+pub mod simple;
+pub mod minimal_test;
+pub mod minimal_wgpu;
+// pub mod wgpu_with_iced; // Version mismatch with iced_wgpu
+pub mod logo_animation;
+pub mod landing_page;
+
+#[wasm_bindgen(start)]
+pub fn main() -> Result<(), JsValue> {
+    // Set panic hook for better error messages in browser console
+    console_error_panic_hook::set_once();
+    
+    web_sys::console::log_1(&"WASM Main function called!".into());
+    
+    // Run the landing page
+    web_sys::console::log_1(&"Starting CIMBOL Landing Page...".into());
+    
+    wasm_bindgen_futures::spawn_local(async {
+        if let Err(e) = landing_page::run_landing_page().await {
+            web_sys::console::error_1(&format!("Landing page failed: {:?}", e).into());
+        }
+    });
+    
+    Ok(())
 }
 
-pub fn run_native() -> iced::Result {
-    CowboyPresentation::run(Settings::default())
-}
+// Native version would need different imports and setup
+// pub fn run_native() -> iced::Result {
+//     iced::application("Cowboy AI Presentation", CowboyPresentation::update, CowboyPresentation::view)
+//         .run_with(CowboyPresentation::new)
+// }
 
 #[derive(Debug, Clone)]
 pub enum Message {
@@ -111,13 +134,8 @@ pub struct SageCapability {
     points: Vec<String>,
 }
 
-impl Application for CowboyPresentation {
-    type Executor = executor::Default;
-    type Message = Message;
-    type Theme = Theme;
-    type Flags = ();
-
-    fn new(_flags: ()) -> (Self, Command<Message>) {
+impl Default for CowboyPresentation {
+    fn default() -> Self {
         let slides = vec![
             // Slide 1: Hero
             Slide {
@@ -409,20 +427,19 @@ impl Application for CowboyPresentation {
             },
         ];
 
-        (
-            Self {
-                current_slide: 0,
-                slides,
-            },
-            Command::none(),
-        )
+        Self {
+            current_slide: 0,
+            slides,
+        }
     }
+}
 
-    fn title(&self) -> String {
-        String::from("Cowboy AI - Presentation")
+impl CowboyPresentation {
+    pub fn new() -> (Self, Task<Message>) {
+        (Self::default(), Task::none())
     }
-
-    fn update(&mut self, message: Message) -> Command<Message> {
+    
+    pub fn update(&mut self, message: Message) -> Task<Message> {
         match message {
             Message::NextSlide => {
                 if self.current_slide < self.slides.len() - 1 {
@@ -440,24 +457,28 @@ impl Application for CowboyPresentation {
                 }
             }
         }
-        Command::none()
+        Task::none()
     }
 
-    fn view(&self) -> Element<Message> {
+    pub fn view(&self) -> Element<Message> {
+        web_sys::console::log_1(&format!("View called for slide {}", self.current_slide).into());
         let slide = &self.slides[self.current_slide];
         
         let content = match &slide.content {
             SlideContent::Hero { title, subtitle, description, warning } => {
                 column![
-                    text(title).size(60),
+                    text(title).size(60).color(Color::WHITE),
                     Space::with_height(20),
-                    text(subtitle).size(30),
+                    text(subtitle).size(30).color(Color::WHITE),
                     Space::with_height(20),
-                    text(description).size(20),
+                    text(description).size(20).color(Color::WHITE),
                     Space::with_height(40),
-                    container(text(warning).size(18))
+                    container(text(warning).size(18).color(Color::from_rgb(1.0, 1.0, 0.8)))
                         .padding(20)
-                        .style(iced::theme::Container::Box),
+                        .style(|_theme: &iced::Theme| container::Style {
+                            background: Some(Background::Color(Color::from_rgba(0.0, 0.0, 0.0, 0.3))),
+                            ..Default::default()
+                        }),
                 ]
             }
             SlideContent::Cognition { items, description } => {
@@ -480,7 +501,7 @@ impl Application for CowboyPresentation {
                             text(&item.subtitle).size(16),
                         ]
                         .spacing(10)
-                        .align_items(Alignment::Center)
+                        .align_x(Alignment::Center)
                     );
                     item_row = item_row.push(Space::with_width(40));
                 }
@@ -511,7 +532,6 @@ impl Application for CowboyPresentation {
                             .spacing(10)
                         )
                         .padding(20)
-                        .style(iced::theme::Container::Box)
                     );
                     col = col.push(Space::with_height(20));
                 }
@@ -560,7 +580,7 @@ impl Application for CowboyPresentation {
                             text(&component.subtitle).size(16),
                         ]
                         .spacing(10)
-                        .align_items(Alignment::Center)
+                        .align_x(Alignment::Center)
                     );
                     comp_row = comp_row.push(Space::with_width(40));
                 }
@@ -588,7 +608,6 @@ impl Application for CowboyPresentation {
                             .spacing(10)
                         )
                         .padding(15)
-                        .style(iced::theme::Container::Box)
                     );
                     current_row = current_row.push(Space::with_width(20));
                     
@@ -635,8 +654,7 @@ impl Application for CowboyPresentation {
                     current_row = current_row.push(
                         container(section_col.spacing(8))
                             .padding(15)
-                            .style(iced::theme::Container::Box)
-                    );
+                        );
                     current_row = current_row.push(Space::with_width(20));
                     
                     if (i + 1) % 2 == 0 {
@@ -679,8 +697,7 @@ impl Application for CowboyPresentation {
                     current_row = current_row.push(
                         container(cap_col.spacing(8))
                             .padding(15)
-                            .style(iced::theme::Container::Box)
-                            .width(Length::FillPortion(1))
+                                .width(Length::FillPortion(1))
                     );
                     current_row = current_row.push(Space::with_width(20));
                     
@@ -700,13 +717,15 @@ impl Application for CowboyPresentation {
         };
         
         let navigation = row![
-            button(text("Previous")).on_press(Message::PreviousSlide),
+            button(text("Previous").color(Color::BLACK)).on_press(Message::PreviousSlide),
             Space::with_width(20),
-            text(format!("Slide {} of {}", self.current_slide + 1, self.slides.len())).size(18),
+            text(format!("Slide {} of {}", self.current_slide + 1, self.slides.len()))
+                .size(18)
+                .color(Color::WHITE),
             Space::with_width(20),
-            button(text("Next")).on_press(Message::NextSlide),
+            button(text("Next").color(Color::BLACK)).on_press(Message::NextSlide),
         ]
-        .align_items(Alignment::Center);
+        .align_y(Alignment::Center);
         
         let slide_indicators = {
             let mut indicators = row![];
@@ -714,11 +733,9 @@ impl Application for CowboyPresentation {
                 let indicator = if i == self.current_slide {
                     button(text(format!("{}", i + 1)))
                         .on_press(Message::GoToSlide(i))
-                        .style(iced::theme::Button::Primary)
                 } else {
                     button(text(format!("{}", i + 1)))
                         .on_press(Message::GoToSlide(i))
-                        .style(iced::theme::Button::Secondary)
                 };
                 indicators = indicators.push(indicator);
                 indicators = indicators.push(Space::with_width(5));
@@ -726,28 +743,32 @@ impl Application for CowboyPresentation {
             indicators
         };
         
-        container(
+        // Create main content with visible background
+        let main_content = container(
             column![
                 content
                     .spacing(20)
-                    .align_items(Alignment::Center),
+                    .align_x(Alignment::Center),
                 Space::with_height(40),
                 navigation,
                 Space::with_height(20),
                 slide_indicators,
             ]
             .spacing(10)
-            .align_items(Alignment::Center)
+            .align_x(Alignment::Center)
         )
         .width(Length::Fill)
         .height(Length::Fill)
-        .center_x()
-        .center_y()
-        .padding(0)
-        .into()
+        .center_x(Length::Fill)
+        .center_y(Length::Fill)
+        .padding(20)
+        .style(|_theme| container::Style {
+            background: Some(Background::Color(Color::from_rgb(0.2, 0.3, 0.8))),
+            text_color: Some(Color::WHITE),
+            ..Default::default()
+        });
+        
+        main_content.into()
     }
 
-    fn theme(&self) -> Theme {
-        Theme::Light
-    }
 }

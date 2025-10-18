@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Console Output</title>
+</head>
+<body>
+    <h1>Test Console Output</h1>
+    <button onclick="testWASM()">Test WASM Module</button>
+    <div id="output"></div>
+    
+    <script type="module">
+        async function testWASM() {
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = 'Loading WASM...<br>';
+            
+            try {
+                const response = await fetch('http://localhost:8090/cowboy-presentation-96bbc9a488a375f1.js');
+                outputDiv.innerHTML += 'JS Module loaded<br>';
+                
+                // Try to import and init
+                const module = await import('http://localhost:8090/cowboy-presentation-96bbc9a488a375f1.js');
+                outputDiv.innerHTML += 'Module imported<br>';
+                
+                await module.default({ module_or_path: 'http://localhost:8090/cowboy-presentation-96bbc9a488a375f1_bg.wasm' });
+                outputDiv.innerHTML += 'WASM initialized<br>';
+                
+                // Try to call main
+                if (module.main) {
+                    module.main();
+                    outputDiv.innerHTML += 'main() called<br>';
+                } else {
+                    outputDiv.innerHTML += 'No main function found<br>';
+                }
+                
+            } catch (e) {
+                outputDiv.innerHTML += 'Error: ' + e.message + '<br>';
+                console.error(e);
+            }
+        }
+        
+        window.testWASM = testWASM;
+    </script>
+</body>
+</html>

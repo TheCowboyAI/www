@@ -1,1 +1,0 @@
-iced::theme::Button: From<for<'a> fn(&'a Theme) -> iced::widget::button::Appearance {nav_button_style}>

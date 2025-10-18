@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WASM Test</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+        }
+        #log {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+        .error { color: #ff6b6b; }
+        .success { color: #51cf66; }
+        .info { color: #339af0; }
+    </style>
+</head>
+<body>
+    <h1>WASM Module Test</h1>
+    <div id="log"></div>
+    <div id="iced" style="display: none;"></div>
+    
+    <script type="module">
+        const log = (msg, type = 'info') => {
+            const div = document.getElementById('log');
+            const span = document.createElement('span');
+            span.className = type;
+            span.textContent = `[${new Date().toLocaleTimeString()}] ${msg}\n`;
+            div.appendChild(span);
+        };
+        
+        log('Starting WASM test...', 'info');
+        
+        try {
+            log('Importing module...', 'info');
+            const module = await import('./pkg/cowboy_presentation.js');
+            log(`Module loaded! Exports: ${Object.keys(module).join(', ')}`, 'success');
+            
+            log('Initializing WASM...', 'info');
+            await module.default();
+            log('WASM initialized!', 'success');
+            
+            log('Calling run()...', 'info');
+            module.run();
+            log('run() called successfully!', 'success');
+            
+            // Show Iced container
+            document.getElementById('iced').style.display = 'block';
+            
+        } catch (error) {
+            log(`Error: ${error.message}`, 'error');
+            log(`Stack: ${error.stack}`, 'error');
+        }
+    </script>
+</body>
+</html>
