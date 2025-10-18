@@ -64,18 +64,24 @@ in
           tryFiles = "$uri $uri/ /index.html";
         };
         
-        locations."~ \\.wasm$" = {
+        # Static file locations must come before catch-all
+        locations."~ \\.js$" = {
+          priority = 1;
+          tryFiles = "$uri =404";
           extraConfig = ''
-            add_header Content-Type application/wasm;
-            add_header Cache-Control "public, max-age=31536000";
+            add_header Content-Type application/javascript;
+            add_header Cache-Control "public, max-age=3600";
             add_header Access-Control-Allow-Origin *;
           '';
         };
         
-        locations."~ \\.js$" = {
+        locations."~ \\.wasm$" = {
+          priority = 1;
+          tryFiles = "$uri =404";
           extraConfig = ''
-            add_header Content-Type application/javascript;
-            add_header Cache-Control "public, max-age=3600";
+            add_header Content-Type application/wasm;
+            add_header Cache-Control "public, max-age=31536000";
+            add_header Access-Control-Allow-Origin *;
           '';
         };
       };
@@ -95,18 +101,24 @@ in
           tryFiles = "$uri $uri/ /index.html";
         };
         
-        locations."~ \\.wasm$" = {
+        # Static file locations must come before catch-all
+        locations."~ \\.js$" = {
+          priority = 1;
+          tryFiles = "$uri =404";
           extraConfig = ''
-            add_header Content-Type application/wasm;
-            add_header Cache-Control "public, max-age=31536000";
+            add_header Content-Type application/javascript;
+            add_header Cache-Control "public, max-age=3600";
             add_header Access-Control-Allow-Origin *;
           '';
         };
         
-        locations."~ \\.js$" = {
+        locations."~ \\.wasm$" = {
+          priority = 1;
+          tryFiles = "$uri =404";
           extraConfig = ''
-            add_header Content-Type application/javascript;
-            add_header Cache-Control "public, max-age=3600";
+            add_header Content-Type application/wasm;
+            add_header Cache-Control "public, max-age=31536000";
+            add_header Access-Control-Allow-Origin *;
           '';
         };
       };
