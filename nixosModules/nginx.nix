@@ -39,6 +39,9 @@ let
 in
 {
   config = {
+    # Ensure certificates are included in the system closure
+    environment.systemPackages = [ certificates ];
+    
     services.nginx = {
       enable = true;
       recommendedGzipSettings = true;
