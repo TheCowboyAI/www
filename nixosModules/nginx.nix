@@ -33,10 +33,9 @@ let
     '';
   };
   
-  # Certificate paths - these should be manually deployed to /etc/ssl/certs/
-  # NOT included in Nix store for security reasons
-  certPath = "/etc/ssl/certs/thecowboy.ai.pem";
-  keyPath = "/etc/ssl/private/thecowboy.ai.key";
+  # Certificate paths - included in Nix store for Cloudflare Origin certificates
+  certPath = "${../certs/thecowboy.ai.pem}";
+  keyPath = "${../certs/thecowboy.ai.key}";
 in
 {
   config = {
