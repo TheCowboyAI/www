@@ -5,13 +5,8 @@ edition = "2021"
 
 [dependencies]
 # Use standard iced crate with webgl feature
-iced = { version = "0.13.1", default-features = false, features = ["webgl", "canvas", "image", "svg", "debug"] }
-
-# Individual iced crates for manual integration
-iced_wgpu = { version = "0.13", features = ["webgl", "image"] }
-iced_core = { version = "0.13" }
-iced_widget = { version = "0.13" }
-iced_runtime = { version = "0.13" }
+# Note: wgpu feature is needed for iced_renderer in release mode
+iced = { version = "0.13.1", default-features = false, features = ["wgpu", "webgl", "canvas", "image", "svg", "debug"] }
 
 # WASM specific dependencies
 wasm-bindgen = "=0.2.104"
@@ -19,8 +14,8 @@ wasm-bindgen-futures = "0.4"
 web-sys = { version = "0.3", features = ["console", "Document", "Window", "Element", "HtmlElement", "HtmlHeadElement", "CssStyleDeclaration", "HtmlCanvasElement", "NodeList", "Performance", "HtmlImageElement", "HtmlInputElement", "HtmlButtonElement", "Event"] }
 console_error_panic_hook = "0.1"
 
-# WebGL/wgpu for minimal test
-wgpu = { version = "0.20", features = ["webgl"] }
+# Use wgpu 0.19 to match iced's version
+wgpu = { version = "0.19", features = ["webgl"] }
 
 # Other dependencies
 getrandom = { version = "0.2", features = ["js"] }

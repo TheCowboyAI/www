@@ -9,10 +9,6 @@ use wasm_bindgen::JsValue;
 pub mod presentation_theme;
 use presentation_theme::PresentationTheme;
 
-pub mod simple;
-pub mod minimal_test;
-pub mod minimal_wgpu;
-// pub mod wgpu_with_iced; // Version mismatch with iced_wgpu
 pub mod logo_animation;
 pub mod landing_page;
 

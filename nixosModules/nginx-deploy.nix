@@ -1,7 +1,8 @@
 { inputs, self, ... }@flakeContext:
 { config, lib, pkgs, ... }: 
 let
-  # Build the WASM presentation site
+  # Simple static site deployment without building WASM
+  # The WASM files should be pre-built and included
   wasmSite = pkgs.stdenv.mkDerivation {
     name = "cowboy-ai-website";
     src = ../iced-wasm;
@@ -10,22 +11,28 @@ let
     
     installPhase = ''
       mkdir -p $out
+      mkdir -p $out/wasm-pkg
       
-      # Check if dist directory exists (from trunk build)
-      if [ -d "$src/dist" ]; then
-        echo "Using pre-built dist directory"
-        cp -r $src/dist/* $out/
-      # Fallback to pkg if it exists
-      elif [ -d "$src/pkg" ]; then
-        echo "Using pkg directory"
-        cp $src/index.html $out/
-        cp -r $src/pkg $out/wasm-pkg
-        cp ${../assets}/logo.svg $out/logo.svg
-        cp ${../assets}/favicon.ico $out/favicon.ico
+      # Copy the index.html from source
+      cp $src/index.html $out/ || echo "Warning: index.html not found"
+      
+      # Try to copy the WASM package from source if it exists
+      if [ -d "$src/pkg" ]; then
+        cp -r $src/pkg/* $out/wasm-pkg/
       else
-        echo "Warning: No build artifacts found, creating minimal site"
-        # Create a minimal index.html
-        echo '<html><body><h1>Cowboy AI - Build pending</h1></body></html>' > $out/index.html
+        echo "Warning: pkg directory not found, creating dummy files"
+        # Create dummy files to prevent nginx errors
+        touch $out/wasm-pkg/cowboy_presentation.js
+        touch $out/wasm-pkg/cowboy_presentation_bg.wasm
+      fi
+      
+      # Copy assets
+      if [ -f "${../assets}/logo.svg" ]; then
+        cp ${../assets}/logo.svg $out/logo.svg
+      fi
+      
+      if [ -f "${../assets}/favicon.ico" ]; then  
+        cp ${../assets}/favicon.ico $out/favicon.ico
       fi
       
       # Ensure proper permissions
@@ -75,7 +82,7 @@ in
           '';
         };
         
-        locations."~ \\.js$" = {
+        locations."~ \.js$" = {
           priority = 2;
           root = wasmSite;
           extraConfig = ''
@@ -86,7 +93,7 @@ in
           '';
         };
         
-        locations."~ \\.wasm$" = {
+        locations."~ \.wasm$" = {
           priority = 2;
           root = wasmSite;
           extraConfig = ''
@@ -122,7 +129,7 @@ in
           '';
         };
         
-        locations."~ \\.js$" = {
+        locations."~ \.js$" = {
           priority = 2;
           root = wasmSite;
           extraConfig = ''
@@ -133,7 +140,7 @@ in
           '';
         };
         
-        locations."~ \\.wasm$" = {
+        locations."~ \.wasm$" = {
           priority = 2;
           root = wasmSite;
           extraConfig = ''

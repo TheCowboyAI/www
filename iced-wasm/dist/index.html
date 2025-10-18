@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowboy AI - The Platform For Composable, Cognitive, Audit-Grade AI Swarms</title>
+    <link rel="icon" href="/favicon-bc7ff3f5c6601bf3.ico" integrity="sha384-ZvQsKcxh2tUSNyRCSoT0h2i5vly72vWSwPeeLgVzy1XZkKb9fck1XkZeGy2WqzDU"/>
+    
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+    
+<script type="module">
+import init, * as bindings from '/cowboy-presentation-aa40376cbf608212.js';
+const wasm = await init({ module_or_path: '/cowboy-presentation-aa40376cbf608212_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+<link rel="modulepreload" href="/cowboy-presentation-aa40376cbf608212.js" crossorigin="anonymous" integrity="sha384-f3pXg5QpFb8HHo9f2BS4cztfCgJNfSJ5NHmu+rE/49/1HotJ8kMC+gL2QL6IjKow"><link rel="preload" href="/cowboy-presentation-aa40376cbf608212_bg.wasm" crossorigin="anonymous" integrity="sha384-YjyJP3KQCVTrQsVJpgCfwE7NPk/JvVBbKGL23NK0Uv6scYhKSjg46HjpDB2rDOB7" as="fetch" type="application/wasm"></head>
+<body>
+</body>
+</html>
